@@ -1,9 +1,41 @@
+import https from 'https';
+import http from 'http';
+
 /**
  * HelpUS Knowledge Base & AI Agent Response Generator
- * Provides intelligent, friendly commercial responses about HelpUS ecosystem services.
+ * Integrates directly with ai.helpusbr.com Multi-AI Gateway & Local Knowledge Fallback.
  * Default Voice: pt-BR-AntonioNeural (Male Voice)
- * Phonetic Pronunciation: "Rélp Ás" (English pronunciation)
+ * Phonetic Pronunciation: "Rélp Ás"
  */
+
+const AI_HELPUS_ENDPOINT = process.env.AI_HELPUS_URL || 'https://ai.helpusbr.com/api/chat';
+
+/**
+ * Call ai.helpusbr.com or generate intelligent response
+ */
+export async function generateHelpUSResponseAsync(customerMessage) {
+  const msg = (customerMessage || '').trim();
+  const maleVoice = "pt-BR-AntonioNeural";
+
+  // Try calling ai.helpusbr.com AI service if available
+  try {
+    const aiResponse = await queryAiHelpus(msg);
+    if (aiResponse) {
+      const cleanText = aiResponse.replace(/HelpUS/gi, 'HelpUS');
+      const ttsPhonetic = aiResponse.replace(/HelpUS/gi, 'Rélp Ás');
+      return {
+        text: cleanText,
+        ttsText: ttsPhonetic,
+        voice: maleVoice
+      };
+    }
+  } catch (err) {
+    console.log('💡 usando base de conhecimento nativa ai.helpusbr.com fallback...');
+  }
+
+  // Native HelpUS Knowledge Base Fallback
+  return generateHelpUSResponse(msg);
+}
 
 export function generateHelpUSResponse(customerMessage) {
   const msg = (customerMessage || '').toLowerCase();
@@ -55,4 +87,56 @@ export function generateHelpUSResponse(customerMessage) {
     ttsText: "Olá! Seja muito bem-vindo à Rélp Ás. Sou o assistente virtual com inteligência artificial. Desenvolvemos ecossistemas de software, plataformas SaaS e soluções de IA como o Rélp Ás Voice. Como posso te ajudar hoje?",
     voice: maleVoice
   };
+}
+
+/**
+ * Helper to query ai.helpusbr.com
+ */
+function queryAiHelpus(promptText) {
+  return new Promise((resolve) => {
+    try {
+      const u = new URL(AI_HELPUS_ENDPOINT);
+      const postData = JSON.stringify({
+        messages: [
+          { role: 'system', content: 'Você é o assistente comercial oficial da HelpUS (ai.helpusbr.com). Responda com clareza, objetividade e foco em ajudar o cliente.' },
+          { role: 'user', content: promptText }
+        ]
+      });
+
+      const options = {
+        hostname: u.hostname,
+        port: u.port || (u.protocol === 'https:' ? 443 : 80),
+        path: u.pathname + u.search,
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Content-Length': Buffer.byteLength(postData)
+        },
+        timeout: 5000
+      };
+
+      const requester = u.protocol === 'https:' ? https : http;
+      const req = requester.request(options, (res) => {
+        let body = '';
+        res.on('data', chunk => body += chunk);
+        res.on('end', () => {
+          try {
+            const data = JSON.parse(body);
+            const content = data.reply || data.content || data?.choices?.[0]?.message?.content;
+            if (content && typeof content === 'string') {
+              return resolve(content);
+            }
+          } catch (e) {}
+          resolve(null);
+        });
+      });
+
+      req.on('error', () => resolve(null));
+      req.on('timeout', () => { req.destroy(); resolve(null); });
+      req.write(postData);
+      req.end();
+    } catch (e) {
+      resolve(null);
+    }
+  });
 }

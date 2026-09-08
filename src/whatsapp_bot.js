@@ -5,7 +5,7 @@ import path from 'path';
 import fs from 'fs';
 import { exec } from 'child_process';
 import { fileURLToPath } from 'url';
-import { generateHelpUSResponse } from './services/helpus_knowledge.js';
+import { generateHelpUSResponseAsync } from './services/helpus_knowledge.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -108,8 +108,8 @@ export async function startWhatsAppBot() {
 
       console.log(`📩 Mensagem recebida de [${remoteJid}]: ${textMessage}`);
 
-      // 1. Generate intelligent HelpUS response
-      const botResponse = generateHelpUSResponse(textMessage);
+      // 1. Generate intelligent HelpUS response via ai.helpusbr.com / Knowledge Engine
+      const botResponse = await generateHelpUSResponseAsync(textMessage);
 
       // 2. Send Text Response
       await sock.sendMessage(remoteJid, { text: botResponse.text });
