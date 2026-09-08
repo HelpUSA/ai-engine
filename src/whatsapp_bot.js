@@ -114,9 +114,10 @@ export async function startWhatsAppBot() {
       // 2. Send Text Response
       await sock.sendMessage(remoteJid, { text: botResponse.text });
 
-      // 3. Generate and Send Audio Voice Message
+      // 3. Generate and Send Audio Voice Message (Male Voice + Phonetic English Pronunciation)
       try {
-        const audioPath = await generateSpeechAudio(botResponse.text, botResponse.voice);
+        const textToSpeak = botResponse.ttsText || botResponse.text;
+        const audioPath = await generateSpeechAudio(textToSpeak, botResponse.voice || 'pt-BR-AntonioNeural');
         if (audioPath && fs.existsSync(audioPath)) {
           const audioBuffer = fs.readFileSync(audioPath);
           await sock.sendMessage(remoteJid, {
