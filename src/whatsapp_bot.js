@@ -1,5 +1,6 @@
 import makeWASocket, { useMultiFileAuthState, DisconnectReason } from '@whiskeysockets/baileys';
-import qrcode from 'qrcode-terminal';
+import qrcodeTerminal from 'qrcode-terminal';
+import QRCode from 'qrcode';
 import path from 'path';
 import fs from 'fs';
 import { exec } from 'child_process';
@@ -18,6 +19,12 @@ const publicDir = path.join(__dirname, '..', 'public');
 if (!fs.existsSync(publicDir)) {
   fs.mkdirSync(publicDir, { recursive: true });
 }
+
+export const botState = {
+  qrCodeDataUrl: null,
+  status: 'initializing',
+  connectedUser: null
+};
 
 /**
  * Generate MP3 audio using local tts_engine.py
@@ -52,24 +59,37 @@ export async function startWhatsAppBot() {
 
   sock.ev.on('creds.update', saveCreds);
 
-  sock.ev.on('connection.update', (update) => {
+  sock.ev.on('connection.update', async (update) => {
     const { connection, lastDisconnect, qr } = update;
 
     if (qr) {
+      botState.status = 'qr_ready';
+      try {
+        botState.qrCodeDataUrl = await QRCode.toDataURL(qr);
+      } catch (err) {
+        console.error('Erro ao gerar QR Code Data URL:', err);
+      }
+
       console.log('\n======================================================');
-      console.log('📱 ESCANEE O QR CODE ABAIXO NO SEU WHATSAPP:');
+      console.log('📱 ESCANEE O QR CODE NO TERMINAL OU NO NAVEGADOR (/qr):');
       console.log('======================================================\n');
-      qrcode.generate(qr, { small: true });
+      qrcodeTerminal.generate(qr, { small: true });
       console.log('\n======================================================\n');
     }
 
     if (connection === 'close') {
       const shouldReconnect = (lastDisconnect?.error?.output?.statusCode !== DisconnectReason.loggedOut);
       console.log('⚠️ Conexão encerrada. Reconectando...', shouldReconnect);
+      botState.status = 'disconnected';
+      botState.qrCodeDataUrl = null;
       if (shouldReconnect) {
         setTimeout(startWhatsAppBot, 5000);
       }
     } else if (connection === 'open') {
+      botState.status = 'connected';
+      botState.qrCodeDataUrl = null;
+      botState.connectedUser = sock.user?.id || 'Conectado';
+
       console.log('✅ Bot WhatsApp HelpUS Conectado com Sucesso!');
       console.log('🎙️ O robô está pronto para responder com Texto + Voz Neural!');
     }
@@ -79,7 +99,6 @@ export async function startWhatsAppBot() {
     if (type !== 'notify') return;
 
     for (const msg of messages) {
-      // Ignore messages sent by the bot itself or status updates
       if (msg.key.fromMe || msg.key.remoteJid === 'status@broadcast') continue;
 
       const remoteJid = msg.key.remoteJid;
@@ -113,5 +132,3 @@ export async function startWhatsAppBot() {
     }
   });
 }
-
-startWhatsAppBot();

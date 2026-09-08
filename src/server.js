@@ -23,9 +23,94 @@ if (!fs.existsSync(publicDir)) {
 }
 app.use('/public', express.static(publicDir));
 
+import { botState, startWhatsAppBot } from './whatsapp_bot.js';
+
 // Health check
 app.get('/health', (req, res) => {
-  res.json({ status: 'online', service: 'AI Engine Hub', version: '1.0.0' });
+  res.json({ status: 'online', service: 'AI Engine Hub', version: '1.0.0', botStatus: botState.status });
+});
+
+// HTML Web Page for Scanning WhatsApp QR Code
+app.get(['/', '/qr'], (req, res) => {
+  if (botState.status === 'connected') {
+    return res.send(`
+      <!DOCTYPE html>
+      <html lang="pt">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HelpUS WhatsApp Bot - Conectado</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+      </head>
+      <body class="bg-slate-950 text-white min-h-screen flex items-center justify-center p-4">
+        <div class="max-w-md w-full bg-slate-900 border border-emerald-500/30 rounded-3xl p-8 text-center space-y-6 shadow-2xl">
+          <div class="w-16 h-16 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto text-3xl">
+            ✅
+          </div>
+          <h1 class="text-2xl font-extrabold text-white">WhatsApp Conectado!</h1>
+          <p class="text-slate-400 text-sm">O robô de atendimento HelpUS com Voz Neural está 100% ativo e respondendo aos seus clientes.</p>
+          <div class="p-3 bg-slate-950 rounded-xl text-xs font-mono text-emerald-400 border border-slate-800">
+            Status: ONLINE 🟢
+          </div>
+        </div>
+      </body>
+      </html>
+    `);
+  }
+
+  if (botState.qrCodeDataUrl) {
+    return res.send(`
+      <!DOCTYPE html>
+      <html lang="pt">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="10">
+        <title>Escanear QR Code - HelpUS WhatsApp Bot</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+      </head>
+      <body class="bg-slate-950 text-white min-h-screen flex items-center justify-center p-4">
+        <div class="max-w-md w-full bg-slate-900 border border-slate-800 rounded-3xl p-8 text-center space-y-6 shadow-2xl">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-cyan-400 bg-cyan-950 px-3 py-1 rounded-full border border-cyan-800">
+              Conexão WhatsApp
+            </span>
+            <h1 class="text-2xl font-extrabold text-white mt-3">Escanear QR Code</h1>
+            <p class="text-slate-400 text-xs mt-1">Abra o WhatsApp no seu iPhone ➔ Configurações ➔ Aparelhos Conectados ➔ Conectar um Aparelho</p>
+          </div>
+
+          <div class="p-4 bg-white rounded-2xl shadow-xl inline-block border-4 border-cyan-500/50">
+            <img src="${botState.qrCodeDataUrl}" alt="WhatsApp QR Code" class="w-64 h-64 mx-auto block" />
+          </div>
+
+          <p class="text-[11px] text-slate-500 animate-pulse">
+            Esta página atualiza automaticamente a cada 10 segundos.
+          </p>
+        </div>
+      </body>
+      </html>
+    `);
+  }
+
+  res.send(`
+    <!DOCTYPE html>
+    <html lang="pt">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="refresh" content="5">
+      <title>Gerando QR Code...</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-slate-950 text-white min-h-screen flex items-center justify-center p-4 text-center">
+      <div class="space-y-4">
+        <div class="w-12 h-12 border-4 border-cyan-500 border-t-transparent rounded-full animate-spin mx-auto"></div>
+        <h2 class="text-lg font-bold">Iniciando motor WhatsApp...</h2>
+        <p class="text-xs text-slate-500">Aguarde alguns segundos enquanto o QR Code é gerado.</p>
+      </div>
+    </body>
+    </html>
+  `);
 });
 
 /**
@@ -97,8 +182,6 @@ app.post('/api/gamma', (req, res) => {
     filename
   });
 });
-
-import { startWhatsAppBot } from './whatsapp_bot.js';
 
 app.listen(PORT, () => {
   console.log(`🚀 AI Engine Hub rodando em http://localhost:${PORT}`);
