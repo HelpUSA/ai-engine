@@ -40,7 +40,7 @@ function generateSpeechAudio(text, voice = 'pt-BR-FranciscaNeural') {
   });
 }
 
-async function startWhatsAppBot() {
+export async function startWhatsAppBot() {
   const { state, saveCreds } = await useMultiFileAuthState(authDir);
 
   console.log('🤖 Iniciando Bot WhatsApp HelpUS com Suporte a Voz Neural...');

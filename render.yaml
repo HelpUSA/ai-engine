@@ -1,7 +1,7 @@
 services:
-  - type: worker
+  - type: web
     name: helpus-whatsapp-bot
     env: node
     plan: free
     buildCommand: npm install && pip install edge-tts
-    startCommand: npm run bot
+    startCommand: npm start

@@ -98,6 +98,9 @@ app.post('/api/gamma', (req, res) => {
   });
 });
 
+import { startWhatsAppBot } from './whatsapp_bot.js';
+
 app.listen(PORT, () => {
   console.log(`🚀 AI Engine Hub rodando em http://localhost:${PORT}`);
+  startWhatsAppBot().catch(err => console.error('Error starting WhatsApp bot:', err));
 });
