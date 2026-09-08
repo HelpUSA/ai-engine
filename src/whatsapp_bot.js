@@ -1,0 +1,117 @@
+import makeWASocket, { useMultiFileAuthState, DisconnectReason } from '@whiskeysockets/baileys';
+import qrcode from 'qrcode-terminal';
+import path from 'path';
+import fs from 'fs';
+import { exec } from 'child_process';
+import { fileURLToPath } from 'url';
+import { generateHelpUSResponse } from './services/helpus_knowledge.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const authDir = path.join(__dirname, '..', 'auth_info_baileys');
+if (!fs.existsSync(authDir)) {
+  fs.mkdirSync(authDir, { recursive: true });
+}
+
+const publicDir = path.join(__dirname, '..', 'public');
+if (!fs.existsSync(publicDir)) {
+  fs.mkdirSync(publicDir, { recursive: true });
+}
+
+/**
+ * Generate MP3 audio using local tts_engine.py
+ */
+function generateSpeechAudio(text, voice = 'pt-BR-FranciscaNeural') {
+  return new Promise((resolve, reject) => {
+    const filename = `bot_voice_${Date.now()}.mp3`;
+    const outputPath = path.join(publicDir, filename);
+    const scriptPath = path.join(__dirname, 'tts_engine.py');
+
+    const cmd = `python "${scriptPath}" --text "${text.replace(/"/g, '\\"')}" --out "${outputPath}" --voice "${voice}"`;
+
+    exec(cmd, (error, stdout, stderr) => {
+      if (error) {
+        console.error('TTS Generation error:', stderr || error.message);
+        return resolve(null);
+      }
+      resolve(outputPath);
+    });
+  });
+}
+
+async function startWhatsAppBot() {
+  const { state, saveCreds } = await useMultiFileAuthState(authDir);
+
+  console.log('🤖 Iniciando Bot WhatsApp HelpUS com Suporte a Voz Neural...');
+
+  const sock = makeWASocket({
+    auth: state,
+    printQRInTerminal: false
+  });
+
+  sock.ev.on('creds.update', saveCreds);
+
+  sock.ev.on('connection.update', (update) => {
+    const { connection, lastDisconnect, qr } = update;
+
+    if (qr) {
+      console.log('\n======================================================');
+      console.log('📱 ESCANEE O QR CODE ABAIXO NO SEU WHATSAPP:');
+      console.log('======================================================\n');
+      qrcode.generate(qr, { small: true });
+      console.log('\n======================================================\n');
+    }
+
+    if (connection === 'close') {
+      const shouldReconnect = (lastDisconnect?.error?.output?.statusCode !== DisconnectReason.loggedOut);
+      console.log('⚠️ Conexão encerrada. Reconectando...', shouldReconnect);
+      if (shouldReconnect) {
+        setTimeout(startWhatsAppBot, 5000);
+      }
+    } else if (connection === 'open') {
+      console.log('✅ Bot WhatsApp HelpUS Conectado com Sucesso!');
+      console.log('🎙️ O robô está pronto para responder com Texto + Voz Neural!');
+    }
+  });
+
+  sock.ev.on('messages.upsert', async ({ messages, type }) => {
+    if (type !== 'notify') return;
+
+    for (const msg of messages) {
+      // Ignore messages sent by the bot itself or status updates
+      if (msg.key.fromMe || msg.key.remoteJid === 'status@broadcast') continue;
+
+      const remoteJid = msg.key.remoteJid;
+      const textMessage = msg.message?.conversation || msg.message?.extendedTextMessage?.text || '';
+
+      if (!textMessage.trim()) continue;
+
+      console.log(`📩 Mensagem recebida de [${remoteJid}]: ${textMessage}`);
+
+      // 1. Generate intelligent HelpUS response
+      const botResponse = generateHelpUSResponse(textMessage);
+
+      // 2. Send Text Response
+      await sock.sendMessage(remoteJid, { text: botResponse.text });
+
+      // 3. Generate and Send Audio Voice Message
+      try {
+        const audioPath = await generateSpeechAudio(botResponse.text, botResponse.voice);
+        if (audioPath && fs.existsSync(audioPath)) {
+          const audioBuffer = fs.readFileSync(audioPath);
+          await sock.sendMessage(remoteJid, {
+            audio: audioBuffer,
+            mimetype: 'audio/mp4',
+            ptt: true
+          });
+          console.log(`🎙️ Mensagem de voz enviada para [${remoteJid}]`);
+        }
+      } catch (err) {
+        console.error('Erro ao enviar áudio no WhatsApp:', err);
+      }
+    }
+  });
+}
+
+startWhatsAppBot();

@@ -1,0 +1,3217 @@
+WEBVTT
+
+1
+00:00:00.151 --> 00:00:05.640
+Olá, aluno e aluna, bem-vindo ao nosso terceiro encontro.
+
+2
+00:00:05.655 --> 00:00:10.830
+Lembramos que você está nessa jornada, nessa caminhada conosco, do seu pré-MBA.
+
+3
+00:00:11.280 --> 00:00:16.935
+Hoje, nesta aula, além de estar aqui comigo, a gente vai receber mais uma vez,
+
+4
+00:00:17.491 --> 00:00:22.965
+com ferramenta, com mão na massa, e já dando spoiler, vai conseguir trazer uma
+
+5
+00:00:22.980 --> 00:00:28.800
+leitura de maturidade. Qual é a sua maturidade quando o tema é inteligência
+
+6
+00:00:28.830 --> 00:00:31.260
+artificial? Bem-vinda, professora Isa.
+
+7
+00:00:31.620 --> 00:00:35.580
+É um prazer estar aqui com essa turma de novo, gente. Bora pra mais uma aula?
+
+8
+00:00:35.970 --> 00:00:41.430
+Bora! E só lembrando aqui, Isa, a gente passou por três macrocamadas até agora.
+
+9
+00:00:41.580 --> 00:00:46.651
+A gente começou entendendo o que de fato é IA generativa, que
+
+10
+00:00:46.920 --> 00:00:49.590
+inteligência artificial não é uma novidade.
+
+11
+00:00:49.981 --> 00:00:54.780
+Entendemos a parte de predição, toda essa parte probabilística da inteligência
+
+12
+00:00:54.990 --> 00:00:58.620
+artificial, e orgulhamos em fazer um prompt melhor.
+
+13
+00:00:58.890 --> 00:01:03.270
+Vamos parar de trazer aquele efeito Clever Hands e, de fato, ao invés de ficar
+
+14
+00:01:03.330 --> 00:01:08.100
+naquele namoro com a IA, de que maravilhoso, que incrível, vamos de fato fazer um
+
+15
+00:01:08.130 --> 00:01:11.836
+prompt, uma engenharia de prompt que ajude os alunos.
+
+16
+00:01:11.850 --> 00:01:17.551
+Passamos depois no momento de assistente, automação, agente e principalmente aquela
+
+17
+00:01:17.610 --> 00:01:23.461
+reflexão de qual problema a gente quer resolver utilizando inteligência
+
+18
+00:01:23.520 --> 00:01:27.090
+artificial. E a aula de hoje é muito importante.
+
+19
+00:01:27.150 --> 00:01:32.370
+Só pra vocês terem uma noção, já existe um estudo que até 2030,
+
+20
+00:01:32.430 --> 00:01:37.859
+75% das empresas vão exigir um teste de nivelamento, ou
+
+21
+00:01:38.010 --> 00:01:43.051
+seja, qual é o nível que eu tenho de conhecimento, mais do que conhecimento, de
+
+22
+00:01:43.141 --> 00:01:46.275
+utilização da inteligência artificial.
+
+23
+00:01:46.290 --> 00:01:51.555
+Pra isso, foi criado um mapper que prova se você já sabe usar a IA,
+
+24
+00:01:52.080 --> 00:01:57.195
+além do que a gente chama daquele Google glorificado, ou seja, uma fonte melhor do
+
+25
+00:01:57.240 --> 00:02:03.000
+que pesquisa. E pra isso a gente passa por sete níveis bem interessantes, do
+
+26
+00:02:03.030 --> 00:02:08.970
+nível um ao nível sete, começando no buscador e terminando no unicórnio.
+
+27
+00:02:09.540 --> 00:02:13.905
+A gente vai agora com a professora Isa, mergulhar nesses sete níveis.
+
+28
+00:02:13.950 --> 00:02:19.560
+É muito legal que você possa refletir em qual nível você está durante a aula três,
+
+29
+00:02:19.650 --> 00:02:24.391
+porque a gente vai utilizar isso inclusive na aula ao vivo, no nosso quarto
+
+30
+00:02:24.480 --> 00:02:28.200
+encontro. O que é esse tal de buscador e unicórnio, Isa?
+
+31
+00:02:28.260 --> 00:02:32.851
+Vamos lá mostrar pra galera? Pode ser que alguém fale: "Não estou nem aí ainda".
+
+32
+00:02:33.150 --> 00:02:38.550
+Está tudo bem. A ideia hoje, inclusive, além de você descobrir em qual dos níveis
+
+33
+00:02:38.610 --> 00:02:43.740
+você está, é entender se você precisa estar no nível superior e como estar nesse
+
+34
+00:02:43.800 --> 00:02:44.325
+nível superior.
+
+35
+00:02:45.870 --> 00:02:50.700
+Vamos lá, começando pelo nível um, que é exatamente esse Google glorificado.
+
+36
+00:02:50.760 --> 00:02:55.305
+Ou seja, você parou de ir no google.com pra fazer pesquisa sobre alguma coisa e
+
+37
+00:02:55.351 --> 00:02:59.641
+você começou a abrir o ChatGPT. E você faz isso com o ChatGPT o dia inteiro.
+
+38
+00:02:59.970 --> 00:03:03.690
+Então você pergunta sobre uma notícia, você pergunta sobre alguma empresa, você
+
+39
+00:03:03.720 --> 00:03:08.340
+pergunta sobre alguma coisa e recebe aquele monte de resposta genérica.
+
+40
+00:03:08.880 --> 00:03:12.660
+Até você tem um texto, mas ao invés de receber links, o Google inclusive está
+
+41
+00:03:12.690 --> 00:03:17.340
+mudando agora a pegada dele pra isso, ao invés de você achar aquele monte de link
+
+42
+00:03:17.355 --> 00:03:22.230
+de site, o que o ChatGPT te devolve já é um resumo do que eu leio na internet pra
+
+43
+00:03:22.291 --> 00:03:27.150
+você coletar. É isso que você usa. É isso, gente, muito básico.
+
+44
+00:03:27.210 --> 00:03:31.845
+É um uso muito básico, mas muitas pessoas, inclusive, estão aqui nesse nível.
+
+45
+00:03:32.250 --> 00:03:35.910
+E a gente vai falar agora como é que você faz pra subir pro nível seguinte.
+
+46
+00:03:36.840 --> 00:03:41.130
+De novo, gente, é uma escadinha. A gente vai evoluindo ao longo do tempo e ao longo
+
+47
+00:03:41.160 --> 00:03:45.300
+do nosso uso. Tudo bem aqui, galera? Agora, como é que eu saio?
+
+48
+00:03:45.601 --> 00:03:48.120
+O que é o perigo que eu tenho aqui? É importante.
+
+49
+00:03:48.840 --> 00:03:54.675
+Nessa fase de nível um, esse buscador, o nível glorificado,
+
+50
+00:03:55.500 --> 00:04:01.291
+você pode ser uma vítima daquele efeito puxação de saco da inteligência artificial,
+
+51
+00:04:01.351 --> 00:04:06.601
+porque se você não estava, inclusive possivelmente antes da nossa aula aqui, da
+
+52
+00:04:06.690 --> 00:04:09.421
+nossa primeira aula juntos, você nem tinha escutado ou visto esse termo.
+
+53
+00:04:09.630 --> 00:04:15.421
+Então esse efeito existe, ele é real, você fica brigando todo
+
+54
+00:04:15.480 --> 00:04:20.490
+dia com seu computador, brigando pro seu ChatGPT te dar uma resposta diferente.
+
+55
+00:04:20.505 --> 00:04:23.940
+E você não consegue ter aquele mesmo resultado que as pessoas falam tanto na
+
+56
+00:04:23.970 --> 00:04:27.466
+internet e por aí. Você está sendo vítima desse efeito Clever Hands.
+
+57
+00:04:28.140 --> 00:04:33.930
+E aí como você começa a inverter? Como é que você começa a sair desse
+
+58
+00:04:33.990 --> 00:04:36.315
+uso básico da inteligência artificial?
+
+59
+00:04:37.140 --> 00:04:40.260
+Lembra de algumas dicas de prompt que eu trouxe pra vocês, inclusive na aula um
+
+60
+00:04:40.320 --> 00:04:45.060
+ainda, que eu falo: "Olha, começa a pedir pra inteligência artificial fazer o quê?
+
+61
+00:04:45.091 --> 00:04:49.154
+Fazer pergunta pra você pra ver se ela entendeu o contexto".
+
+62
+00:04:49.500 --> 00:04:52.591
+Essa é a melhor forma de você começar a sair desse nível um.
+
+63
+00:04:52.710 --> 00:04:57.345
+Ao invés de aceitar e ficar discutindo, é mandar alguma coisa de pergunta pra
+
+64
+00:04:57.390 --> 00:05:03.300
+inteligência artificial e complementa dizendo: "Olha só, me faça perguntas pra
+
+65
+00:05:03.360 --> 00:05:05.595
+ver se você entendeu realmente o que eu quero dizer".
+
+66
+00:05:06.180 --> 00:05:10.531
+Outra tática que também a gente passou aqui, ensinou pra vocês na aula um, o prompt
+
+67
+00:05:10.560 --> 00:05:14.654
+reverso. Quando você chega no resultado final, que você adorou, que você falou:
+
+68
+00:05:14.654 --> 00:05:18.494
+"Cara, era isso que eu queria desde o começo", pede pra ela fazer o prompt pra você
+
+69
+00:05:18.540 --> 00:05:22.800
+e você vai ter então a inteligência artificial, como o Léo inclusive destacou na
+
+70
+00:05:22.815 --> 00:05:28.170
+aula um, te ensinando como fazer prompts melhores, te ensinando como
+
+71
+00:05:28.185 --> 00:05:33.930
+montar esses melhores prompts. Então essa aqui é a tática número
+
+72
+00:05:34.230 --> 00:05:39.404
+dois, tudo bem? Você precisa começar a esquecer esse vai e vem
+
+73
+00:05:39.451 --> 00:05:42.810
+infinito da inteligência artificial. Vocês precisam o quê?
+
+74
+00:05:42.900 --> 00:05:48.600
+Começar a efetivamente usar a inteligência artificial nesse seu dia a dia.
+
+75
+00:05:48.750 --> 00:05:52.770
+Então vamos sair desse uso de vai e vem.
+
+76
+00:05:53.490 --> 00:05:58.710
+Inclusive, a gente vai trazer aqui agora uma ferramenta que a gente falou também na
+
+77
+00:05:58.725 --> 00:06:03.720
+aula dois, se não me engano, que é o Perplexit, que ela é ótima pra buscas, o Léo
+
+78
+00:06:03.781 --> 00:06:06.960
+usa muito ela e o Léo vai ensinar pra gente um pouquinho sobre ela agora.
+
+79
+00:06:07.110 --> 00:06:11.025
+A gente vai pôr a mão na massa agora, trazendo inclusive esse caso que está aqui na
+
+80
+00:06:11.070 --> 00:06:16.951
+imagem do slide, que é do Toguro. Vamos entender a diferença do que é buscar no
+
+81
+00:06:16.980 --> 00:06:22.860
+Google e o que é de fato utilizar uma ferramenta feita pra busca pra você
+
+82
+00:06:22.890 --> 00:06:27.375
+dar esse próximo passo no nível de utilização da IA agora.
+
+83
+00:06:27.390 --> 00:06:33.300
+Bora lá, pessoal, dando sequência aqui nessa mudança, desse tráfego de um nível
+
+84
+00:06:33.331 --> 00:06:37.530
+pro outro, do teu conhecimento de inteligência artificial.
+
+85
+00:06:37.591 --> 00:06:42.151
+Até muito tempo atrás, nós fomos doutrinados a fazer buscas no Google.
+
+86
+00:06:42.180 --> 00:06:46.680
+E quando a gente tinha que fazer uma análise um pouco mais profunda, como um
+
+87
+00:06:46.740 --> 00:06:52.230
+exemplo aqui: faça uma análise do que é ser um CMO no Brasil com efeito Toguro.
+
+88
+00:06:53.010 --> 00:06:57.210
+CMO é o principal profissional de marketing numa estrutura de uma empresa, e
+
+89
+00:06:57.240 --> 00:07:02.401
+Toguro, recentemente, pra quem não é da área, virou um fenômeno, porque mesmo não
+
+90
+00:07:02.520 --> 00:07:07.770
+sendo alguém formado na área, ele assumiu esse cargo numa grande farmacêutica no
+
+91
+00:07:07.800 --> 00:07:12.735
+Brasil. Então quando a gente faz essa pergunta pro Google, mesmo hoje ele tendo o
+
+92
+00:07:12.780 --> 00:07:18.331
+efeito Gemini, naturalmente nós tínhamos que clicar em vários links, ler sobre
+
+93
+00:07:18.420 --> 00:07:23.701
+tudo, e o quão mais a gente estudasse sobre um tema, nós estaríamos fazendo uma
+
+94
+00:07:23.730 --> 00:07:26.820
+pesquisa um pouco melhor, um pouco mais aprofundada.
+
+95
+00:07:26.835 --> 00:07:32.160
+Acho que vários de nós aqui já passamos horas e horas pra entregar uma boa
+
+96
+00:07:32.190 --> 00:07:37.620
+pesquisa, uma boa análise. Quando a gente vai pros LLMs que nós conhecemos, se eu
+
+97
+00:07:37.651 --> 00:07:43.515
+fizer essa mesma pergunta pro ChatGPT, ele vai tentar entender esse efeito.
+
+98
+00:07:44.100 --> 00:07:48.720
+E aqui, olha que interessante, ele não capta muito bem o que eu estou querendo
+
+99
+00:07:48.750 --> 00:07:54.510
+dizer. Ele faz uma separação como se o efeito Toguro fosse um hype.
+
+100
+00:07:55.380 --> 00:07:59.415
+Ele não entendeu muito bem o conceito do que eu estou querendo dizer.
+
+101
+00:07:59.895 --> 00:08:05.701
+Então ele fica aqui meio que talvez alucinando ou não entregando aquilo que
+
+102
+00:08:05.760 --> 00:08:07.680
+de fato eu preciso.
+
+103
+00:08:09.061 --> 00:08:14.790
+Se eu for, por exemplo, aqui pro Gemini e fizer a mesma pergunta, e a gente ensinou
+
+104
+00:08:14.820 --> 00:08:19.545
+pra vocês nas últimas três aulas, inclusive, como fugir disso.
+
+105
+00:08:20.280 --> 00:08:26.220
+O Gemini já conseguiu captar um pouco mais, ele fala do efeito Mansão Maromba, que
+
+106
+00:08:26.250 --> 00:08:31.980
+é um momento do Toguro, ele fala do shape dos negócios e ele está aqui
+
+107
+00:08:32.040 --> 00:08:35.550
+separando um pouco essa questão do que é CMO.
+
+108
+00:08:36.211 --> 00:08:42.181
+Mais uma ferramenta muito maravilhosa, que inclusive usa LLMs e
+
+109
+00:08:42.240 --> 00:08:44.970
+que é muito querida do mercado, é o Perplexit.
+
+110
+00:08:45.015 --> 00:08:50.340
+Então ele é muito feito pra essas análises mais aprofundadas que a gente precisa
+
+111
+00:08:50.401 --> 00:08:56.265
+fazer, que vai consultar várias fontes e que a gente vai ter a
+
+112
+00:08:56.311 --> 00:09:01.755
+confirmação de fontes. Então aqui, olha que interessante, ele já começa a tentar
+
+113
+00:09:01.830 --> 00:09:07.470
+entender essa correlação do ser CMO com o efeito Toguro, enquanto ele vai
+
+114
+00:09:07.500 --> 00:09:13.260
+fazendo aqui a análise. Ele já captou aqui rapidamente que a gente está falando de
+
+115
+00:09:13.290 --> 00:09:19.080
+um efeito de uma empresa, de uma farmacêutica que buscou esse
+
+116
+00:09:19.110 --> 00:09:22.681
+profissional como guardião da narrativa.
+
+117
+00:09:22.710 --> 00:09:26.250
+Vamos ver aqui que interessante. Como é ser um CMO.
+
+118
+00:09:26.431 --> 00:09:30.061
+Então ele já começa a fazer uma correlação, olha que interessante, do que é esse
+
+119
+00:09:30.090 --> 00:09:35.280
+CMO no efeito Toguro. Alguém que consegue ler códigos culturais, acompanhar
+
+120
+00:09:35.431 --> 00:09:40.200
+criadores, ou seja, ele conseguiu entender lendo 15
+
+121
+00:09:40.290 --> 00:09:44.220
+fontes, olha que pilar interessante, de uma forma muito rápida
+
+122
+00:09:45.480 --> 00:09:47.760
+O que eu quis dizer com o efeito Toguro.
+
+123
+00:09:47.790 --> 00:09:52.200
+E eu consigo confirmar as fontes de como ele chegou nessa conclusão.
+
+124
+00:09:52.290 --> 00:09:58.050
+Aqui ao lado, olha que interessante, ele já dá ideias do que seriam as
+
+125
+00:09:58.110 --> 00:10:03.510
+próximas perguntas. Por exemplo, quais são os passos da CMED, que é a farmacêutica,
+
+126
+00:10:03.570 --> 00:10:09.240
+para lançar Carmédio com Toguro? Então ele vai me dando possíveis perguntas
+
+127
+00:10:09.330 --> 00:10:14.280
+dentro de um macrotema. Lembra da ideia da árvore e da floresta?
+
+128
+00:10:14.295 --> 00:10:17.910
+Que eu poderia aprofundar mais em um tema.
+
+129
+00:10:17.940 --> 00:10:23.730
+Então aqui é um exemplo muito claro de mais uma ferramenta que pode te ajudar e
+
+130
+00:10:23.790 --> 00:10:28.965
+muito. O grande efeito do Perplexities é fazer uma pesquisa
+
+131
+00:10:28.980 --> 00:10:34.920
+avançada para você e trazer uma média de 20 a 50 fontes,
+
+132
+00:10:34.950 --> 00:10:39.690
+pelo menos, dependendo da pesquisa, já com resumo. Vamos para um novo tópico?
+
+133
+00:10:39.720 --> 00:10:40.290
+Vamos lá.
+
+134
+00:10:41.610 --> 00:10:47.295
+Faça uma análise de como está o mercado de comunicação no Brasil,
+
+135
+00:10:47.311 --> 00:10:52.860
+principalmente o mercado que hoje é muito conhecido como TikTok Shop, essa
+
+136
+00:10:52.890 --> 00:10:55.590
+plataforma tão importante do TikTok.
+
+137
+00:10:56.160 --> 00:11:01.320
+O que tem acontecido, quem são os principais players, quais são os usuários que
+
+138
+00:11:01.350 --> 00:11:03.960
+estão conseguindo rentabilizar ou não o canal.
+
+139
+00:11:05.520 --> 00:11:10.530
+Então vou deixar aqui ele ler e vou pedir para ele fazer essa análise.
+
+140
+00:11:10.620 --> 00:11:14.790
+Uma coisa muito interessante também, enquanto ele vai buscando a análise e a
+
+141
+00:11:14.850 --> 00:11:20.760
+resposta, ele vai ler aqui várias fontes, é que aqui na barra ao lado esquerdo,
+
+142
+00:11:20.820 --> 00:11:26.325
+você tem o descobrir, muito parecido com aquele resumo de notícias que a gente está
+
+143
+00:11:26.340 --> 00:11:28.770
+acostumado no Google, inclusive.
+
+144
+00:11:28.800 --> 00:11:34.380
+Só que ele faz uma análise muito focada em você e quanto mais pesquisas você faz,
+
+145
+00:11:34.860 --> 00:11:40.620
+ele melhora a resposta do descobrir, ele traz uma leitura
+
+146
+00:11:40.651 --> 00:11:43.830
+principal e você também pode escolher tópicos.
+
+147
+00:11:43.890 --> 00:11:49.651
+Aqui muito parecido com os publishers, mas principalmente o para você, quanto mais
+
+148
+00:11:49.665 --> 00:11:52.980
+você faz pesquisas, mais ele otimiza.
+
+149
+00:11:53.010 --> 00:11:58.080
+Você também pode criar espaços, muito parecido com o que são os projetos, que daqui
+
+150
+00:11:58.110 --> 00:12:00.061
+a pouquinho a professora Isa vai te explicar.
+
+151
+00:12:00.990 --> 00:12:05.820
+E quando você cria um novo espaço, como por exemplo, eu vou criar um espaço que é
+
+152
+00:12:06.510 --> 00:12:10.950
+marketing com IA, eu posso sempre fazer
+
+153
+00:12:11.040 --> 00:12:16.440
+pesquisas nesse campo do marketing com IA, e a partir de
+
+154
+00:12:16.500 --> 00:12:22.020
+agora essa pasta fica salva, esse projeto, para que eu consiga
+
+155
+00:12:22.110 --> 00:12:27.915
+utilizar e fazer pesquisas. Enquanto isso, ele continua aqui rodando a
+
+156
+00:12:28.020 --> 00:12:33.585
+análise. Algumas análises podem demorar alguns minutos, mas ele passou aqui por
+
+157
+00:12:33.600 --> 00:12:38.311
+15 fontes e ele até me dá uma opção se eu quero criar um dash
+
+158
+00:12:38.370 --> 00:12:42.195
+interativo com essa análise que ele acabou de criar.
+
+159
+00:12:42.345 --> 00:12:47.040
+E olha que interessante, eu não pedi isso, mas ele fez uma correlação do TikTok
+
+160
+00:12:47.130 --> 00:12:53.130
+Shop com o Mercado Livre e Shopee. E eu nem citei esses pilares aqui, mas ele já
+
+161
+00:12:53.190 --> 00:12:58.095
+fez essa correlação exatamente por esse olhar mais abrangente de que várias
+
+162
+00:12:58.170 --> 00:13:03.661
+matérias devem ter citado que o TikTok Shop é um concorrente de Mercado Livre e
+
+163
+00:13:03.780 --> 00:13:09.374
+Shopee. Enquanto ele vai aqui gerando esse dash que ele me deu a
+
+164
+00:13:09.420 --> 00:13:13.440
+sugestão, aqui ao lado eu também posso subir arquivos.
+
+165
+00:13:13.500 --> 00:13:17.490
+As tarefas são literalmente idênticas ao histórico de chat.
+
+166
+00:13:17.610 --> 00:13:22.784
+Embaixo, a gente tem a parte de conectores, que é onde você consegue conectar com o
+
+167
+00:13:22.801 --> 00:13:28.200
+teu Google Drive, com arquivos que facilitem a tua utilização.
+
+168
+00:13:28.260 --> 00:13:33.270
+Você também pode criar habilidades nele, algo muito parecido com o que a professora
+
+169
+00:13:33.330 --> 00:13:37.395
+Isa trouxe, por exemplo, no Claude, em aulas anteriores.
+
+170
+00:13:37.395 --> 00:13:42.480
+Daqui a pouquinho a gente finaliza mostrando como ficou esse dash para vocês.
+
+171
+00:13:42.510 --> 00:13:44.640
+Bom, gente, vocês viram aí Léo usando o Perplexity.
+
+172
+00:13:44.670 --> 00:13:48.600
+Eu adoro, inclusive, levar essa parte toda da aula, porque é para entender mais
+
+173
+00:13:48.630 --> 00:13:50.850
+cada pedacinho do Perplexity, como usar.
+
+174
+00:13:50.926 --> 00:13:56.760
+Então gente, essa é uma ferramenta, inclusive, que pode ajudar vocês a sair do
+
+175
+00:13:56.790 --> 00:14:00.210
+nível um e passar para o nível dois.
+
+176
+00:14:00.255 --> 00:14:03.990
+"Ótimo, Isa, não estou mais usando só o ChatGPT para fazer pergunta, estou
+
+177
+00:14:04.020 --> 00:14:09.360
+começando agora a entender um pouco melhor como pedir, como perguntar".
+
+178
+00:14:09.661 --> 00:14:13.621
+Ótimo, parabéns, você chegou no nível dois, que é um engenheiro de prompt.
+
+179
+00:14:13.860 --> 00:14:18.270
+E aí você começa a entender agora, chuchu, que o contexto muda tudo.
+
+180
+00:14:18.330 --> 00:14:20.040
+Lembra que a gente falou muito isso, né Léo?
+
+181
+00:14:20.100 --> 00:14:24.704
+Na aula um, na aula dois, a importância de dar contexto, de você até botar um áudio
+
+182
+00:14:24.720 --> 00:14:28.110
+explicando. A gente falou isso em assistente, a gente falou disso em automação, a
+
+183
+00:14:28.140 --> 00:14:33.195
+gente falou disso em agente. Olha como o assunto contexto vem junto com a
+
+184
+00:14:33.195 --> 00:14:34.980
+inteligência artificial ao longo do tempo.
+
+185
+00:14:35.911 --> 00:14:39.480
+E se você está aqui no nível dois, o que você mais faz hoje?
+
+186
+00:14:39.496 --> 00:14:43.890
+Você já entende que é importante dar contexto para a inteligência artificial, que é
+
+187
+00:14:44.100 --> 00:14:49.801
+importante dar restrição, ou seja, o que não fazer, e é importante você
+
+188
+00:14:49.830 --> 00:14:52.621
+parar de pedir para ela fazer persona.
+
+189
+00:14:52.710 --> 00:14:57.270
+Você aplicou ali tudo que a gente falou na aula um do prompt engineering, você já
+
+190
+00:14:57.360 --> 00:15:01.020
+está aplicando no seu dia a dia no uso da inteligência artificial.
+
+191
+00:15:01.110 --> 00:15:03.420
+A ferramenta, chuchus, não mudou.
+
+192
+00:15:03.780 --> 00:15:07.681
+Você continua usando ChatGPT, você continua usando Gemini, você continua usando sua
+
+193
+00:15:07.770 --> 00:15:13.110
+única LLM, mas muda a forma como você usa.
+
+194
+00:15:13.140 --> 00:15:19.051
+Você não usa ela só para ficar falando sobre perguntas, você usa
+
+195
+00:15:19.080 --> 00:15:22.440
+ela efetivamente para gerar algum resultado.
+
+196
+00:15:23.220 --> 00:15:28.710
+Qual é o problema do nível dois? Esse é o problema número dois: o teto de vidro.
+
+197
+00:15:28.725 --> 00:15:32.280
+É uma bola bonita, não é Léo? O teto de vidro. Mas o que isso quer dizer, gente?
+
+198
+00:15:32.340 --> 00:15:34.306
+Essa é uma pergunta, inclusive, que muitos de vocês me fazem.
+
+199
+00:15:34.320 --> 00:15:37.260
+E se você não gasta muito tempo com IA, normalmente quem não faz essa pergunta, eu
+
+200
+00:15:37.276 --> 00:15:39.301
+já sei que está no nível dois. Sabe por quê?
+
+201
+00:15:39.330 --> 00:15:43.860
+Vocês começam a sempre ter que digitar a mesma coisa, ou vocês digitam aquele
+
+202
+00:15:43.890 --> 00:15:49.770
+contexto todo, aí vocês pedem para ela te fazer pergunta, você responde, aí você
+
+203
+00:15:49.801 --> 00:15:54.901
+pode ir para ela te mostrar linha de raciocínio, ou seja, você faz tudo sempre do
+
+204
+00:15:54.960 --> 00:16:00.390
+zero. Você sempre precisa começar a usar inteligência artificial usando isso aqui,
+
+205
+00:16:00.630 --> 00:16:05.655
+você precisa digitar do zero. Então você gasta muito tempo para usar inteligência
+
+206
+00:16:05.670 --> 00:16:08.415
+artificial. Algo que era rápido, ela te devolve em dois, três minutos, você gasta
+
+207
+00:16:08.551 --> 00:16:10.860
+20 minutos para fazer o que você pedia, ou o que queria.
+
+208
+00:16:10.920 --> 00:16:13.469
+E é agora que a gente navega para o nível três.
+
+209
+00:16:13.739 --> 00:16:17.911
+Você para de precisar reexplicar as coisas.
+
+210
+00:16:17.940 --> 00:16:21.931
+Existem alguns atalhos, inclusive, que eu vou deixar aqui para vocês.
+
+211
+00:16:21.990 --> 00:16:26.940
+Quem já viu projeto? Eu uso muito projeto no Club, uso muito assistente e
+
+212
+00:16:27.090 --> 00:16:31.920
+projeto no ChatGPT, chama Gems no Gemini.
+
+213
+00:16:32.310 --> 00:16:34.890
+O Manus também tem projetos, todas elas têm projeto.
+
+214
+00:16:34.920 --> 00:16:38.401
+Poxa, por que então toda ferramenta de inteligência artificial generativa tem essa
+
+215
+00:16:38.431 --> 00:16:40.036
+coisinha chamada projeto? O que vocês acham?
+
+216
+00:16:40.651 --> 00:16:45.090
+Exatamente para você sair do nível dois e você começar a ir para o nível três.
+
+217
+00:16:45.540 --> 00:16:50.820
+Isso aqui te ajuda muito. Então galera, vocês precisam começar a criar
+
+218
+00:16:50.911 --> 00:16:56.670
+projetos. Projeto guarda contexto, ele guarda memória,
+
+219
+00:16:56.820 --> 00:17:01.695
+ele guarda quem você é, como você escreve, sobre o que você escreve.
+
+220
+00:17:01.695 --> 00:17:05.520
+É acabar com aquele efeito que dá uma certa raiva quando você está numa conversa
+
+221
+00:17:05.551 --> 00:17:07.681
+muito longa. Isso é um ponto importante também.
+
+222
+00:17:07.710 --> 00:17:12.240
+Se você vai fazer uma conversa que tem muitos e muitos exemplos, ou que você vai
+
+223
+00:17:12.270 --> 00:17:15.345
+colocar vários documentos, isso merece virar um projeto.
+
+224
+00:17:15.496 --> 00:17:21.450
+Merece. Uma boa dica: eu quero fazer sempre um post,
+
+225
+00:17:22.020 --> 00:17:27.375
+mas eu sempre fico procurando no meu histórico do ChatGPT qual era aquela conversa
+
+226
+00:17:27.390 --> 00:17:30.795
+do post. Pronto, você tem um projeto que você está voltando sempre numa conversa.
+
+227
+00:17:31.005 --> 00:17:35.460
+Uma coisa que eu utilizo bastante é: eu monto projetos e subo na memória de
+
+228
+00:17:35.490 --> 00:17:38.670
+projetos várias apresentações que eu já fiz.
+
+229
+00:17:38.685 --> 00:17:41.790
+Hoje quando eu tenho que fazer uma apresentação nova, eu vou lá e falo: "Faço uma
+
+230
+00:17:41.805 --> 00:17:44.010
+apresentação de uma palestra para esse público".
+
+231
+00:17:44.430 --> 00:17:49.140
+Naturalmente, a LLM lê todas as apresentações e já traz uma apresentação.
+
+232
+00:17:49.170 --> 00:17:53.640
+Eu perdia muito tempo sempre voltando atrás, abrindo vários Google Slides para
+
+233
+00:17:53.670 --> 00:17:58.080
+montar a apresentação nova e agora cada vez mais isso vai calibrando, não é Isa?
+
+234
+00:17:58.335 --> 00:18:00.045
+Isso vai ficando perfeita a utilização.
+
+235
+00:18:00.210 --> 00:18:05.835
+Sabe o que é legal também? Uma outra dica que eu até uso muito o Claude, o nosso
+
+236
+00:18:05.880 --> 00:18:08.970
+novo desespero agora é ver acima de 90% do consumo.
+
+237
+00:18:09.240 --> 00:18:12.780
+Todo mundo passa por esse desespero. Normal. O que acontece?
+
+238
+00:18:12.810 --> 00:18:18.720
+Quando você pega uma conversa sua muito antiga para pegar esse contexto, inclusive,
+
+239
+00:18:18.750 --> 00:18:23.145
+você gasta muito mais token da sua inteligência artificial.
+
+240
+00:18:23.145 --> 00:18:24.914
+"Ah, Isa, mas eu não sinto isso no ChatGPT".
+
+241
+00:18:25.140 --> 00:18:28.920
+Se enquanto, porque o jeito que o ChatGPT funciona, ele tem uma memória muito
+
+242
+00:18:28.935 --> 00:18:32.160
+melhor do que um Gemini, do que um Claude, principalmente. O Claude não.
+
+243
+00:18:32.190 --> 00:18:33.900
+O Claude não tem tanta essa memória.
+
+244
+00:18:33.914 --> 00:18:39.121
+Então é importante vocês usarem aqui projetos, porque eu não preciso, toda vez que
+
+245
+00:18:39.135 --> 00:18:42.270
+eu escrever um texto no LinkedIn, imagina, Léo, eu ter que subir todos os meus
+
+246
+00:18:42.330 --> 00:18:45.705
+textos, mostrar como eu escrevo, que eu chamo as pessoas de chuchu, que eu falo de
+
+247
+00:18:45.750 --> 00:18:49.230
+uma forma descomplicada. Imagina toda vez ter que falar isso, gente.
+
+248
+00:18:49.290 --> 00:18:52.020
+Não faz sentido. Então pode anotar aqui para a prova, galera.
+
+249
+00:18:52.260 --> 00:18:56.400
+Para navegar para o nível três, e aí vocês podem então criar os projetos.
+
+250
+00:18:56.430 --> 00:19:00.630
+Tudo bem, gente? Essa é a dica aqui para você navegar do nível dois para o nível
+
+251
+00:19:00.690 --> 00:19:05.730
+três. Próximo, chegamos. Está até mostrando a tela aqui, Léo, dos projetos do
+
+252
+00:19:05.760 --> 00:19:06.090
+Claude.
+
+253
+00:19:07.290 --> 00:19:11.070
+Essa, para quem nunca viu, é a telinha. Eu posso mostrar ele rápido?
+
+254
+00:19:11.100 --> 00:19:12.030
+Deve, bora lá.
+
+255
+00:19:12.090 --> 00:19:15.060
+Deve. Então, produção, eu vou colocar a minha tela e a gente vai mostrar já já aqui
+
+256
+00:19:15.090 --> 00:19:20.040
+para vocês o Claude. E aí, chuchus, chegamos no Claude, que tem
+
+257
+00:19:20.310 --> 00:19:25.020
+sido o meu queridinho. Não só meu, que eu já fiquei sabendo aqui que o Léo também
+
+258
+00:19:25.051 --> 00:19:30.210
+está apaixonadíssimo pelo Claude. O que eu gosto muito do Claude?
+
+259
+00:19:31.051 --> 00:19:36.180
+Ele é uma LLM muito mais agêntica. Palavra bonita, não é? O que isso quer dizer?
+
+260
+00:19:36.720 --> 00:19:39.090
+Você consegue construir com ele
+
+261
+00:19:39.966 --> 00:19:44.466
+Ações. Ele é uma baita LLM, é uma LLM
+
+262
+00:19:45.546 --> 00:19:50.856
+de criação, ela é ótima pra criativos, mas
+
+263
+00:19:52.146 --> 00:19:57.756
+ela está muito à frente agora, porque você pode criar algumas skills dentro dela.
+
+264
+00:19:57.786 --> 00:20:02.496
+Então eu vou mostrar aqui pra vocês como é que vocês podem fazer isso.
+
+265
+00:20:02.676 --> 00:20:07.565
+Vocês vão vir aqui em personalizar, habilidades. Ele tem várias já.
+
+266
+00:20:07.596 --> 00:20:13.116
+Tem algoritmo, tem guideline de marca, design de
+
+267
+00:20:13.146 --> 00:20:18.216
+Canva, coautoria de documentos, tem várias coisas que você pode usar e você pode
+
+268
+00:20:18.246 --> 00:20:20.076
+criar as suas próprias habilidades.
+
+269
+00:20:20.646 --> 00:20:23.826
+Eu, por exemplo, criei uma habilidade pra ele
+
+270
+00:20:25.536 --> 00:20:29.916
+marcar reuniões no meu Google. Olha que legal, na minha Google Agenda, com o Google
+
+271
+00:20:29.976 --> 00:20:35.437
+Meet, com tudo isso. Então, você pode vir aqui, e fazer
+
+272
+00:20:35.451 --> 00:20:37.956
+"criar com Claude", está vendo? Foi o que eu fiz.
+
+273
+00:20:37.986 --> 00:20:42.366
+Eu vim aqui, abri, criar com Claude, ou você pode direto escrever as instruções ou
+
+274
+00:20:42.486 --> 00:20:44.226
+fazer o upload da habilidade também.
+
+275
+00:20:45.846 --> 00:20:47.947
+Com isso, olha o que está acontecendo agora.
+
+276
+00:20:48.276 --> 00:20:53.856
+Você vem aqui no novo bate-papo e fala assim: "Claude, crie uma
+
+277
+00:20:53.916 --> 00:20:54.681
+reunião
+
+278
+00:20:56.256 --> 00:20:56.646
+na
+
+279
+00:20:59.466 --> 00:21:02.136
+próxima segunda", eu vou falar com ele, como se você estivesse falando com uma
+
+280
+00:21:02.197 --> 00:21:07.776
+pessoa. "Na próxima segunda, na minha agenda e convide o
+
+281
+00:21:09.546 --> 00:21:13.356
+leonardo.cirino@exame.com
+
+282
+00:21:15.336 --> 00:21:16.866
+para falarmos
+
+283
+00:21:18.276 --> 00:21:24.187
+sobre imersão de A. O evento
+
+284
+00:21:25.836 --> 00:21:27.156
+será online
+
+285
+00:21:29.736 --> 00:21:35.586
+e você tem que incluir o link do Meet".
+
+286
+00:21:36.291 --> 00:21:38.091
+Olha isso aqui, é como se fosse um superpoder.
+
+287
+00:21:38.136 --> 00:21:40.236
+Imagina, você está na rua, você não pode fazer isso.
+
+288
+00:21:40.326 --> 00:21:43.086
+Eu não tenho paciência pra gerenciar agenda.
+
+289
+00:21:43.116 --> 00:21:47.961
+Então ao invés de eu mesma ficar escrevendo tudo isso,
+
+290
+00:21:48.966 --> 00:21:50.556
+olha, ele já me entendeu "próxima semana".
+
+291
+00:21:51.276 --> 00:21:53.826
+Já me deu aqui as opções, eu coloco segunda-feira.
+
+292
+00:21:56.346 --> 00:22:00.516
+Eu deixei só na próxima semana. Horário, vamos às 10:00, Léo?
+
+293
+00:22:00.606 --> 00:22:05.046
+Vou marcar 10:00, 30 minutinhos, a gente resolve isso aqui, a gente é super rápido.
+
+294
+00:22:07.386 --> 00:22:12.216
+E olha aqui, ele está me dizendo se pode criar, eu vou falar "sim".
+
+295
+00:22:12.846 --> 00:22:15.846
+É como se eu tivesse uma assistente mesmo, uma pessoa que cuida da minha agenda,
+
+296
+00:22:15.906 --> 00:22:19.655
+que vai fazer tudo isso pra mim. Olha o que ele vai fazer aqui.
+
+297
+00:22:19.716 --> 00:22:23.226
+Ele vai pedir a permissão, obviamente, pra entrar no meu calendário, minha conta do
+
+298
+00:22:23.256 --> 00:22:27.396
+Google já está conectada com a minha conta aqui.
+
+299
+00:22:27.456 --> 00:22:30.726
+E vou mostrar pra vocês agora, na minha agenda, dia 23, isso aqui criado. Olha só.
+
+300
+00:22:31.896 --> 00:22:34.447
+Aqui, pessoal, imersão de A,
+
+301
+00:22:36.006 --> 00:22:40.086
+Google Meet marcado para o senhor Leonardo Cirino.
+
+302
+00:22:40.116 --> 00:22:45.501
+Então já está aqui muito fácil de eu conseguir criar este tipo
+
+303
+00:22:46.296 --> 00:22:49.626
+de solução. Você já consegue ter uma solução, você não precisa do n8n, você não
+
+304
+00:22:49.641 --> 00:22:54.081
+precisa do Make.com, você não precisa de API, conectores, que dificultavam muito
+
+305
+00:22:54.516 --> 00:22:59.572
+esse uso. Inclusive, eu fiz aqui no Claude, mostrar rapidinho também pra vocês,
+
+306
+00:23:00.396 --> 00:23:04.836
+no Cowork. Eu estava no chat. Então skills você pode criar no chat, mas se você for
+
+307
+00:23:04.866 --> 00:23:10.746
+no Cowork, que é o seu colega de trabalho, olha isso aqui que eu criei.
+
+308
+00:23:10.836 --> 00:23:13.401
+Eu me perco muitas vezes nas minhas tarefas, no que eu tenho que fazer.
+
+309
+00:23:13.447 --> 00:23:18.891
+Imagino, todo mundo tem diversas tarefas pra irem acompanhando durante o dia e fica
+
+310
+00:23:18.996 --> 00:23:21.846
+muita coisa. Ainda mais no começo de empresa, é muita coisa pra fazer.
+
+311
+00:23:22.716 --> 00:23:27.396
+Olha o que eu criei, gente. Eu criei esse sistema de painel de tarefas.
+
+312
+00:23:27.516 --> 00:23:32.136
+Ele tem aqui pra mim todas as minhas tarefas, se é urgente, se é importante, eu
+
+313
+00:23:32.166 --> 00:23:35.466
+consigo filtrar. Vou filtrar aqui pela
+
+314
+00:23:36.786 --> 00:23:40.896
+Exame. Vou filtrar aqui pela Zingu. Está vendo?
+
+315
+00:23:40.926 --> 00:23:45.366
+Ele filtra, eu posso falar que é pessoal, o que eu tenho de pessoal também, ele me
+
+316
+00:23:45.396 --> 00:23:50.120
+lista aqui várias coisas pessoais, que está escalonado, ou seja, que já tem mais de
+
+317
+00:23:50.120 --> 00:23:53.706
+dois dias que eu não fiz, e as coisas que eu já fiz.
+
+318
+00:23:54.636 --> 00:24:00.366
+E olha que bacana, eu posso vir aqui e pedir pra ele me lembrar.
+
+319
+00:24:01.431 --> 00:24:04.746
+Pedir pra ele: "me diga quais tarefas eu preciso executar ainda hoje".
+
+320
+00:24:06.336 --> 00:24:08.616
+Olha isso aqui, gente, eu já tinha mandado aqui em cima
+
+321
+00:24:09.966 --> 00:24:12.306
+algumas tarefas. Está vendo? Ele me manda esses lembretes.
+
+322
+00:24:14.166 --> 00:24:19.746
+Exatamente todos os lembretes. Ele vai aqui exatamente acessar de novo as
+
+323
+00:24:19.776 --> 00:24:23.706
+tarefas que eu mostrei pra você e vai abrir pra mim.
+
+324
+00:24:23.766 --> 00:24:27.516
+Aqui, com base nas tarefas que foram prontas até hoje, você está com essas aqui
+
+325
+00:24:27.546 --> 00:24:32.166
+atrasadas, essas estão vencendo hoje, você tem 19 tarefas.
+
+326
+00:24:32.197 --> 00:24:36.336
+Quando você vai cumprindo alguma tarefa, eu posso vir aqui e dizer que a tarefa
+
+327
+00:24:36.351 --> 00:24:39.816
+está concluída e ele vai lá e fecha a tarefa pra mim.
+
+328
+00:24:39.846 --> 00:24:41.796
+Então, gente, ficou muito mais fácil o meu dia a dia.
+
+329
+00:24:41.856 --> 00:24:47.616
+Isso aqui levaria pra fazer n8n, Zapier, API, ter um sistema que vai fazer o
+
+330
+00:24:47.646 --> 00:24:52.072
+front-end. Agora eu tenho tudo isso aqui no Cowork, por isso que eu estou
+
+331
+00:24:52.086 --> 00:24:55.326
+apaixonada pelo Claude, ficou muito mais fácil de usar.
+
+332
+00:24:55.536 --> 00:25:00.050
+Inclusive você criar essas soluções que precisam conectar diversas ferramentas.
+
+333
+00:25:01.447 --> 00:25:04.026
+Xuxu, mostrei aqui agora o Claude.
+
+334
+00:25:04.116 --> 00:25:04.746
+Incrível.
+
+335
+00:25:04.806 --> 00:25:05.391
+Ele é maravilhoso.
+
+336
+00:25:05.391 --> 00:25:06.816
+Por isso que faz esse credinho em todo mundo.
+
+337
+00:25:06.921 --> 00:25:10.116
+Por isso, todo mundo está apaixonado por causa disso, ele realmente é sensacional.
+
+338
+00:25:10.146 --> 00:25:11.406
+Vamos voltar pros níveis?
+
+339
+00:25:11.437 --> 00:25:11.751
+Vamos lá.
+
+340
+00:25:12.036 --> 00:25:15.756
+Então, passamos pra level 1, você parou de usar como Google linkado, você começou a
+
+341
+00:25:15.786 --> 00:25:18.486
+fazer pergunta ou você começou a usar nossas técnicas de prompt.
+
+342
+00:25:18.741 --> 00:25:23.210
+Quando pro nível dois, você cansou de ter que dar sempre muito contexto, começou a
+
+343
+00:25:23.256 --> 00:25:28.626
+criar projetos e aí você chega no nível três, ou seja, você agora é um arquiteto de
+
+344
+00:25:28.687 --> 00:25:33.546
+contexto. A sua inteligência artificial, ou seja, quando você abre a sua LLM, ela
+
+345
+00:25:33.697 --> 00:25:37.582
+já começa a trabalhar com você sabendo exatamente quem você é, como você gosta de
+
+346
+00:25:37.582 --> 00:25:40.880
+escrever, tudo o que você fala. Qual que é aqui, gente, o sintoma?
+
+347
+00:25:41.616 --> 00:25:45.171
+Você tem todos os seus projetos já configurados, então você tem Claude, ChatGPT.
+
+348
+00:25:45.846 --> 00:25:47.692
+A ferramenta ainda não mudou. Está vendo?
+
+349
+00:25:47.752 --> 00:25:52.341
+A ferramenta continua a mesma, mas o uso dela foi se amplificando, foi ficando um
+
+350
+00:25:52.356 --> 00:25:58.207
+pouco mais rebuscada, um pouco mais complexa. O que a gente tem aqui, então?
+
+351
+00:25:58.296 --> 00:26:02.841
+Você está muito mais rápido. Você consegue pedir pro seu Claude gerar um texto no
+
+352
+00:26:02.856 --> 00:26:05.255
+LinkedIn, o texto sai como se você tivesse escrito.
+
+353
+00:26:05.346 --> 00:26:09.082
+Você pode ir no ChatGPT, como o Léo falou, criar uma apresentação, e a apresentação
+
+354
+00:26:09.127 --> 00:26:12.937
+sai perfeita, porque ele já sabe exatamente como você fala e sobre o que você fala.
+
+355
+00:26:12.996 --> 00:26:18.457
+Mas aí você começa a perceber o seguinte: as ferramentas de texto não fazem tudo.
+
+356
+00:26:18.666 --> 00:26:22.161
+O Claude não consegue gerar vídeo, o ChatGPT não tem mais a ferramenta de vídeos
+
+357
+00:26:22.177 --> 00:26:25.431
+dele, ele até faz imagem, mas ele não faz mais vídeo. Entenderam?
+
+358
+00:26:25.746 --> 00:26:27.695
+Então você começa a perceber o quê?
+
+359
+00:26:27.726 --> 00:26:32.736
+Você vai precisar de outras ferramentas, de outras assinaturas. Tudo bem?
+
+360
+00:26:32.976 --> 00:26:36.127
+E aí, galera, a gente vai então começar a entender como é que a gente entra no
+
+361
+00:26:36.156 --> 00:26:41.736
+nível quatro. Você não começa o seu dia preocupado: "Fe Chan, isso aqui o
+
+362
+00:26:41.766 --> 00:26:43.596
+ChatGPT não faz, mas também vai fazer com o IA".
+
+363
+00:26:44.121 --> 00:26:49.386
+Hoje as pessoas estão se limitando ao que a sua LLM ou que a sua plataforma faz.
+
+364
+00:26:49.416 --> 00:26:53.856
+Você começa o quê? A entender qual que é a melhor ferramenta pra isso.
+
+365
+00:26:53.886 --> 00:26:56.317
+Então, por exemplo, eu tenho uma lista aqui.
+
+366
+00:26:57.246 --> 00:27:00.141
+Preciso ler documentos, entender, ir a fundo.
+
+367
+00:27:00.576 --> 00:27:03.546
+Você não vai jogar no ChatGPT, você vai no NotebookLM, é a melhor ferramenta pra
+
+368
+00:27:03.606 --> 00:27:07.146
+isso. Poxa, eu preciso gravar uma reunião. Você vai usar o Fireflies.
+
+369
+00:27:07.356 --> 00:27:10.056
+Eu preciso fazer um vídeo no avatar.
+
+370
+00:27:10.207 --> 00:27:14.796
+Você vai usar o HeyGen, você não vai usar o Claude, que nem vai saber fazer isso.
+
+371
+00:27:14.856 --> 00:27:20.526
+Entenderam? Então você começa agora a buscar outras ferramentas de IA que
+
+372
+00:27:20.586 --> 00:27:25.776
+vão complementar o que a sua LLM já faz, tudo bem?
+
+373
+00:27:26.136 --> 00:27:26.856
+Perfeito.
+
+374
+00:27:26.886 --> 00:27:31.266
+Próximo, então, gente, Fireflies. Vamos mostrar o Fireflies pra galera?
+
+375
+00:27:31.582 --> 00:27:31.582
+Vamos.
+
+376
+00:27:31.627 --> 00:27:34.806
+Gente, eu vou falar, deixa eu avisar, vocês não ficarem bravos comigo.
+
+377
+00:27:35.136 --> 00:27:38.707
+Vocês ficam bravos depois. Eu uso o Fireflies em inglês, o Fireflies tem a sua
+
+378
+00:27:38.736 --> 00:27:39.696
+versão em português.
+
+379
+00:27:39.726 --> 00:27:40.656
+Tem todos os idiomas.
+
+380
+00:27:40.687 --> 00:27:44.556
+Tem todos os idiomas, mas eu vou mostrar pra vocês aqui, obviamente, usando.
+
+381
+00:27:44.586 --> 00:27:49.266
+E eu estou usando uma reunião em inglês, porque tenho clientes fora do Brasil.
+
+382
+00:27:49.356 --> 00:27:49.836
+Só por causa disso.
+
+383
+00:27:51.726 --> 00:27:55.086
+Mas as funcionalidades e caminhos são os mesmos em inglês e em português.
+
+384
+00:27:55.146 --> 00:27:56.646
+Em inglês e em português. Tudo bem?
+
+385
+00:27:56.736 --> 00:27:58.957
+Se não entender alguma coisa, já vai mandando aqui pra gente também.
+
+386
+00:27:59.046 --> 00:28:01.446
+Manda pra gente, a gente está ao vivo daqui a pouquinho.
+
+387
+00:28:01.567 --> 00:28:05.826
+Exato. Xuxus, então aqui estamos dentro do Fireflies.
+
+388
+00:28:07.476 --> 00:28:12.261
+fireflies.ai. E eu quero mostrar pra vocês algumas configurações básicas que hoje
+
+389
+00:28:12.306 --> 00:28:17.796
+existem dentro dele. Então uma vez que você assina o Fireflies, você assina ele
+
+390
+00:28:17.826 --> 00:28:22.207
+dentro de uma conta sua que faça as reuniões.
+
+391
+00:28:22.236 --> 00:28:26.976
+Então não dá pra você assinar e depois ficar configurando várias outras reuniões.
+
+392
+00:28:27.006 --> 00:28:30.756
+Tem que assinar naquela onde você faz as reuniões.
+
+393
+00:28:30.996 --> 00:28:36.127
+Você pode vir aqui e falar: "olha, queria fazer um auto record de todas as
+
+394
+00:28:36.156 --> 00:28:40.806
+reuniões". Então todas as reuniões que ele encaminha
+
+395
+00:28:42.084 --> 00:28:47.934
+Ele vai marcar quando vai gravar, então posso vir aqui e dizer: "Olha, eu quero que
+
+396
+00:28:47.949 --> 00:28:51.954
+você entre em todas as reuniões do meu calendário, eu quero que você entre só nas
+
+397
+00:28:51.984 --> 00:28:54.954
+reuniões que eu mandei", ou seja, as reuniões que eu fui convidado, ele não vai
+
+398
+00:28:54.984 --> 00:28:55.554
+entrar.
+
+399
+00:28:56.934 --> 00:28:58.165
+Eu vou deixar aqui todas.
+
+400
+00:28:59.694 --> 00:29:02.934
+Você pode pedir pra ele gravar também o vídeo, se você quiser.
+
+401
+00:29:03.564 --> 00:29:09.429
+Coloca aqui o seu idioma. Se você faz mais reuniões em
+
+402
+00:29:09.444 --> 00:29:14.544
+inglês, mais reuniões em português, deixa isso aqui muito mais claro.
+
+403
+00:29:15.684 --> 00:29:19.584
+Você pode ir pedindo também pra ele, está vendo que você está na Enterprise, eu
+
+404
+00:29:19.614 --> 00:29:22.689
+estou numa conta Pro. Numa conta Enterprise, você pode pedir pra ele
+
+405
+00:29:22.704 --> 00:29:26.605
+automaticamente deletar as suas reuniões também.
+
+406
+00:29:27.444 --> 00:29:31.105
+Privacidade, aqui eu quero só pra mim.
+
+407
+00:29:34.284 --> 00:29:40.044
+Não quero que ninguém fique vendo, nem quero acesso público, nem requisição.
+
+408
+00:29:40.074 --> 00:29:44.874
+Posso mandar um e-mail de recap. Aí você pode decidir que é pra todo mundo no
+
+409
+00:29:44.904 --> 00:29:50.064
+invite, somente pras pessoas que estão no meu time do Fireflies ou somente pra mim.
+
+410
+00:29:51.624 --> 00:29:56.904
+E o que eu incluo? Uma overview, key highlights, posso colocar aqui tudo
+
+411
+00:29:57.054 --> 00:30:02.184
+e uma preparação pra reunião. Olha isso aqui, ele já faz isso.
+
+412
+00:30:03.084 --> 00:30:08.544
+Então eu posso falar que manda só pra mim uma preparação pra reunião,
+
+413
+00:30:09.174 --> 00:30:11.634
+trazendo todas as interações anteriores.
+
+414
+00:30:11.665 --> 00:30:15.715
+Então legal, ele já tem essa automação aqui dentro do próprio Fireflies.
+
+415
+00:30:17.334 --> 00:30:20.350
+E aí, com isso citado, o que vai acontecer?
+
+416
+00:30:20.484 --> 00:30:25.465
+Ele vai entrar em todas as reuniões que estão hoje dentro do meu calendário.
+
+417
+00:30:25.480 --> 00:30:27.234
+Então se você vier aqui,
+
+418
+00:30:28.465 --> 00:30:34.209
+eu vou pegar aqui meetings. Tem aqui ou todas as reuniões que foram gravadas, tem
+
+419
+00:30:34.254 --> 00:30:39.174
+as minhas reuniões, tem as reuniões que você mandar o seu agente de voz, então você
+
+420
+00:30:39.204 --> 00:30:43.583
+pode criar um agente de voz que ele vai entrar nas reuniões no seu lugar.
+
+421
+00:30:43.674 --> 00:30:48.355
+Olha isso aqui que legal. Eu vou pegar então todas as minhas reuniões.
+
+422
+00:30:48.415 --> 00:30:53.394
+Gente, obviamente eu ocultei aqui todas as reuniões que eu já fiz
+
+423
+00:30:55.134 --> 00:30:59.949
+porque tem muita informação sensível aqui dentro, mas eu deixei aqui um exemplo
+
+424
+00:30:59.965 --> 00:31:05.725
+feito ontem, está vendo? Exatamente pra gente conseguir fazer isso aqui
+
+425
+00:31:05.784 --> 00:31:07.495
+dentro do nosso
+
+426
+00:31:09.294 --> 00:31:12.114
+exemplo aqui hoje, pra vocês não terem uma informação muito sensível.
+
+427
+00:31:13.074 --> 00:31:17.965
+E olha o resumo que eu tenho aqui dentro do Fireflies.
+
+428
+00:31:18.834 --> 00:31:24.415
+Então aqui dentro do Fireflies, quando você abre a reunião, ele pode te mostrar
+
+429
+00:31:24.475 --> 00:31:26.844
+toda a gravação da reunião que foi feita.
+
+430
+00:31:29.965 --> 00:31:34.614
+Isso aqui é a gravação da reunião e ele vai marcando aqui exatamente.
+
+431
+00:31:34.629 --> 00:31:40.704
+E
+
+432
+00:31:40.734 --> 00:31:43.465
+aí ele vai marcando aqui, deu um bugzinho aqui, gente, desculpa.
+
+433
+00:31:43.495 --> 00:31:47.350
+Ele vai marcando aqui exatamente, se eu mudo, está vendo que ele acende aqui um
+
+434
+00:31:47.394 --> 00:31:53.034
+negócio diferente? Então, por exemplo, se você está numa reunião que tem muitas
+
+435
+00:31:53.064 --> 00:31:55.314
+pessoas conversando, você pode vir aqui e "cara, estou achando interessante essa
+
+436
+00:31:55.404 --> 00:31:56.004
+frase aqui".
+
+437
+00:31:59.725 --> 00:32:01.673
+E aí você escuta exatamente essa reunião.
+
+438
+00:32:03.624 --> 00:32:07.975
+Aqui tem algumas notas, aqui tem o que era a reunião.
+
+439
+00:32:08.094 --> 00:32:09.204
+Ficou aqui
+
+440
+00:32:10.855 --> 00:32:15.264
+um action item e ficou aqui também um outro action item pra uma outra pessoa que
+
+441
+00:32:15.294 --> 00:32:16.253
+não estava aqui.
+
+442
+00:32:17.544 --> 00:32:20.844
+Então essa é a forma, gente, do
+
+443
+00:32:24.624 --> 00:32:28.975
+Fireflies de conseguir colocar isso dentro do
+
+444
+00:32:29.034 --> 00:32:35.004
+nosso dia a dia. Você pode ver aqui que ele está usando um formato de
+
+445
+00:32:35.034 --> 00:32:40.105
+general summary. Eu posso aqui falar: "Cara, eu quero que você use um de reunião".
+
+446
+00:32:40.314 --> 00:32:46.029
+Ou seja, ele já tem formas de apresentar uma reunião pra você, pré-formatadas,
+
+447
+00:32:46.554 --> 00:32:49.284
+com o que ele vai trazer de dados importantes, tudo mais.
+
+448
+00:32:49.314 --> 00:32:54.684
+Você pode vir ali e mudar isso pra facilitar.
+
+449
+00:32:54.745 --> 00:32:57.939
+Deixa ele já rodar aqui, dá um minutinho pra ele já rodar e mostrar pra vocês.
+
+450
+00:32:59.304 --> 00:33:02.004
+Enquanto ele faz ali, eu queria mostrar outros tópicos pra vocês.
+
+451
+00:33:02.048 --> 00:33:06.850
+Se vocês vieram nessa marcação de index, olha que bacana, vocês podem navegar por
+
+452
+00:33:06.864 --> 00:33:11.215
+todo o index da reunião. Aqui ele já me falou o que ele fez, deixa eu voltar aqui
+
+453
+00:33:11.245 --> 00:33:15.444
+no sumário. Olha que legal. Ele mudou então pra generic sales.
+
+454
+00:33:15.534 --> 00:33:18.519
+O que ele fala aqui no generic sales?
+
+455
+00:33:20.334 --> 00:33:25.165
+Se a reunião for feita em inglês, você consegue pegar o sentimento das pessoas,
+
+456
+00:33:25.194 --> 00:33:27.850
+então você tem o mais positivo, o mais neutro e o mais negativo.
+
+457
+00:33:28.495 --> 00:33:30.355
+Vou pegar uma reunião em inglês pra vocês verem de exemplo.
+
+458
+00:33:31.524 --> 00:33:37.404
+E aqui, inclusive, questões. Se tiver algumas questões, ele pondera aqui,
+
+459
+00:33:38.454 --> 00:33:43.855
+falas positivas, negativas. E se tiver mais de um speaker, ele vai falar a
+
+460
+00:33:43.915 --> 00:33:46.465
+velocidade com que essa pessoa estava falando.
+
+461
+00:33:46.495 --> 00:33:49.674
+Então quantas palavras por minuto ela está falando.
+
+462
+00:33:49.704 --> 00:33:55.434
+O normalmente recomendado é que a pessoa fale de 140 a 160 palavras por minuto.
+
+463
+00:33:56.094 --> 00:34:00.218
+Aqui o speaker entrou um pouco mais abaixo, então já te mostra que pode ser que ele
+
+464
+00:34:00.234 --> 00:34:04.855
+não esteja tão interessado assim. E essa pessoa falou por 100% do tempo.
+
+465
+00:34:04.915 --> 00:34:10.074
+Essa aqui, galera, acho que é o mais interessante que eu vejo no Fireflies, essa
+
+466
+00:34:10.105 --> 00:34:15.939
+questão de sentimento e essa relação de velocidade de fala, porque se a
+
+467
+00:34:15.984 --> 00:34:19.884
+pessoa está empolgada, se não está empolgada, e quanto tempo cada pessoa falou
+
+468
+00:34:19.975 --> 00:34:25.434
+também pra você identificar. Às vezes, você acha que a pessoa com quem você mais
+
+469
+00:34:25.495 --> 00:34:28.734
+tem que se relacionar na reunião é uma, e isso aqui vai te mostrar exatamente quem
+
+470
+00:34:28.794 --> 00:34:32.184
+é essa pessoa que está mais interessada ou que está menos interessada no seu
+
+471
+00:34:32.214 --> 00:34:32.634
+trabalho.
+
+472
+00:34:33.954 --> 00:34:37.404
+O Fireflies, aquela questão de sentimento da reunião é muito boa.
+
+473
+00:34:37.734 --> 00:34:40.344
+Principalmente se você vai fazer alguma comunicação.
+
+474
+00:34:40.824 --> 00:34:42.459
+Você quer saber se as pessoas reagiram bem ou não.
+
+475
+00:34:43.058 --> 00:34:44.934
+É, e pessoal, a gente passa o dia em reuniões.
+
+476
+00:34:45.114 --> 00:34:48.968
+Você ter essa leitura no final do dia de tudo que de fato você ficou de fazer,
+
+477
+00:34:49.015 --> 00:34:53.214
+ajuda muito. É isso que vai te deixar mais produtivo pra você virar esse maestro de
+
+478
+00:34:53.304 --> 00:34:53.844
+ferramenta.
+
+479
+00:34:53.995 --> 00:34:58.374
+Opa, vamos lá. Xuxus, chegamos então aqui no nível quatro.
+
+480
+00:34:58.434 --> 00:35:01.629
+Agora, como ele falou, você é o maestro das ferramentas.
+
+481
+00:35:02.094 --> 00:35:07.839
+Então você já sabe escolher qual que é a ferramenta certa pro problema
+
+482
+00:35:07.913 --> 00:35:10.554
+certo. E aí você começa a viver isso aqui.
+
+483
+00:35:11.154 --> 00:35:16.089
+Você entra no NotebookLM, você entra no Fireflies, você entra no Manus, mas ainda é
+
+484
+00:35:16.344 --> 00:35:17.244
+tudo muito...
+
+485
+00:35:17.334 --> 00:35:18.834
+Separado, isolado.
+
+486
+00:35:18.924 --> 00:35:19.644
+Muito isolado.
+
+487
+00:35:19.704 --> 00:35:24.114
+Elas te ajudam, mas ainda depende de um trabalho manual repetitivo teu.
+
+488
+00:35:24.234 --> 00:35:28.374
+Exato, de você copiar e colar de um lado pro outro, de você abrir várias
+
+489
+00:35:28.389 --> 00:35:34.374
+ferramentas ao mesmo tempo. Essa, inclusive, galera, é a dor de quem
+
+490
+00:35:34.434 --> 00:35:37.764
+está no nível quatro hoje. Se você está no nível quatro hoje, você sente exatamente
+
+491
+00:35:37.794 --> 00:35:42.504
+isso. Eu fico copiando e colando muitas coisas de uma ferramenta pra outra, pra
+
+492
+00:35:42.564 --> 00:35:46.734
+conseguir ter resultado. Eu até consigo, mas eu ainda demoro muito tempo trocando
+
+493
+00:35:46.794 --> 00:35:50.904
+de tela, trocando de ferramenta, copiando o contexto de uma pra criar a imagem na
+
+494
+00:35:51.025 --> 00:35:55.584
+outra. Então você está passando exatamente aí por essa dor.
+
+495
+00:35:55.644 --> 00:35:58.974
+E qual que é aqui o seu ponto de virada?
+
+496
+00:35:59.034 --> 00:36:03.564
+Como é que você vai sair desse nível quatro, Léo, a gente fala, e começar a
+
+497
+00:36:03.714 --> 00:36:06.444
+trabalhar no nível cinco com inteligência artificial?
+
+498
+00:36:06.474 --> 00:36:09.504
+Você começa a pensar como é que você constrói algo que faz isso por você.
+
+499
+00:36:09.594 --> 00:36:13.914
+Essa é a virada de chave, tá, chuchus? Não mais que ferramenta eu uso.
+
+500
+00:36:14.004 --> 00:36:16.494
+Então se você ainda tem esse pensamento de que ferramenta eu uso, você está no
+
+501
+00:36:16.525 --> 00:36:20.454
+nível quatro. Eu, Isabella, o Léo, a gente usa ferramenta de inteligência
+
+502
+00:36:20.469 --> 00:36:24.400
+artificial o tempo inteiro. Mas se eu vou começar alguma coisa nova, por exemplo,
+
+503
+00:36:24.429 --> 00:36:27.533
+eu estou automatizando toda a criação de posts da Murai.
+
+504
+00:36:27.564 --> 00:36:30.534
+Vai pro momento, Léo, que a gente vai cair aqui no nível três.
+
+505
+00:36:30.744 --> 00:36:34.659
+Depois você vai passar pro nível quatro, ou seja, você começa a usar mais
+
+506
+00:36:34.704 --> 00:36:39.924
+ferramentas e você começa a se incomodar com isso. Isso, chuchus, é normal.
+
+507
+00:36:39.939 --> 00:36:43.584
+"Ah, eu já estou no nível seis". Toda vez que você for desenvolver alguma coisa
+
+508
+00:36:43.734 --> 00:36:47.394
+nova com inteligência artificial, você vai voltar pro nível três ou pro nível
+
+509
+00:36:47.544 --> 00:36:50.844
+quatro. É assim que acontece. Por quê?
+
+510
+00:36:50.874 --> 00:36:54.144
+Porque você não vai, Léo, que é uma coisa automatizada, que você ainda não testou,
+
+511
+00:36:54.234 --> 00:36:57.579
+que você não viu qual que é a melhor ferramenta, que você não conhece ainda qual é
+
+512
+00:36:57.579 --> 00:36:59.784
+o fluxo ideal de troca de informação.
+
+513
+00:36:59.844 --> 00:37:03.864
+Só pra acalmar os corações também, de quem ainda não chegou no nível cinco ou nível
+
+514
+00:37:03.894 --> 00:37:08.514
+seis e está sonhando o dia que chegar lá, isso aqui, gente, é uma escadinha.
+
+515
+00:37:08.529 --> 00:37:11.664
+Você vai subindo, mas tem hora também que você volta alguns degraus porque você
+
+516
+00:37:11.679 --> 00:37:13.644
+precisa testar alguma coisa nova e fazer um processo novo.
+
+517
+00:37:13.704 --> 00:37:18.534
+E, na verdade, o grande domínio é trafegar pelos níveis, Isa.
+
+518
+00:37:18.594 --> 00:37:24.174
+Não é porque eu já sei fazer uma automação, já sei usar um N8N, um Zapier, que eu
+
+519
+00:37:24.204 --> 00:37:26.784
+vou deixar de utilizar os chats da vida.
+
+520
+00:37:26.814 --> 00:37:30.294
+Sim, claro. Ou até mesmo de testar coisas novas. Perfeito.
+
+521
+00:37:30.414 --> 00:37:35.034
+Tudo lá, então aqui quem está no nível quatro se sentiu aqui representado?
+
+522
+00:37:35.184 --> 00:37:36.924
+E aí a gente vai mostrar essa ferramenta, Léo?
+
+523
+00:37:37.434 --> 00:37:43.074
+Bora. Eles tiveram essa ferramenta já na nossa aula dois Já é um exemplo de como
+
+524
+00:37:43.105 --> 00:37:46.074
+vocês já estão trafegando por níveis, pessoal.
+
+525
+00:37:46.344 --> 00:37:48.954
+Perfeito. O Léo precisa estar aqui pra me ajudar. Oi!
+
+526
+00:37:49.074 --> 00:37:54.504
+A gente já falou pra vocês, já apresentamos o GPT Maker, que é aquela construção do
+
+527
+00:37:54.534 --> 00:37:59.874
+chatbot pra você responder no WhatsApp. Ela é uma ferramenta nível quatro. Por quê?
+
+528
+00:37:59.964 --> 00:38:03.639
+Você está usando a LLM, já está usando uma outra ferramenta específica pra fazer
+
+529
+00:38:03.684 --> 00:38:06.143
+algo que uma LLM não consegue fazer por você.
+
+530
+00:38:06.174 --> 00:38:09.204
+E ela consegue fazer um nível agêntico muito importante.
+
+531
+00:38:09.234 --> 00:38:13.584
+Muito. E às vezes, só o GPT Maker já resolve o que você precisa, você não precisa
+
+532
+00:38:13.644 --> 00:38:17.154
+ficar passando pra outros níveis. Não é obrigatório também subir a escadinha, não.
+
+533
+00:38:17.634 --> 00:38:21.054
+Fizemos o nível quatro, mestre de ferramentas, já consegue escolher uma ferramenta
+
+534
+00:38:21.084 --> 00:38:25.855
+pra outra, mas você ainda tem elas muito separadas. E você precisa o quê?
+
+535
+00:38:26.304 --> 00:38:29.828
+Ao invés de você ficar navegando entre elas, lembra do ponto de virada?
+
+536
+00:38:29.904 --> 00:38:35.094
+Você quer agora: "Como eu construo algo que faça isso por mim?" Aí você vai chegar
+
+537
+00:38:35.484 --> 00:38:39.624
+no nível cinco, que é o construtor de automações.
+
+538
+00:38:39.684 --> 00:38:43.194
+E eu ainda não estou falando de agente, eu estou falando de construtor de
+
+539
+00:38:43.284 --> 00:38:49.194
+automações. O que é isso aqui? Você começa, então, a tirar aquelas tarefas de copia
+
+540
+00:38:49.224 --> 00:38:53.664
+e cola de um lado pro outro, de sempre fazer a mesma ação toda semana ou todos os
+
+541
+00:38:53.724 --> 00:38:59.605
+dias. Você começa a colocar mais sistemas pra rodarem de
+
+542
+00:38:59.664 --> 00:39:05.605
+forma autônoma e sozinho. E aí, galera, você começa a construir coisas pra
+
+543
+00:39:05.634 --> 00:39:08.605
+que a inteligência artificial trabalhe por você.
+
+544
+00:39:09.204 --> 00:39:14.874
+Esse é o nosso nível cinco. Olha uma dica aqui, a gente chama a dica do Zapier,
+
+545
+00:39:14.934 --> 00:39:19.959
+inclusive. O n8n é ótimo, mas o n8n já é um pouco mais complexo, você precisa
+
+546
+00:39:19.959 --> 00:39:24.924
+entender um pouco mais de linguagem Python, você precisa ter uma bagagem técnica.
+
+547
+00:39:25.614 --> 00:39:30.519
+O Zapier, não. O Zapier é um pouco mais simples, eu diria até bem simples pra ser
+
+548
+00:39:30.564 --> 00:39:35.154
+executado. Ele é antiguinho. Veio, obviamente, muito mais destaque agora nessa nova
+
+549
+00:39:35.244 --> 00:39:39.114
+era da IA generativa, mas ele é ótimo pra você conectar sistemas.
+
+550
+00:39:39.204 --> 00:39:44.874
+O que isso quer dizer? Você gera algo no seu e-mail, que do e-mail precisa ir pro
+
+551
+00:39:44.904 --> 00:39:48.294
+seu Instagram. Por exemplo, os bruxos do Zodari. O que você vai fazer?
+
+552
+00:39:48.324 --> 00:39:51.834
+O e-mail não tem uma conexão direta com o seu Instagram, você precisa ter uma
+
+553
+00:39:51.864 --> 00:39:56.724
+ferramenta no meio que faça essa conexão acontecer. Essa ferramenta é o Zapier.
+
+554
+00:39:57.714 --> 00:40:01.764
+Você pode, inclusive, usar o Zapier. Sabe o Fireflies que a gente fez?
+
+555
+00:40:01.855 --> 00:40:05.605
+Fez uma reunião no Fireflies, ele guardou essa reunião, você quer mandar isso pras
+
+556
+00:40:05.634 --> 00:40:08.679
+pessoas, você quer anotar isso numa lista de tarefas. Usa o Zapier.
+
+557
+00:40:08.784 --> 00:40:13.224
+O Zapier vai conseguir fazer isso muito bem. Xuxus, agora a gente vai pro Zapier.
+
+558
+00:40:13.404 --> 00:40:17.034
+Eu não quero fazer isso aqui ultramega complexo, superdifícil.
+
+559
+00:40:18.264 --> 00:40:23.844
+Existem formas de você criar fluxos muito simples com o Zapier, sem código, só
+
+560
+00:40:23.874 --> 00:40:27.894
+entendendo mesmo o fluxo como deveria funcionar. E eu quero aproveitar, né, Léo?
+
+561
+00:40:28.480 --> 00:40:34.374
+A gente falou lá das reuniões, mas enquanto você tá só usando o Fireflies, lá na
+
+562
+00:40:34.554 --> 00:40:38.379
+plataforma Fireflies, você precisa entrar na plataforma todo dia pra saber
+
+563
+00:40:38.394 --> 00:40:42.039
+exatamente o que foi feito, o que foi falado, o que ainda não foi executado.
+
+564
+00:40:42.114 --> 00:40:47.049
+Existe uma metodologia de produtividade, que é você criar um segundo cérebro, ela é
+
+565
+00:40:47.064 --> 00:40:52.944
+chamada de second brain. E o que acontece aqui é: você decide um único lugar onde
+
+566
+00:40:53.004 --> 00:40:56.783
+você vai ter todas as informações do seu dia.
+
+567
+00:40:56.844 --> 00:40:59.934
+Vai ficar muito fácil você saber o que acontece normalmente.
+
+568
+00:41:00.084 --> 00:41:00.699
+Você sabe que em
+
+569
+00:41:03.384 --> 00:41:09.099
+alguma reunião no seu dia, você falou sobre venda, algum produto
+
+570
+00:41:09.114 --> 00:41:13.779
+específico e o lançamento da campanha, mas você não consegue lembrar exatamente em
+
+571
+00:41:13.855 --> 00:41:17.214
+que dia você falou isso. Raras são as pessoas que lembram de tudo isso.
+
+572
+00:41:17.904 --> 00:41:21.009
+Então o que eu vou fazer aqui com vocês é ajudar a começar a criar esse segundo
+
+573
+00:41:21.084 --> 00:41:21.548
+cérebro.
+
+574
+00:41:23.244 --> 00:41:25.734
+E como é que a gente vai fazer isso? Eu vou clicar aqui.
+
+575
+00:41:26.454 --> 00:41:32.364
+Você pode, inclusive, no Zapier, ele tem essa funcionalidade de você começar a
+
+576
+00:41:32.484 --> 00:41:38.034
+usar ele através desse copilot. Você descreve aqui o fluxo que você quer e ele
+
+577
+00:41:38.124 --> 00:41:43.419
+sozinho já monta o fluxo pra você. Facilita muito quem tá começando a entender
+
+578
+00:41:43.494 --> 00:41:46.359
+essas ideias de fluxo. Eu já vou vir aqui no Create.
+
+579
+00:41:47.874 --> 00:41:51.444
+E eu vou falar que eu quero criar uma automação.
+
+580
+00:41:53.275 --> 00:41:58.194
+Ele vai abrir aqui pra mim. E aí, qual que vai ser o meu trigger aqui?
+
+581
+00:41:59.304 --> 00:42:04.884
+Eu vou vir nos apps que eu já tenho configurados, então meu Fireflies, por
+
+582
+00:42:04.914 --> 00:42:10.644
+exemplo. Vou selecionar aqui, a única opção que tem aqui é como uma
+
+583
+00:42:10.674 --> 00:42:15.324
+nova reunião for transcrita, ou seja, uma nova transcrição de reunião foi criada, e
+
+584
+00:42:15.384 --> 00:42:17.468
+já tá aqui configurado no meu e-mail.
+
+585
+00:42:18.624 --> 00:42:23.859
+Configuração é automaticamente feita pelo Zapier, mas eu quero, por exemplo, que
+
+586
+00:42:23.904 --> 00:42:27.414
+ele inclua o nome dos speakers, ou não, não quero que ele inclua.
+
+587
+00:42:28.674 --> 00:42:33.414
+Nosso call aqui de fazer. Posso dizer que eu quero ele num Slack
+
+588
+00:42:33.504 --> 00:42:37.704
+Markdown e vou fazer um teste. Deixa eu testar o trigger.
+
+589
+00:42:40.044 --> 00:42:43.808
+É importante, gente, no Zapier, toda vez que você for executando fluxo, tem muita
+
+590
+00:42:43.914 --> 00:42:49.824
+gente que constrói o fluxo inteiro, testa tudo e depois testa o
+
+591
+00:42:49.855 --> 00:42:54.834
+trigger. Eu não gosto. Eu gosto da gente ir testando pedacinho por pedacinho,
+
+592
+00:42:55.404 --> 00:43:00.444
+porque você já consegue saber onde tá o problema do seu fluxo muito rápido.
+
+593
+00:43:00.564 --> 00:43:05.874
+Já funcionou, tá vendo? Ficou verdinho aqui também, ele encontrou essa reunião.
+
+594
+00:43:05.904 --> 00:43:11.184
+Vou selecionar ela pra gente poder fazer o passo dois. Qual que é o passo dois?
+
+595
+00:43:12.775 --> 00:43:15.264
+Criou uma nova reunião. O que você quer que ele faça?
+
+596
+00:43:15.308 --> 00:43:17.964
+Eu quero que você vá no Slack
+
+597
+00:43:19.734 --> 00:43:21.654
+e, deixa eu achar aqui.
+
+598
+00:43:26.814 --> 00:43:27.654
+Message.
+
+599
+00:43:29.244 --> 00:43:30.924
+Quero que você envie uma mensagem
+
+600
+00:43:33.834 --> 00:43:34.404
+num canal.
+
+601
+00:43:35.874 --> 00:43:38.634
+Tá bom? Já tá configurado também a minha conta do Slack.
+
+602
+00:43:40.284 --> 00:43:42.279
+Vou vir aqui, vou selecionar qual canal.
+
+603
+00:43:42.339 --> 00:43:45.114
+Eu tenho três canais hoje no Slack da minha empresa.
+
+604
+00:43:45.144 --> 00:43:46.554
+Eu vou colocar aqui na reunião de lead,
+
+605
+00:43:48.624 --> 00:43:51.264
+vou adicionar o Zapier automaticamente nesse canal, sim.
+
+606
+00:43:51.324 --> 00:43:57.204
+E aqui você vai dizer o que você quer nesse texto, tá bom? Então olha só que legal.
+
+607
+00:44:00.834 --> 00:44:02.874
+Reunião, nome da reunião.
+
+608
+00:44:04.164 --> 00:44:07.749
+Então eu vou vir aqui adicionar um campo. Aqui tem título, tá vendo?
+
+609
+00:44:08.034 --> 00:44:10.659
+Esse é o título lá do Fireflies. Esse é o título.
+
+610
+00:44:13.014 --> 00:44:13.494
+Data.
+
+611
+00:44:14.829 --> 00:44:18.504
+Tem aqui data, mas tá vendo que esse formato de data tá ruim?
+
+612
+00:44:19.434 --> 00:44:22.014
+Eu quero que ele formate a data pra mim.
+
+613
+00:44:22.074 --> 00:44:24.775
+Então eu vou fazer exatamente aqui, adorei isso aqui.
+
+614
+00:44:26.859 --> 00:44:29.724
+Change. Opa, desculpa, não copiei.
+
+615
+00:44:31.178 --> 00:44:33.775
+Isso aqui é um exemplo, eu tô fazendo real aqui com vocês.
+
+616
+00:44:34.914 --> 00:44:40.674
+Então ele tá, na verdade, year, year, year, mês,
+
+617
+00:44:40.794 --> 00:44:41.154
+mês
+
+618
+00:44:43.944 --> 00:44:49.464
+e dia, dia. Eu quero que ele faça o oposto, dia, dia, mês, mês e ano, e hora, hora,
+
+619
+00:44:49.974 --> 00:44:54.414
+minuto, minuto. Aqui também tá tudo esquisito. Vou criar esse step.
+
+620
+00:44:59.454 --> 00:45:04.704
+Então ele próprio já colocou aqui um step de formatação do próprio
+
+621
+00:45:06.654 --> 00:45:07.764
+Zapier, vou testar.
+
+622
+00:45:11.664 --> 00:45:16.344
+A reunião que tava com aquela data esquisita, mudou pra 28/03/2026 à 01/22, tá
+
+623
+00:45:16.404 --> 00:45:21.775
+vendo? Então, de novo, vou continuar com a configuração.
+
+624
+00:45:21.834 --> 00:45:26.244
+Data, vai ser o output dessa outra reunião aqui.
+
+625
+00:45:26.844 --> 00:45:28.434
+Participantes.
+
+626
+00:45:33.518 --> 00:45:36.534
+Eu consigo vir aqui na reunião e buscar
+
+627
+00:45:37.944 --> 00:45:39.924
+quem participou. Então posso colocar e-mail, por exemplo.
+
+628
+00:45:41.514 --> 00:45:42.264
+E aqui,
+
+629
+00:45:44.904 --> 00:45:48.609
+tópicos da reunião. Ao invés de eu colocar um só, eu vou colocar várias coisas que
+
+630
+00:45:48.624 --> 00:45:54.204
+eu sei que tem aqui. Ficou overview, que é importante.
+
+631
+00:45:57.414 --> 00:45:59.124
+Um short summary.
+
+632
+00:46:03.444 --> 00:46:04.944
+Vê se tem mais alguma outra coisa.
+
+633
+00:46:06.234 --> 00:46:07.404
+E pontos de ação.
+
+634
+00:46:10.014 --> 00:46:14.934
+E ações combinadas em
+
+635
+00:46:15.025 --> 00:46:16.374
+reunião.
+
+636
+00:46:18.084 --> 00:46:23.064
+Tem aqui também, vocês viram aqui em cima, action items.
+
+637
+00:46:23.514 --> 00:46:28.494
+Isso aqui tudo, gente, já é o entendimento do Zapier sobre o Fireflies.
+
+638
+00:46:28.525 --> 00:46:30.384
+Eu não precisei configurar nada disso aqui.
+
+639
+00:46:30.414 --> 00:46:35.184
+Uma vez que você conecta a sua conta do Fireflies com o Zapier, ele já faz essa
+
+640
+00:46:35.214 --> 00:46:37.254
+busca de metadados, tá bom?
+
+641
+00:46:38.904 --> 00:46:44.244
+Beleza, já criei qual que vai ser a minha tarefa, mandar como um bot, sim, bot name
+
+642
+00:46:44.304 --> 00:46:49.299
+Zapier. Posso colocar um link. Isso aqui tudo vocês vão mudando, o que vocês querem
+
+643
+00:46:49.314 --> 00:46:49.644
+fazer
+
+644
+00:46:52.068 --> 00:46:55.368
+Thread, não quero ir em uma thread específica, mandar uma mensagem no canal,
+
+645
+00:46:55.428 --> 00:46:58.668
+continuar. Vou testar.
+
+646
+00:47:02.688 --> 00:47:05.688
+Boa, já fez. Deixa eu abrir meu Slack para ver a mensagem.
+
+647
+00:47:07.458 --> 00:47:11.029
+Abri aqui o meu Slack, já está inclusive com uma nova mensagem. Está vendo?
+
+648
+00:47:11.118 --> 00:47:16.728
+Esse é o meu Slack, postagem Nura, reuniões.
+
+649
+00:47:16.758 --> 00:47:22.473
+E olha aqui, ele fez agora a reunião do dia 28/03, os
+
+650
+00:47:22.488 --> 00:47:27.498
+participantes, o meu e-mail, tópicos abordados na reunião, então discutiu-se a
+
+651
+00:47:27.529 --> 00:47:32.568
+importância dos leads, métrica de sucesso, estratégia de venda, prazo.
+
+652
+00:47:32.598 --> 00:47:37.683
+Nura participou da reunião com a Tópicos, trouxe um belo resumo e ações formadas
+
+653
+00:47:37.699 --> 00:47:43.279
+para a reunião. Isabela, ouvir as demandas e o representante da empresa fazer isso.
+
+654
+00:47:43.503 --> 00:47:46.742
+O que vai acontecer aqui, gente? Deixa eu voltar para o Zapier.
+
+655
+00:47:47.808 --> 00:47:53.779
+O que vai acontecer agora? Com esse setup que eu fiz, sempre que
+
+656
+00:47:53.808 --> 00:47:59.779
+eu tiver uma nova reunião acontecendo no Fireflies, sempre que ele criar uma nova
+
+657
+00:47:59.808 --> 00:48:02.808
+transcrição, ele vai disparar esse fluxo.
+
+658
+00:48:02.898 --> 00:48:08.013
+É só eu clicar aqui em publicar, esse fluxo fica disponível e ele vai o tempo todo
+
+659
+00:48:08.058 --> 00:48:10.367
+sozinho trabalhar para mim. Eu só vou receber o quê?
+
+660
+00:48:10.848 --> 00:48:14.088
+O resumo da reunião dentro do meu Slack.
+
+661
+00:48:14.208 --> 00:48:16.848
+Ou até mesmo criar sistemas dentro do Replit.
+
+662
+00:48:16.878 --> 00:48:21.918
+Nós já falamos também do Replit, que é para que essas ferramentas de resposta,
+
+663
+00:48:21.963 --> 00:48:24.828
+essas ferramentas de dash, board, painel de controle.
+
+664
+00:48:24.873 --> 00:48:30.498
+Então aqui você já consegue também no nível cinco, começar a criar este tipo de
+
+665
+00:48:30.529 --> 00:48:36.288
+automação, ou seja, poxa, a pessoa responde um formulário no
+
+666
+00:48:36.348 --> 00:48:40.713
+Replit, já vai direto para o seu CRM, já vai direto para uma planilha de Excel,
+
+667
+00:48:40.758 --> 00:48:44.988
+onde você guarda os leads, isso já é na automação rodando no dia a dia.
+
+668
+00:48:45.529 --> 00:48:48.708
+Não é a gente, é a automação rodando no dia a dia. Tudo bem?
+
+669
+00:48:48.738 --> 00:48:51.468
+Bem, como é que a gente então sobe com vocês?
+
+670
+00:48:51.498 --> 00:48:54.199
+Como que a gente chega no consultor de agentes?
+
+671
+00:48:54.888 --> 00:49:00.468
+A gente está falando aqui que o Zapier ou o Replit é muito bom para
+
+672
+00:49:00.498 --> 00:49:06.288
+automações simples. Ele é muito bom para caminhos lineares, ou seja,
+
+673
+00:49:06.529 --> 00:49:12.348
+sempre execute desta forma, as informações sempre são salvas no mesmo lugar, sempre
+
+674
+00:49:12.408 --> 00:49:15.738
+sai desse sistema para esse outro sistema. Ele é muito bom para isso.
+
+675
+00:49:15.768 --> 00:49:20.763
+Você precisa começar a colocar um racional no meio do caminho, aí você já precisa
+
+676
+00:49:20.808 --> 00:49:26.238
+começar a subir de nível e ir aqui para o nível seis, que é o
+
+677
+00:49:26.268 --> 00:49:29.508
+criador de agentes. Eu passei rápido, gente, lá, porque era só a tela.
+
+678
+00:49:29.523 --> 00:49:33.228
+Aí não é só uma automação simples funcionando por você.
+
+679
+00:49:33.258 --> 00:49:36.138
+Você não precisa ficar ali olhando se está funcionando ou se não está funcionando,
+
+680
+00:49:36.529 --> 00:49:40.638
+checando ou aprovando alguma coisa no seu dia a dia. Você já tem o quê?
+
+681
+00:49:40.668 --> 00:49:43.188
+Uma inteligência artificial. Opa, deixa eu voltar.
+
+682
+00:49:43.788 --> 00:49:49.699
+Uma inteligência artificial que executa para você, que pensa para você, que coleta
+
+683
+00:49:49.788 --> 00:49:53.779
+os dados necessários e toma a devida ação.
+
+684
+00:49:53.808 --> 00:49:59.058
+Diferenças: chatbot e agente. Chatbot é uma automação, inclusive. O que vai lá?
+
+685
+00:49:59.598 --> 00:50:01.068
+Te dá uma lista de opção, não é, Leo?
+
+686
+00:50:01.098 --> 00:50:01.458
+Total.
+
+687
+00:50:01.488 --> 00:50:04.548
+Quem nunca brigou com a Ura ou com o chatbot na vida? O que ele vai fazer?
+
+688
+00:50:04.562 --> 00:50:06.632
+Ele vai te dar uma lista de opções e você escolhe essas opções e vai-
+
+689
+00:50:06.828 --> 00:50:08.418
+A árvorezinha padrão.
+
+690
+00:50:08.538 --> 00:50:12.228
+Exatamente. Um agente, não, você vai conversando.
+
+691
+00:50:12.288 --> 00:50:16.383
+É uma experiência de estar conversando com uma outra pessoa. Lembra disso?
+
+692
+00:50:16.398 --> 00:50:19.443
+De alguma outra aula que a gente fez? IA generativa parece com uma pessoa.
+
+693
+00:50:19.458 --> 00:50:25.398
+Então você já tem aqui um "puts" um pouco mais complexo, você já não precisa
+
+694
+00:50:25.428 --> 00:50:30.708
+explicar tanto o passo a passo e você precisa de algo que tome a decisão de qual
+
+695
+00:50:30.768 --> 00:50:35.418
+caminho é o melhor a ser seguido. Aí sim, gente, você vai usar o n8n.
+
+696
+00:50:35.463 --> 00:50:40.038
+"Isa, não posso usar o Zapier?" Super pode usar o Zapier, inclusive com API de
+
+697
+00:50:40.068 --> 00:50:45.529
+Claude, API de ChatGPT, você coloca ali para ele fazer essa parte de agentes.
+
+698
+00:50:45.558 --> 00:50:50.253
+O Zapier também é muito bom para isso, mas o n8n é a ferramenta mais
+
+699
+00:50:51.949 --> 00:50:57.888
+comum, é a mais usada, é uma ferramenta que tem muito volume de
+
+700
+00:50:57.949 --> 00:51:02.478
+dado que ela consegue coletar e funciona muito bem para esse escopo de uso mais
+
+701
+00:51:02.538 --> 00:51:07.398
+avançado. O Zapier ainda não tem tantas conexões assim, tem algumas limitações,
+
+702
+00:51:07.458 --> 00:51:10.188
+então quer fazer algo mais complexo, eu iria para o n8n.
+
+703
+00:51:10.472 --> 00:51:15.199
+Então, gente, olha isso aqui. A gente está falando, inclusive,
+
+704
+00:51:16.218 --> 00:51:21.438
+existe também o CloudCode e o Canvas. O Canvas dentro do Gemini.
+
+705
+00:51:22.489 --> 00:51:24.348
+Outras ferramentas que você pode usar.
+
+706
+00:51:24.378 --> 00:51:28.263
+CloudCode, você consegue codar e criar o seu próprio sistema e usar o Replit para
+
+707
+00:51:28.459 --> 00:51:33.123
+dar vida a esse sistema. CloudCode não dá vida ao sistema, ele coda para você, você
+
+708
+00:51:33.228 --> 00:51:36.199
+precisa copiar esse código e colocar em algum outro lugar.
+
+709
+00:51:36.228 --> 00:51:40.878
+O Replit pode ser inclusive uma saída para você fazer isso e criar os seus próprios
+
+710
+00:51:40.938 --> 00:51:45.048
+aplicativos. Criar o próprio aplicativo é tentador, é maravilhoso, mas você não
+
+711
+00:51:45.079 --> 00:51:49.758
+precisa. "Eu quero criar meu próprio ChatGPT". Precisa?
+
+712
+00:51:49.804 --> 00:51:52.818
+"Eu quero criar meu próprio Fireflies". Precisa? Já sai um.
+
+713
+00:51:52.878 --> 00:51:54.618
+Só o que você tem já resolve o teu problema.
+
+714
+00:51:54.679 --> 00:51:58.098
+Exato. Então assim, gente, tem muita empresa no Brasil, não é, Leo?
+
+715
+00:51:58.503 --> 00:52:01.338
+"Eu quero criar meu próprio CRM". Será?
+
+716
+00:52:01.788 --> 00:52:03.408
+Várias opções no mercado.
+
+717
+00:52:03.648 --> 00:52:08.358
+Esse é o foco da sua organização? O foco da sua organização hoje está em
+
+718
+00:52:08.478 --> 00:52:12.663
+manutenção do sistema seu próprio? Possivelmente, não. Toma cuidado.
+
+719
+00:52:12.739 --> 00:52:14.568
+O business é o não criar sistemas.
+
+720
+00:52:15.018 --> 00:52:18.588
+É isso. Às vezes, seu business é uma informação, isso aí é diferente.
+
+721
+00:52:18.618 --> 00:52:22.878
+Tudo bem, você cria o seu. Mas se não é, se isso é parte do seu processo, a gente
+
+722
+00:52:22.938 --> 00:52:24.348
+fala de core business.
+
+723
+00:52:25.938 --> 00:52:29.808
+O seu objetivo central da empresa, não faça. Cuidado com isso aqui.
+
+724
+00:52:29.838 --> 00:52:33.408
+E o Canvas dentro do Gemini, também você consegue criar essas micro sisteminhas que
+
+725
+00:52:33.468 --> 00:52:37.579
+disparam algumas ações, super indico para vocês usarem também.
+
+726
+00:52:38.058 --> 00:52:42.978
+E aí, pessoal, um cuidado, já inclusive dei spoiler aqui, é com
+
+727
+00:52:43.308 --> 00:52:48.918
+governança desses dados. Quando você chegar no nível seis, você vai ter muito mais
+
+728
+00:52:48.933 --> 00:52:54.843
+cuidado do que não pode ser feito ou de, principalmente, do que precisa de um
+
+729
+00:52:54.858 --> 00:52:58.608
+humano para checar. Seja para aprovar se aquela informação está certa ou não, seja
+
+730
+00:52:58.638 --> 00:53:02.989
+para continuar o processo. Então toma muito cuidado também quando forem criar esses
+
+731
+00:53:03.079 --> 00:53:06.723
+agentes. A gente tem muito essa ideia: "Eu vou deixar o agente criar tudo sozinho".
+
+732
+00:53:06.918 --> 00:53:09.918
+Deixa fazer tudo sozinho e vai rodar maravilha.
+
+733
+00:53:10.008 --> 00:53:13.699
+Das duas uma, você vai precisar colocar uma etapa de uma aprovação humana, porque,
+
+734
+00:53:13.758 --> 00:53:19.248
+sei lá, é uma informação financeira, é uma informação de orçamento, é uma proposta
+
+735
+00:53:19.308 --> 00:53:23.222
+comercial que vai sair. Eu, Isabela, não vou deixar nenhuma proposta comercial sair
+
+736
+00:53:23.298 --> 00:53:27.348
+da Nuura sem antes validar que está certo, o atendimento está certo, o preço está
+
+737
+00:53:27.408 --> 00:53:33.258
+certo. Então tomem muito cuidado com onde vocês vão colocar e
+
+738
+00:53:33.408 --> 00:53:37.353
+como vocês vão colocar esse nível aqui de governança.
+
+739
+00:53:37.429 --> 00:53:42.348
+E para a gente fechar, a gente fala do nível sete, unicórnio. O que é isso?
+
+740
+00:53:42.378 --> 00:53:47.898
+A empresa de uma pessoa só. Existem no Brasil algumas, a última foi inclusive
+
+741
+00:53:47.929 --> 00:53:53.913
+uma de processos trabalhistas, na verdade, aí entra de processos jurídicos,
+
+742
+00:53:54.408 --> 00:53:58.459
+que virou uma unicórnio. Já existem nos Estados Unidos diversas outras empresas de
+
+743
+00:53:58.518 --> 00:54:04.158
+uma pessoa só também. A gente, obviamente, todo mundo sonha em
+
+744
+00:54:04.188 --> 00:54:07.893
+chegar nesse momento, não é, Leo? Nesse momento unicórnio, que a tua empresa está
+
+745
+00:54:07.938 --> 00:54:11.179
+rodando, tudo funcionando e a gente precisa de muito data.
+
+746
+00:54:11.239 --> 00:54:17.179
+Mas galera, leva tempo, custa e dá trabalho também de
+
+747
+00:54:17.268 --> 00:54:20.748
+manter, você viu que na Nuura a gente tem muitos agentes funcionando, a gente tem
+
+748
+00:54:20.778 --> 00:54:23.329
+que monitorar os agentes se estão fazendo a coisa certa ou não.
+
+749
+00:54:23.358 --> 00:54:27.574
+Então muito cuidado com essa governança que eu mencionei do nível seis, ela é
+
+750
+00:54:27.588 --> 00:54:28.489
+importantíssima.
+
+751
+00:54:28.699 --> 00:54:33.079
+É interessante esse ponto do unicórnio, Isa, porque no último mês, gerou uma
+
+752
+00:54:33.108 --> 00:54:38.658
+polêmica em alguns grupos de Harvard, de um candidato que naquele momento de
+
+753
+00:54:38.688 --> 00:54:43.098
+contratação que você está negociando, deu passe, deu salário, enfim, ele pediu um
+
+754
+00:54:43.128 --> 00:54:46.608
+valor médio quatro vezes o valor do cargo.
+
+755
+00:54:46.638 --> 00:54:49.623
+E aí quem estava contratando falou: "Não faz sentido".
+
+756
+00:54:49.758 --> 00:54:54.858
+E ele explicou que sim, fazia sentido, porque ele por ter o domínio de todos os
+
+757
+00:54:54.888 --> 00:54:58.968
+níveis de inteligência artificial, ele sozinho conseguia desempenhar o trabalho de
+
+758
+00:54:58.998 --> 00:54:59.838
+uma equipe inteira.
+
+759
+00:55:00.258 --> 00:55:00.272
+Uau!
+
+760
+00:55:00.408 --> 00:55:04.923
+Então na verdade, a empresa estaria fazendo uma economia ao pagar quatro vezes.
+
+761
+00:55:05.358 --> 00:55:11.043
+E é onde no RH surgiu o termo de HIC, que é esse
+
+762
+00:55:11.209 --> 00:55:15.918
+colaborador, esse indivíduo de alto impacto de contribuição.
+
+763
+00:55:16.098 --> 00:55:21.017
+Então assim, alguém que de forma individual contribui muito para a companhia.
+
+764
+00:55:21.378 --> 00:55:25.804
+Esse é um termo que nos próximos anos a gente vai começar a ouvir, de fato, que são
+
+765
+00:55:25.818 --> 00:55:30.018
+pessoas que com as automações, com tudo que fez, de fato, consegue representar uma
+
+766
+00:55:30.033 --> 00:55:35.838
+equipe inteira. Ou também tem N analistas relevantes do mercado dizendo que o
+
+767
+00:55:35.868 --> 00:55:41.163
+próximo bilionário do mundo pode estar agora nesta sala aqui nos assistindo, com o
+
+768
+00:55:41.179 --> 00:55:45.258
+conhecimento de inteligência artificial, vai conseguir criar o seu negócio.
+
+769
+00:55:45.288 --> 00:55:49.938
+Porque a gente na última década, a gente olhou para todo mundo que criou negócios
+
+770
+00:55:49.998 --> 00:55:53.763
+incríveis, e sempre são pessoas ligadas à tecnologia.
+
+771
+00:55:53.959 --> 00:55:58.308
+Sempre algum app que resolveu a vida do mundo, aí bilhões de pessoas utilizam e
+
+772
+00:55:58.338 --> 00:56:01.368
+afins, e a gente sempre olha para isso com uma certa distância.
+
+773
+00:56:01.563 --> 00:56:05.838
+"Eu não sou de tecnologia, não sou bilionário, para poder contratar uma equipe
+
+774
+00:56:05.868 --> 00:56:08.313
+absurda para desenvolver a minha ideia".
+
+775
+00:56:08.748 --> 00:56:13.218
+Está claro para vocês que, de fato, a Elenita, professora Isa trouxe na segunda
+
+776
+00:56:13.308 --> 00:56:18.588
+aula, aquele gráfico da Antrópic mostrando que para várias profissões, as
+
+777
+00:56:18.648 --> 00:56:24.588
+profissões de raciocínio, de escritório, pelo menos 70% das habilidades técnicas do
+
+778
+00:56:24.679 --> 00:56:28.038
+profissional, a inteligência artificial já dá conta de desempenhar.
+
+779
+00:56:28.368 --> 00:56:31.968
+Então quando a gente olha para esses níveis, não importa em qual nível você está
+
+780
+00:56:31.998 --> 00:56:36.949
+agora, é importante você passar por essa aula para você entender o nível que você
+
+781
+00:56:37.008 --> 00:56:42.679
+está e você tomar a decisão do próximo passo, seja ele com quem for, mas vai ser
+
+782
+00:56:42.709 --> 00:56:47.989
+cobrado de vocês esta grande certificação que comprove o nível de
+
+783
+00:56:48.048 --> 00:56:51.798
+maturidade que você tem de inteligência artificial.
+
+784
+00:56:51.888 --> 00:56:56.478
+Para isso, inclusive, na nossa aula quatro, a gente vai encaminhar para vocês um
+
+785
+00:56:56.538 --> 00:57:02.209
+material para que vocês possam até responder um quiz para facilitar esta leitura de
+
+786
+00:57:02.239 --> 00:57:05.959
+vocês dos níveis. Então eu queria aqui, professora Isa, te agradecer.
+
+787
+00:57:05.989 --> 00:57:10.038
+Nós temos o nosso próximo encontro ao vivo, é o momento que a gente ama, que a
+
+788
+00:57:10.098 --> 00:57:13.038
+gente consegue interagir com vocês, tirar dúvida em tempo real.
+
+789
+00:57:13.128 --> 00:57:18.138
+A aula quatro, a gente traz um monte de ferramenta, então no mínimo um maestro
+
+790
+00:57:18.199 --> 00:57:23.088
+vocês vão sair, porque a gente põe muita mão na massa com vocês, porque agora vocês
+
+791
+00:57:23.148 --> 00:57:28.758
+já têm uma base que é muito importante, desde saber melhor utilizar uma LLM,
+
+792
+00:57:29.118 --> 00:57:34.459
+a ter uma leitura de quais são as boas práticas para usar inteligência artificial.
+
+793
+00:57:34.489 --> 00:57:38.538
+Com certeza, e vai ser um prazer estar ao vivo com vocês, mostrando as ferramentas,
+
+794
+00:57:38.554 --> 00:57:42.454
+tirando dúvidas, dar uma nota aqui todas as dúvidas que vocês tiveram durante as
+
+795
+00:57:42.558 --> 00:57:45.648
+aulas, que a gente vai ainda, fazer um correcó ali, não é, Leo?
+
+796
+00:57:45.709 --> 00:57:51.018
+Para poder lembrar alguns conceitos antes de entrar na ferramenta, eventualmente,
+
+797
+00:57:51.048 --> 00:57:52.998
+para relembrar um pouco a cabeça de vocês.
+
+798
+00:57:53.028 --> 00:57:55.848
+Então vai ser um prazer, eu te espero na nossa aula ao vivo.
+
+799
+00:57:55.864 --> 00:58:01.413
+E para você emitir o teu certificado, você vê agora na tela a palavra "automação"
+
+800
+00:58:01.429 --> 00:58:07.143
+como a terceira senha. Lembre, está chegando o nosso encontro mais importante, mais
+
+801
+00:58:07.218 --> 00:58:10.204
+incrível, mais mão na massa, que é a nossa aula quatro.
+
+802
+00:58:10.248 --> 00:58:14.838
+A gente espera, no mínimo, ter despertado uma curiosidade em você e provado para
+
+803
+00:58:14.868 --> 00:58:20.329
+você mesmo que você tem total condições de dominar a inteligência artificial.
+
+804
+00:58:20.388 --> 00:58:23.058
+Até a aula quatro. Tchau.

@@ -1,0 +1,3953 @@
+WEBVTT
+
+1
+00:00:06.284 --> 00:00:10.291
+Seja muito bem-vindo e muito bem-vinda ao nosso segundo encontro.
+
+2
+00:00:10.380 --> 00:00:16.140
+Eu sou Léo Sirino e eu estou aqui direto dos estúdios da Exame, dentro do campus da
+
+3
+00:00:16.230 --> 00:00:21.300
+Saint Paul. E você está vivendo essa jornada conosco porque você está vivenciando a
+
+4
+00:00:21.331 --> 00:00:27.330
+experiência do nosso pré MBA. Lembrando que até o nosso último encontro, você terá
+
+5
+00:00:27.360 --> 00:00:33.135
+vivenciado um total de três a quatro horas de conteúdo, lembrando que o nosso
+
+6
+00:00:33.210 --> 00:00:38.370
+último encontro é ao vivo. E com isso, você vai ter vivenciado um pouco de
+
+7
+00:00:38.610 --> 00:00:44.460
+1% da experiência do que é estudar conosco aqui na Exame Saint Paul.
+
+8
+00:00:44.550 --> 00:00:49.020
+Que bom que você está aqui, porque o nosso desafio juntos é garantir que você
+
+9
+00:00:49.051 --> 00:00:54.511
+consegue cada vez mais liderar os seus projetos, tanto da vida pessoal como do
+
+10
+00:00:54.540 --> 00:00:58.470
+trabalho, utilizando a inteligência artificial.
+
+11
+00:00:58.530 --> 00:01:04.261
+Até porque, segundo esse dado aqui da pesquisa de partnership da Amazon, da AWS,
+
+12
+00:01:04.651 --> 00:01:10.230
+nos próximos anos, mais de 97% das empresas estarão adotando
+
+13
+00:01:10.260 --> 00:01:13.051
+projetos de inteligência artificial.
+
+14
+00:01:13.080 --> 00:01:17.670
+Você tanto sabe disso, que você está aqui nesse pré MBA conosco.
+
+15
+00:01:17.700 --> 00:01:23.640
+E pra dar essa aula de hoje, vocês terão eu, que sou Léo Sirino, sou CMO aqui
+
+16
+00:01:23.670 --> 00:01:28.605
+do grupo Exame Saint Paul, também professor do nosso MBA de Inteligência
+
+17
+00:01:28.650 --> 00:01:33.795
+Artificial. Nos últimos três anos, principalmente, eu mergulhei a minha energia e a
+
+18
+00:01:33.810 --> 00:01:38.505
+minha carreira nessa temática, tanto na área de marketing, vendas, como em outras
+
+19
+00:01:38.610 --> 00:01:43.230
+áreas também. Anterior aqui a liderar a Exame Saint Paul, fiquei por quase uma
+
+20
+00:01:43.320 --> 00:01:48.720
+década no grupo Smart Fit, liderando todo o crescimento da marca nos
+
+21
+00:01:48.750 --> 00:01:52.470
+16 países que ela lidera hoje no mercado.
+
+22
+00:01:52.530 --> 00:01:56.309
+E a aula de hoje, eu tenho um convidado muito especial.
+
+23
+00:01:56.340 --> 00:02:01.920
+Ele também é professor do nosso MBA de Inteligência Artificial, inclusive o
+
+24
+00:02:01.980 --> 00:02:07.110
+módulo especial de Claude, que é o módulo mais desejado no momento.
+
+25
+00:02:07.290 --> 00:02:12.690
+Ele é o professor desse módulo, mas ele é o fundador da Pixel Wolf e
+
+26
+00:02:12.840 --> 00:02:18.510
+também da SabiiA. A Pixel Wolf é uma empresa que terceiriza tanto a área de
+
+27
+00:02:18.540 --> 00:02:24.180
+tecnologia como a implementação de projetos de IA nas suas empresas e a
+
+28
+00:02:24.240 --> 00:02:29.370
+SabiiA é uma empresa de inteligência artificial também voltada pro mercado de
+
+29
+00:02:29.550 --> 00:02:34.560
+educação. Ele tem aí grandes cases dentro de grandes companhias.
+
+30
+00:02:35.010 --> 00:02:39.750
+Já tive o prazer, inclusive, de atuar com ele em outros projetos e é um brilhante
+
+31
+00:02:39.870 --> 00:02:43.680
+professor. Thiago, já aqui no nosso estúdio, bem-vindo, professor.
+
+32
+00:02:43.800 --> 00:02:49.260
+Obrigado, Léo. É um prazer enorme estar aqui com vocês nesse nosso pré MBA
+
+33
+00:02:49.800 --> 00:02:52.770
+e a nossa promessa é que vocês vão aprender muito.
+
+34
+00:02:52.800 --> 00:02:56.040
+Então já se prepara porque a gente vai ter aqui minutos intensos de muita
+
+35
+00:02:56.070 --> 00:03:00.030
+informação, mas claro, sempre com aquela didática que você já conhece.
+
+36
+00:03:00.046 --> 00:03:04.275
+Eu e o Léo vamos nos dedicar aqui nessa parceria pra que você saia daqui muito
+
+37
+00:03:04.275 --> 00:03:08.355
+satisfeita, muito satisfeito, e se sinta mais preparado pra colocar a inteligência
+
+38
+00:03:08.370 --> 00:03:11.940
+artificial no seu dia. Tenho certeza que vai mudar não só a maneira como você
+
+39
+00:03:11.970 --> 00:03:15.570
+trabalha, mas como você vive e pensa também.
+
+40
+00:03:15.870 --> 00:03:19.425
+Comigo e com o Thiago, a aula de hoje tem muita mão na massa, então você vai
+
+41
+00:03:19.425 --> 00:03:24.750
+aproveitar pra aprender, obviamente, mas também para aplicar o teu conhecimento.
+
+42
+00:03:24.781 --> 00:03:29.130
+Pessoal, além do Léo e do Thiago e da professora Isa, que vários de vocês já
+
+43
+00:03:29.190 --> 00:03:34.560
+conhecem, durante a tua jornada no MBA de IA, vocês terão aí mais de
+
+44
+00:03:34.980 --> 00:03:40.860
+40 grandes profissionais que lideram toda a narrativa do nosso MBA de
+
+45
+00:03:40.890 --> 00:03:46.695
+Inteligência Artificial e são profissionais que estão dentro de grandes empresas,
+
+46
+00:03:46.740 --> 00:03:52.590
+liderando a implementação de inteligência artificial no seu dia a dia, além de
+
+47
+00:03:52.620 --> 00:03:57.270
+professores internacionais de parcerias que nós temos com mais de oito
+
+48
+00:03:57.300 --> 00:04:02.791
+universidades ao redor do mundo. E eu começo a aula de hoje já trazendo uma
+
+49
+00:04:02.851 --> 00:04:08.490
+reflexão: é muito importante você tratar essa ferramenta, essa
+
+50
+00:04:08.550 --> 00:04:12.421
+solução, essa tecnologia, não como um software.
+
+51
+00:04:12.451 --> 00:04:16.244
+O que a gente está querendo dizer, e eu diria que essa é a primeira dica muito
+
+52
+00:04:16.260 --> 00:04:21.960
+especial dessa aula. Antigamente, principalmente pra quem tem mais de 30, 40, 50
+
+53
+00:04:22.140 --> 00:04:27.074
+anos, quando você foi aprender a mexer no computador, você tinha que aprender a
+
+54
+00:04:27.150 --> 00:04:32.730
+mexer no sistema do computador. E se você não sabia mexer no Excel, por exemplo, ou
+
+55
+00:04:32.820 --> 00:04:37.620
+no CorelDRAW ou no Photoshop, simplesmente não tinha como você utilizar aquele
+
+56
+00:04:37.650 --> 00:04:43.545
+software. Pois bem, a inteligência artificial deve ser tratada não como
+
+57
+00:04:43.591 --> 00:04:48.074
+um software, mas sim como uma boa pessoa ali do seu lado.
+
+58
+00:04:48.074 --> 00:04:52.845
+O que a gente está querendo dizer com isso? Você precisa se soltar ao máximo.
+
+59
+00:04:53.250 --> 00:04:58.080
+Às vezes a gente fica preso de "eu só vou usar alguma solução quando eu tiver muito
+
+60
+00:04:58.140 --> 00:05:03.781
+conhecimento no tema". E essa tecnologia não está ali pra te julgar, ela está ali
+
+61
+00:05:03.810 --> 00:05:08.910
+pra ajudar você no processo. Então a primeira dica aqui muito importante é:
+
+62
+00:05:09.420 --> 00:05:13.770
+pensa no que você quer resolver com inteligência artificial.
+
+63
+00:05:13.860 --> 00:05:19.410
+Imagina que ela é uma pessoa. Se você fosse pedir pra essa pessoa resolver aquele
+
+64
+00:05:19.440 --> 00:05:24.885
+problema, como você pediria? Faz esse mesmo pedido pra essa tecnologia.
+
+65
+00:05:25.080 --> 00:05:30.195
+Para de ter aquela preocupação de ser julgado, se solta nesse processo de
+
+66
+00:05:30.210 --> 00:05:34.470
+aprendizado. As ferramentas que a gente vai trazer aqui hoje, é muito importante
+
+67
+00:05:34.485 --> 00:05:39.300
+que você coloque a mão na massa e não fique naquele lugar de depois que eu aprender
+
+68
+00:05:39.330 --> 00:05:44.281
+mais, eu vou começar a mexer. Essa tecnologia não está aqui pra te julgar, ela está
+
+69
+00:05:44.310 --> 00:05:50.130
+aqui pra ajudar você a resolver os problemas, as suas tarefas do seu dia a
+
+70
+00:05:50.190 --> 00:05:54.150
+dia. E agora pra começar, eu vou passar aqui pro Thiago pra gente ter um
+
+71
+00:05:54.180 --> 00:05:59.550
+aquecimento aqui. Vamos entender o quão vocês já estão utilizando a
+
+72
+00:05:59.610 --> 00:06:04.890
+inteligência artificial no dia a dia de vocês. Bora lá, Thiago.
+
+73
+00:06:04.994 --> 00:06:09.150
+Bora, Léo. A gente está aí com as nossas 10 primeiras IAs.
+
+74
+00:06:09.195 --> 00:06:13.560
+Esse aqui é testezinho, um quiz pra você ir respondendo o que você já está
+
+75
+00:06:13.591 --> 00:06:17.039
+utilizando na prática ou de repente você conhece, teve ali um bom uso.
+
+76
+00:06:17.070 --> 00:06:22.920
+Não precisa ser aprofundado, mas o primeiro deles aqui, que é o mais famoso de
+
+77
+00:06:22.951 --> 00:06:27.884
+todos, que introduziu a inteligência artificial no assunto do nosso dia a dia,
+
+78
+00:06:28.095 --> 00:06:31.710
+imagino que você já saiba, que é o ChatGPT.
+
+79
+00:06:31.831 --> 00:06:36.015
+Ele que começou apenas como um chat, mas hoje esse nome talvez possa até começar a
+
+80
+00:06:36.061 --> 00:06:40.710
+ficar um pouquinho desatualizado, já que ele tem toda uma miríade de soluções pra
+
+81
+00:06:40.831 --> 00:06:45.061
+que você melhore a sua produtividade, melhore os seus processos.
+
+82
+00:06:45.091 --> 00:06:47.895
+Depois a gente tem esse aqui que parece vários livrinhos.
+
+83
+00:06:48.061 --> 00:06:53.311
+Ele até acaba dando uma dica pra gente do que se trata, é o Perplexity, uma
+
+84
+00:06:53.370 --> 00:06:58.081
+ferramenta pra pesquisa muito robusta, excelente pra que você busque informações
+
+85
+00:06:58.140 --> 00:07:03.210
+que são verificáveis e que você garanta que toda informação que está sendo exibida
+
+86
+00:07:03.240 --> 00:07:08.130
+pra você tem uma fonte de verdade verificável facilmente através dele.
+
+87
+00:07:08.160 --> 00:07:13.260
+Depois nós temos esse aqui que tem um G, também uma dicazinha do que temos pela
+
+88
+00:07:13.380 --> 00:07:19.201
+frente, o Gamma, que permite a criação de apresentações com muita facilidade e que
+
+89
+00:07:19.260 --> 00:07:24.331
+tem também o diferencial de conseguir se integrar a outras IAs, como por exemplo, o
+
+90
+00:07:24.360 --> 00:07:30.300
+próprio Claude. Seguindo em frente, esse aqui talvez nem tão conhecido, mas
+
+91
+00:07:30.360 --> 00:07:34.320
+tenho quase certeza que você já entrou numa chamada, numa call e viu uma
+
+92
+00:07:34.350 --> 00:07:39.811
+notificação dele aqui, que é o Fireflies, excelente pra conseguir registrar tudo
+
+93
+00:07:39.870 --> 00:07:44.190
+que acontece nas suas reuniões e inclusive você consegue integrar ele com CRMs.
+
+94
+00:07:44.250 --> 00:07:50.040
+Então tudo que é falado na reunião já gera um acionável, já movimenta ali os seus
+
+95
+00:07:50.100 --> 00:07:53.925
+cards, sua pipeline, se for o caso, mais voltado pra vendas também.
+
+96
+00:07:54.151 --> 00:07:59.745
+Seguindo em frente, ele aí que está superhypado, que todo mundo está falando como é
+
+97
+00:07:59.760 --> 00:08:04.290
+que utiliza, que gerou inclusive uma revolução na maneira como a tecnologia é
+
+98
+00:08:04.320 --> 00:08:09.120
+desenvolvida através do Cloud Code, mas que torna isso muito acessível.
+
+99
+00:08:09.210 --> 00:08:13.410
+Já falei aqui o spoiler pra vocês, a gente está falando do Claude, do nosso
+
+100
+00:08:13.470 --> 00:08:17.010
+Cláudio, Claudinho pros mais íntimos.
+
+101
+00:08:17.040 --> 00:08:22.951
+Na sequência, o nosso Manychat, excelente pra que você crie automações
+
+102
+00:08:22.980 --> 00:08:25.980
+integradas ao seu Instagram, ao seu WhatsApp.
+
+103
+00:08:26.010 --> 00:08:30.510
+Sabe quando você faz um comentário num post do Instagram e vem uma DM automática
+
+104
+00:08:30.540 --> 00:08:36.120
+pra você? Muito provavelmente é o Manychat que está fazendo essa integração junto
+
+105
+00:08:36.151 --> 00:08:42.135
+com o Instagram. A gente tem aqui esses três pontinhos, que é o Replit,
+
+106
+00:08:42.240 --> 00:08:46.845
+pra você que quer criar soluções, aplicativos, sistemas de uma maneira intuitiva e
+
+107
+00:08:46.890 --> 00:08:51.600
+já garantir que eles vão estar disponíveis e podem ser disponibilizados pra outros
+
+108
+00:08:51.660 --> 00:08:56.370
+usuários utilizarem também. Seguindo então, a gente tem esse aqui, que parece um
+
+109
+00:08:56.401 --> 00:09:01.651
+botãozinho de pause ou quem sabe um 11, é o ElevenLabs, que tem
+
+110
+00:09:01.860 --> 00:09:06.240
+uma solução pra criação de áudios, narrações, muito completa.
+
+111
+00:09:06.675 --> 00:09:11.175
+Então pra você que quer trazer, de repente até gerar podcasts, por exemplo, ou ter
+
+112
+00:09:11.220 --> 00:09:16.110
+uma narração dos seus vídeos, o ElevenLabs é o que traz as melhores soluções pra
+
+113
+00:09:16.200 --> 00:09:21.870
+esse tipo de problema. Seguindo aqui então, a gente vai ter esse
+
+114
+00:09:21.901 --> 00:09:27.720
+daqui, que talvez seja o menos conhecido aqui dessas logos, mas que é o
+
+115
+00:09:27.780 --> 00:09:33.059
+HeyGen. HeyGen permite que você crie avatares pra que de repente você, inclusive a
+
+116
+00:09:33.090 --> 00:09:37.710
+gente tem aqui na Exame alguns creators que boa parte dos vídeos que são gravados
+
+117
+00:09:37.740 --> 00:09:40.740
+de reações são gerados com avatares virtuais.
+
+118
+00:09:40.770 --> 00:09:44.610
+Então ele permite que você crie uma espécie de clone digital seu pra que grave
+
+119
+00:09:44.640 --> 00:09:47.550
+conteúdos simplesmente inserindo o roteiro.
+
+120
+00:09:47.640 --> 00:09:52.890
+E aqui pra finalizar, essa nossa mãozinha aqui que é Humanos.
+
+121
+00:09:52.920 --> 00:09:57.750
+Ele foi recentemente, inclusive, comprado pela Meta e tem uma integração muito
+
+122
+00:09:57.780 --> 00:10:02.160
+legal com o Instagram e com a própria plataforma de anúncios da Meta.
+
+123
+00:10:02.190 --> 00:10:05.686
+Sabe que a gente, Thiago, do mercado publicitário, ficou mega feliz com essa
+
+124
+00:10:05.730 --> 00:10:09.285
+aquisição, porque teve a integração do Humanos com o Instagram.
+
+125
+00:10:09.690 --> 00:10:13.681
+E aí logo depois o governo chinês exige a devolução da plataforma.
+
+126
+00:10:14.145 --> 00:10:18.030
+Então a integração ainda está valendo, inclusive, em uma das aulas vocês vão
+
+127
+00:10:18.045 --> 00:10:20.790
+vivenciar essa integração do Instagram aqui com a gente.
+
+128
+00:10:21.270 --> 00:10:25.755
+Exatamente. E algo interessante, tanto que se você for entrar no Humanos agora,
+
+129
+00:10:25.830 --> 00:10:29.175
+você vai ver que ele está falando que talvez você perca algumas informações,
+
+130
+00:10:29.250 --> 00:10:33.570
+pedindo pra você fazer backup. E é muito legal que o Léo está trazendo isso, porque
+
+131
+00:10:33.690 --> 00:10:37.950
+isso já mostra, demonstra a natureza dos cursos dentro da Exame.
+
+132
+00:10:38.070 --> 00:10:43.125
+IA está evoluindo muito rápido e é praticamente impossível se manter atualizado sem
+
+133
+00:10:43.200 --> 00:10:47.925
+ter alguém fazendo essa curadoria em tempo real de tudo que acontece nesse mundo.
+
+134
+00:10:48.480 --> 00:10:52.860
+Coisa superlegal, falando em velocidade, em como as coisas evoluem rapidamente.
+
+135
+00:10:52.920 --> 00:10:57.165
+Gente, dá uma olhadinha nesse gráfico aqui, que a duração de tarefas que a IA
+
+136
+00:10:57.181 --> 00:11:01.440
+consegue realizar, ela está dobrando a cada sete meses.
+
+137
+00:11:01.740 --> 00:11:07.290
+Assim, dobrando a cada sete meses é uma escala exponencial absurda.
+
+138
+00:11:07.350 --> 00:11:12.151
+Significa que é o tempo que uma IA consegue trabalhar sozinha sem nenhum tipo de
+
+139
+00:11:12.181 --> 00:11:15.510
+intervenção humana. Olha só que curva mais maluca.
+
+140
+00:11:15.540 --> 00:11:20.610
+Ali no topo a gente tem o Claude Opus 4.6, depois do 4.6 a gente já teve o
+
+141
+00:11:20.640 --> 00:11:24.540
+lançamento do 4.8, a gente já está falando do Opus 5.
+
+142
+00:11:24.600 --> 00:11:29.100
+Então pouquinho tempo a gente já tem esse gráfico, inclusive, desatualizado e essa
+
+143
+00:11:29.130 --> 00:11:34.512
+curva continua crescendo. Agora vamos dar uma olhadinha aqui nos cargos mais
+
+144
+00:11:34.542 --> 00:11:36.883
+expostos à inteligência artificial.
+
+145
+00:11:37.363 --> 00:11:42.432
+A gente tem esse gráfico aqui, nesse ponto azul, é o potencial que a IA possui de
+
+146
+00:11:42.492 --> 00:11:47.863
+conseguir atender essas áreas. Então a gente tem ali gestão, negócios e finanças,
+
+147
+00:11:47.922 --> 00:11:52.542
+matemática e questões computacionais, arquitetura e engenharia.
+
+148
+00:11:52.557 --> 00:11:53.457
+Vocês percebam que
+
+149
+00:11:54.702 --> 00:11:59.937
+a linha azul está muito próxima da borda, significa que tem potencial muito grande
+
+150
+00:11:59.952 --> 00:12:04.902
+da IA atuar nessas esferas. Quando a gente olha ali também pra office e admin, que
+
+151
+00:12:04.932 --> 00:12:09.762
+são assuntos de backoffice, de escritório, de administração, também está quase lá
+
+152
+00:12:09.822 --> 00:12:14.982
+na ponta. Mas quando a gente olha pro gráfico vermelho, é o quanto de fato a gente
+
+153
+00:12:15.012 --> 00:12:19.212
+está utilizando, o quanto que a gente está explorando de todo esse potencial.
+
+154
+00:12:19.752 --> 00:12:23.697
+E a gente consegue notar como existem áreas ali que estão sendo pouquíssimo
+
+155
+00:12:23.772 --> 00:12:27.522
+exploradas. Então ao mesmo tempo que você tem a parte de matemática e de
+
+156
+00:12:27.552 --> 00:12:31.842
+computação, ali um pouco mais avançadas, ainda claro, muito longe do potencial,
+
+157
+00:12:32.292 --> 00:12:36.642
+você tem áreas como, por exemplo, a instalação e reparos, que é praticamente zero
+
+158
+00:12:36.702 --> 00:12:42.492
+uso. Então a gente tem um potencial de exploração da inteligência artificial
+
+159
+00:12:42.552 --> 00:12:46.422
+muito grande, a gente está só no começo dessa curva.
+
+160
+00:12:46.482 --> 00:12:52.123
+Bom, e Léo, qual é a pergunta que a gente mais faz desde 2002, que foi quando o
+
+161
+00:12:52.333 --> 00:12:56.803
+ChatGPT foi lançado, foi disponibilizado pras massas?
+
+162
+00:12:56.817 --> 00:13:01.782
+Pessoal, a gente recebe aqui como professores e como time da Exame, a todo momento
+
+163
+00:13:01.797 --> 00:13:03.942
+essa pergunta. E vocês devem se fazer também.
+
+164
+00:13:04.602 --> 00:13:08.337
+Qual deve ser a melhor IA pra tua área de atuação?
+
+165
+00:13:08.381 --> 00:13:12.852
+A gente começou ali com o professor Tiago trazendo 10 soluções, entre ferramentas e
+
+166
+00:13:12.972 --> 00:13:17.142
+LLMs, pra já saber quais vocês já estão usando no dia a dia.
+
+167
+00:13:17.623 --> 00:13:22.467
+E a gente tem essa mania de sempre perguntar qual IA eu deveria usar pra marketing,
+
+168
+00:13:22.812 --> 00:13:26.712
+qual IA eu deveria usar pra área jurídica, pra engenharia, pra arquitetura.
+
+169
+00:13:27.192 --> 00:13:31.842
+E aqui é mais um aprendizado antes do mão na massa, que a gente precisa trazer pra
+
+170
+00:13:31.902 --> 00:13:37.377
+vocês. A pergunta está errada. A gente não deve perguntar qual é a
+
+171
+00:13:37.392 --> 00:13:43.121
+melhor IA para uma área de atuação, seja advocacia, marketing,
+
+172
+00:13:43.137 --> 00:13:48.373
+engenharia. Vamos fazer uma reflexão aqui, até pra gente não esquecer mais isso.
+
+173
+00:13:48.462 --> 00:13:53.787
+A gente nunca olhou pra um smartphone, por exemplo, perguntando qual que é mais
+
+174
+00:13:53.863 --> 00:13:59.742
+ideal, se você é de marketing, engenharia, arquitetura ou um empreendedor.
+
+175
+00:13:59.772 --> 00:14:04.812
+O que a gente faz geralmente? Você escolhe qual smartphone você gosta mais.
+
+176
+00:14:05.262 --> 00:14:10.992
+E aqui entre as LLMs, Large Language Model, esses sistemas
+
+177
+00:14:11.113 --> 00:14:16.287
+complexos que nós temos, você vai acabar escolhendo, inclusive no seu dia a dia,
+
+178
+00:14:16.692 --> 00:14:22.002
+qual você tem mais afinidade, se você prefere mais o ChatGPT, o Claude, o
+
+179
+00:14:22.032 --> 00:14:25.542
+DeepSeek, o Grok, o Manus, não importa.
+
+180
+00:14:25.572 --> 00:14:31.123
+E você acaba, quando você inclusive vai escolher o teu smartphone, fazendo essa
+
+181
+00:14:31.152 --> 00:14:36.822
+referência, você acaba colocando os aplicativos que fazem sentido pra
+
+182
+00:14:36.852 --> 00:14:42.462
+você. Exemplo prático disso. Se você tem um filho e você entrega um smartphone pra
+
+183
+00:14:42.583 --> 00:14:47.411
+ele, geralmente você vai ter o WhatsApp, pra você conseguir conversar com ele, e
+
+184
+00:14:47.502 --> 00:14:50.157
+deixa ali o YouTube com aquele controle de idade.
+
+185
+00:14:50.336 --> 00:14:54.972
+Teu filho vai crescendo, nesse mesmo smartphone, já pode ter o Instagram, se ele
+
+186
+00:14:55.032 --> 00:15:00.748
+tiver rede social, o Spotify que ele ouve músicas, Uber pra ele voltar do colégio,
+
+187
+00:15:00.762 --> 00:15:06.027
+já vai tendo mais autonomia. Até que depois olha pro teu smartphone, que é essa
+
+188
+00:15:06.132 --> 00:15:11.412
+loucura, que são todas as soluções que atendem a sua necessidade.
+
+189
+00:15:11.833 --> 00:15:17.142
+A gente nunca tem uma solução, ou um smartphone, ou um aplicativo, que
+
+190
+00:15:17.172 --> 00:15:22.108
+resolve toda a nossa vida. A gente acaba tendo soluções que resolvem
+
+191
+00:15:22.363 --> 00:15:28.032
+micromomentos da nossa vida. E o que isso tem a ver com IA? É a mesma coisa pra IA.
+
+192
+00:15:28.542 --> 00:15:34.512
+Nunca é uma IA única e isolada que vai resolver ou
+
+193
+00:15:34.572 --> 00:15:38.892
+responder a sua dor. A IA é apenas a plataforma.
+
+194
+00:15:38.952 --> 00:15:44.623
+Você precisa parar de perguntar e refletir qual ferramenta eu uso pra marketing, e
+
+195
+00:15:44.682 --> 00:15:49.451
+se perguntar qual problema de marketing eu quero resolver.
+
+196
+00:15:49.483 --> 00:15:54.942
+Porque daí pra cada problema, você pode ter uma solução ideal pra aquele
+
+197
+00:15:54.972 --> 00:16:00.613
+micromomento, pra aquele microproblema, pra você conseguir extrair o melhor do
+
+198
+00:16:00.702 --> 00:16:03.432
+potencial da inteligência artificial.
+
+199
+00:16:03.733 --> 00:16:08.608
+Então a partir de hoje, eu espero que vocês, alunos, não tenham mais a reflexão
+
+200
+00:16:08.983 --> 00:16:14.652
+qual IA ideal pra jurídico, mas você pense qual é a melhor IA para rever contratos,
+
+201
+00:16:15.102 --> 00:16:19.542
+qual é a melhor IA pra fazer análise de riscos, qual é a melhor IA pra fazer
+
+202
+00:16:19.602 --> 00:16:24.642
+consulta ao andamento de processo junto à Justiça.
+
+203
+00:16:24.672 --> 00:16:30.537
+Então pra cada problema ou oportunidade que você queira resolver, você vai
+
+204
+00:16:30.583 --> 00:16:35.083
+entender qual ferramenta ou solução você deve usar.
+
+205
+00:16:35.096 --> 00:16:40.452
+Então a ferramenta vem depois, o problema vem primeiro.
+
+206
+00:16:40.483 --> 00:16:45.567
+E aqui eu já peço pra vocês, até pra produção, colocar tanto o meu Instagram como o
+
+207
+00:16:45.583 --> 00:16:51.012
+Instagram do professor Tiago, pra que vocês possam mandar pra gente a
+
+208
+00:16:51.072 --> 00:16:56.772
+resposta pra essa pergunta: qual problema você quer resolver
+
+209
+00:16:56.833 --> 00:16:59.562
+utilizando inteligência artificial?
+
+210
+00:16:59.892 --> 00:17:04.392
+Porque no momento da nossa aula ao vivo, a gente vai trabalhar pra resolver ao
+
+211
+00:17:04.482 --> 00:17:07.482
+máximo os problemas que vocês trouxeram.
+
+212
+00:17:07.542 --> 00:17:13.152
+E vocês vão aprender conosco aqui hoje que na maioria das vezes, a melhor solução
+
+213
+00:17:13.242 --> 00:17:18.373
+não é uma ferramenta pronta de mercado, mas sim, a solução que você vai aprender
+
+214
+00:17:18.402 --> 00:17:24.208
+conosco a construir. Então, mais importante, qual problema
+
+215
+00:17:24.222 --> 00:17:27.717
+você quer resolver utilizando inteligência artificial.
+
+216
+00:17:28.092 --> 00:17:33.912
+E esse problema pode ser resolvido, muitas vezes, através de um assistente, de
+
+217
+00:17:33.972 --> 00:17:39.612
+uma automação ou de um agente. 2026 é o ano que a gente ouviu falar
+
+218
+00:17:39.642 --> 00:17:44.172
+muito dos agentes. Por que isso está acontecendo?
+
+219
+00:17:44.202 --> 00:17:48.926
+E vamos trazer mais essa teoria, esse conteúdo que é importante os alunos terem,
+
+220
+00:17:49.077 --> 00:17:49.542
+Tiago.
+
+221
+00:17:49.557 --> 00:17:51.942
+O primeiro passo, Léo, é entender o conceito.
+
+222
+00:17:52.032 --> 00:17:56.622
+A gente quando fala de inteligência artificial, a gente pensa que essa grande caixa
+
+223
+00:17:56.772 --> 00:18:01.721
+engloba, de fato, várias coisas, mas existem maneiras de você conseguir utilizar, e
+
+224
+00:18:01.752 --> 00:18:06.342
+nem tudo você vai precisar de um superagente pra resolução de problemas.
+
+225
+00:18:06.972 --> 00:18:10.992
+O primeiro deles, que é importante entender, é a noção de assistentes.
+
+226
+00:18:11.322 --> 00:18:16.002
+O que significa isso? Muito provavelmente quando você utilizou o ChatGPT pela
+
+227
+00:18:16.032 --> 00:18:20.337
+primeira vez, ou quem sabe um Gemini, você utilizou ele como assistente, que
+
+228
+00:18:20.412 --> 00:18:25.662
+basicamente é aquela conversa onde você faz perguntas e ele te responde, inclusive
+
+229
+00:18:25.722 --> 00:18:28.632
+com comandos ali que você dá de forma direta.
+
+230
+00:18:28.692 --> 00:18:31.332
+Você dá o contexto, ele te devolve uma pergunta.
+
+231
+00:18:31.392 --> 00:18:35.922
+Se você nunca mais abrir aquela ferramenta, ela não vai entrar em contato com você
+
+232
+00:18:36.013 --> 00:18:39.522
+perguntando se aquela tua pergunta, aquela questão, foi resolvida ou não.
+
+233
+00:18:39.852 --> 00:18:45.402
+Então ele vai agir sempre de uma maneira passiva, respondendo as suas perguntas, as
+
+234
+00:18:45.432 --> 00:18:50.202
+suas questões, as suas pesquisas. Uma evolução disso é a automação.
+
+235
+00:18:50.232 --> 00:18:55.303
+A automação, é claro, ela não está simplesmente ligada à IA, já é um conceito
+
+236
+00:18:55.332 --> 00:18:59.172
+relativamente antigo, mas é quando você cria esses sistemas que eles estão
+
+237
+00:18:59.202 --> 00:19:02.442
+programados pra executar tarefas.
+
+238
+00:19:02.502 --> 00:19:06.912
+E você tem regras muito bem definidas de como essas tarefas vão ser executadas.
+
+239
+00:19:07.092 --> 00:19:11.352
+E é superimportante, até pra qualidade da automação, que essas regras não se
+
+240
+00:19:11.382 --> 00:19:15.162
+alterem. Então a automação não vai evoluir por conta própria.
+
+241
+00:19:15.192 --> 00:19:19.482
+Você entende como é um processo e faz com que ele seja replicável de forma
+
+242
+00:19:19.542 --> 00:19:23.922
+contínua. E claro, quando a gente fala de automação, eventualmente eles estão
+
+243
+00:19:23.952 --> 00:19:28.242
+ligados a alguns gatilhos. Então, por exemplo, quando você chega em casa e uma luz
+
+244
+00:19:28.257 --> 00:19:32.352
+se acende automaticamente, é uma automação que está sendo aplicada ali pra que uma
+
+245
+00:19:32.442 --> 00:19:36.763
+tarefa seja executada. Então note, as regras são bem definidas.
+
+246
+00:19:36.822 --> 00:19:39.972
+Ao chegar em casa, acender a luz, por exemplo.
+
+247
+00:19:40.032 --> 00:19:44.622
+Agora quando a gente fala de agente, que é essa buzzword, essa palavra aí que está
+
+248
+00:19:44.712 --> 00:19:49.362
+tão em alta atualmente, o que de fato é o agente?
+
+249
+00:19:49.422 --> 00:19:55.122
+São sistemas que conseguem entender um objetivo e agem de forma mais proativa.
+
+250
+00:19:55.182 --> 00:19:58.272
+Inclusive, eles podem orquestrar outros agentes.
+
+251
+00:19:58.303 --> 00:20:03.056
+O agente é basicamente esse sistema que consegue agir por conta própria e ele
+
+252
+00:20:03.072 --> 00:20:08.442
+consegue tomar decisões também. Além disso, é importante que ele possa evoluir.
+
+253
+00:20:08.532 --> 00:20:14.082
+Assim dessa forma, ele se torna cada vez melhor, se adapta aos processos e garante
+
+254
+00:20:14.142 --> 00:20:18.312
+que o objetivo seja cumprido. Esse é o mais importante quando a gente fala de
+
+255
+00:20:18.402 --> 00:20:22.272
+agente. Ele não segue simplesmente pequenas regras, mas ele entende o objetivo e
+
+256
+00:20:22.303 --> 00:20:25.332
+percorre meios pra conseguir alcançá-los.
+
+257
+00:20:25.362 --> 00:20:28.902
+Pra que a gente tenha um entendimento ainda melhor do que é importante pra
+
+258
+00:20:28.932 --> 00:20:33.312
+construção de um agente, que de repente pode trabalhar pra você, seja num viés
+
+259
+00:20:33.342 --> 00:20:38.592
+pessoal, num viés profissional, o primeiro ponto é que ele precisa ter um cérebro.
+
+260
+00:20:39.162 --> 00:20:43.902
+Então ele precisa de fato conseguir ter essa reflexão, ter o entendimento do que
+
+261
+00:20:43.962 --> 00:20:49.662
+está acontecendo, e muita das vezes a gente vai utilizar modelos do Claude, que
+
+262
+00:20:49.692 --> 00:20:51.732
+fazem parte da Anthropic ou da OpenAI.
+
+263
+00:20:51.792 --> 00:20:55.632
+O modelo hoje, sendo bem sincero, nem é tão importante assim, porque todos eles têm
+
+264
+00:20:55.662 --> 00:20:59.622
+um nível de performance tão alto, que dificilmente você vai notar uma diferença
+
+265
+00:20:59.652 --> 00:21:01.572
+muito significativa pra esses agentes.
+
+266
+00:21:01.692 --> 00:21:05.922
+No entanto, claro, alguns vão ser mais recomendados e a gente vai ver um pouquinho
+
+267
+00:21:05.937 --> 00:21:09.252
+mais disso nos próximos momentos de aula.
+
+268
+00:21:09.312 --> 00:21:14.322
+Superimportante pra que um agente consiga estabelecer esses objetivos, ter esses
+
+269
+00:21:14.352 --> 00:21:18.882
+objetivos estabelecidos e consiga também evoluir, é ter uma memória.
+
+270
+00:21:19.152 --> 00:21:23.922
+Então ele precisa saber o que aconteceu no passado, refletir sobre aquilo, assim
+
+271
+00:21:24.013 --> 00:21:28.752
+que novas decisões são tomadas, ele registra essas decisões e você cria um loop
+
+272
+00:21:28.872 --> 00:21:33.882
+contínuo de aprimoramento. E é importante que ele consiga, inclusive, receber seus
+
+273
+00:21:33.912 --> 00:21:36.763
+feedbacks a respeito do que funcionou, do que não funcionou.
+
+274
+00:21:36.792 --> 00:21:41.112
+Tudo isso vai sendo guardado na memória e vai criando-se ali uma espécie de
+
+275
+00:21:41.142 --> 00:21:44.862
+processo de machine learning, onde a máquina, onde esse agente está de fato
+
+276
+00:21:44.892 --> 00:21:46.872
+aprendendo com o que está acontecendo ali.
+
+277
+00:21:46.902 --> 00:21:52.344
+Depois a gente vai ter Então as ferramentas que esse nosso agente vai poder
+
+278
+00:21:52.374 --> 00:21:54.774
+utilizar. São as conexões que ele possui.
+
+279
+00:21:54.804 --> 00:21:59.528
+Então, de repente, ele vai se conectar ao seu e-mail, vai se conectar ao Fireflies,
+
+280
+00:21:59.574 --> 00:22:03.789
+por exemplo, pra buscar uma informação que ele precisa e assim por diante.
+
+281
+00:22:03.789 --> 00:22:07.884
+Então o agente, além de ele possuir um cérebro, a gente diz que ele também possui
+
+282
+00:22:07.914 --> 00:22:11.754
+os olhos pra que ele consiga observar o que está acontecendo e ele também possui
+
+283
+00:22:11.844 --> 00:22:15.894
+braços, pra que ele faça essas execuções por você.
+
+284
+00:22:15.954 --> 00:22:20.154
+Afinal de contas, diferente do assistente que apenas te indica como realizar uma
+
+285
+00:22:20.184 --> 00:22:23.574
+tarefa, o agente pode executar essa tarefa, de fato.
+
+286
+00:22:23.604 --> 00:22:29.350
+O assistente te dá uma sugestão de e-mail, já o agente pode, inclusive, enviar esse
+
+287
+00:22:29.364 --> 00:22:34.584
+e-mail por você. E pra que a construção do agente seja efetiva, é superimportante
+
+288
+00:22:34.600 --> 00:22:37.044
+que você documente o seu processo.
+
+289
+00:22:37.194 --> 00:22:42.954
+Então você vai escrever o que você faz em cada etapa, em cada tarefa, cada fluxo de
+
+290
+00:22:42.984 --> 00:22:47.184
+trabalho. Você precisa ter um entendimento muito completo, entender quais são essas
+
+291
+00:22:47.274 --> 00:22:51.984
+regrinhas que precisam ser aplicadas, onde que elas quebram, e deixar tudo isso
+
+292
+00:22:52.074 --> 00:22:56.394
+muito bem definido pra que o agente consiga executá-las.
+
+293
+00:22:56.454 --> 00:23:01.614
+E olha só o que você precisa entender quando você está fazendo essa documentação de
+
+294
+00:23:01.704 --> 00:23:06.654
+processo. Você vai encontrar formas de tornar o processo mais eficiente antes mesmo
+
+295
+00:23:06.684 --> 00:23:11.424
+de qualquer automação. É supernatural que quando você pensa sobre um processo,
+
+296
+00:23:11.484 --> 00:23:15.324
+antes mesmo de colocar a mão na massa, que você já começa a notar alguns pontos de
+
+297
+00:23:15.384 --> 00:23:19.464
+melhoria, alguns furinhos, porque afinal de contas, quando você documenta, é como
+
+298
+00:23:19.494 --> 00:23:23.784
+aquela coisa de você precisar ensinar pra alguém que você entende se, de fato, você
+
+299
+00:23:23.814 --> 00:23:26.049
+sabe sobre aquele assunto. Com o processo é a mesma coisa.
+
+300
+00:23:26.515 --> 00:23:29.364
+Se você consegue documentar ele do começo ao fim, quer dizer que ele está
+
+301
+00:23:29.394 --> 00:23:34.329
+fechadinho. Se de repente você precisa fazer algumas pequenas gambiarras pra que
+
+302
+00:23:34.374 --> 00:23:38.725
+ele feche, então provavelmente esse processo precisa ser aprimorado e durante essa
+
+303
+00:23:38.754 --> 00:23:41.244
+documentação, isso se torna mais evidente.
+
+304
+00:23:41.274 --> 00:23:45.204
+Bom, você encontra também essas etapas que são desnecessárias, de repente, tem o
+
+305
+00:23:45.219 --> 00:23:47.934
+aprimoramento do processo, tornando ele um pouco mais simples.
+
+306
+00:23:47.994 --> 00:23:52.899
+Afinal de contas, você precisa ensinar isso pra que esse agente realize isso.
+
+307
+00:23:52.914 --> 00:23:57.234
+Você vai consolidar as tarefas que são redundantes, que são repetitivas e
+
+308
+00:23:57.249 --> 00:24:02.259
+esclarecer pontos de decisão. Então em determinados pontos do seu processo você vai
+
+309
+00:24:02.515 --> 00:24:08.019
+ter clareza: "ok, aqui eu preciso ir pra direção X ou direção Y", onde que estão
+
+310
+00:24:08.064 --> 00:24:12.369
+essas bifurcações pra que o agente, através do cérebro, dessa integração que ele
+
+311
+00:24:12.384 --> 00:24:16.015
+vai possuir com as IAs, consiga tomar essa decisão por você.
+
+312
+00:24:16.044 --> 00:24:21.819
+Bom, depois de documentar e otimizar, você precisa avaliar se, de fato, faz sentido
+
+313
+00:24:22.434 --> 00:24:25.493
+adicionar um agente ou até mesmo uma automação pra esse processo.
+
+314
+00:24:25.524 --> 00:24:28.225
+E aqui a gente tem quatro características principais.
+
+315
+00:24:28.239 --> 00:24:30.984
+A primeira delas é alta frequência.
+
+316
+00:24:30.999 --> 00:24:35.604
+A gente foca em criar um agente pra coisas que acontecem com uma frequência alta.
+
+317
+00:24:35.784 --> 00:24:37.284
+Então que estão sendo repetitivas.
+
+318
+00:24:37.314 --> 00:24:41.409
+Então um relatório que você tem que enviar todo dia, de repente, toda semana, uma
+
+319
+00:24:41.484 --> 00:24:46.975
+tarefa que ocupa essas horas do seu tempo, que é exatamente o segundo ponto, alto
+
+320
+00:24:47.034 --> 00:24:51.879
+consumo de tempo. O que você faz com muita repetição e que te consome tempo?
+
+321
+00:24:52.225 --> 00:24:56.424
+É aí que a gente começa a trazer eficiência pro nosso processo através da criação
+
+322
+00:24:56.454 --> 00:25:01.794
+de agentes. Terceiro ponto superimportante é ter dados estruturados.
+
+323
+00:25:01.823 --> 00:25:07.508
+Pra que uma IA consiga trabalhar, ter uma qualidade de dados
+
+324
+00:25:07.644 --> 00:25:12.804
+alta, dados que são confiáveis, que são facilmente acessíveis, é um dos pontos mais
+
+325
+00:25:12.834 --> 00:25:16.164
+importantes pra garantir que você não vai ter alucinações.
+
+326
+00:25:16.404 --> 00:25:20.064
+Que é quando a IA começa a inventar coisas que não estão registradas em lugar
+
+327
+00:25:20.124 --> 00:25:23.454
+nenhum. E pra finalizar, métricas de sucesso claras.
+
+328
+00:25:23.844 --> 00:25:29.484
+Como é que você entende que todo esse processo teve sucesso, foi bem realizado?
+
+329
+00:25:29.515 --> 00:25:34.524
+Como é que você avalia que, por exemplo, um relatório que foi gerado por IA cumpriu
+
+330
+00:25:34.584 --> 00:25:39.594
+o seu objetivo? Essas métricas são superimportantes pra que você crie esse loop,
+
+331
+00:25:39.654 --> 00:25:44.484
+esse ciclo de melhoria constante e assim o seu agente vai se tornando cada vez
+
+332
+00:25:44.544 --> 00:25:50.454
+melhor a cada uso. Por exemplo, dentro de vendas, Léo, a gente tem aqui quatro
+
+333
+00:25:51.294 --> 00:25:54.969
+pontos de como que a gente poderia entender essa integração.
+
+334
+00:25:55.014 --> 00:25:59.754
+Quais são esses objetivos? Então, por exemplo, aqui a gente poderia definir um
+
+335
+00:25:59.784 --> 00:26:02.634
+objetivo inicial que é a qualificação de leads.
+
+336
+00:26:02.665 --> 00:26:05.588
+Quando a gente fala de qualificação de leads, provavelmente a gente vai ter um
+
+337
+00:26:05.634 --> 00:26:10.194
+agente que vai estar integrado ao LinkedIn, vai entender qual que é o histórico
+
+338
+00:26:10.254 --> 00:26:13.614
+desse nosso lead, qual que de repente é o faturamento.
+
+339
+00:26:13.674 --> 00:26:17.709
+Afinal de contas, muitas dessas informações estão disponíveis publicamente.
+
+340
+00:26:18.174 --> 00:26:20.394
+Então esse é um objetivo específico.
+
+341
+00:26:20.424 --> 00:26:23.454
+A gente não vai olhar simplesmente pra um agente de vendas.
+
+342
+00:26:23.995 --> 00:26:28.975
+Ele vai cumprir um desses objetivos. Um outro poderia ser de enviar follow-ups.
+
+343
+00:26:29.725 --> 00:26:35.034
+Então você já tem esses leads dentro ali de um CRM, de um pipeline seu, e eles
+
+344
+00:26:35.064 --> 00:26:40.299
+precisam, depois de um prazo específico, de um critério que você decidiu, eles
+
+345
+00:26:40.374 --> 00:26:46.044
+precisam ser novamente comunicados, entender como aquele processo de venda se deu.
+
+346
+00:26:46.434 --> 00:26:51.144
+Agendar reuniões é um próximo processo e ele envolve outras integrações.
+
+347
+00:26:51.564 --> 00:26:54.834
+Então perceba que cada um desses objetivos, a gente nem no momento aqui está
+
+348
+00:26:54.864 --> 00:26:59.245
+começando pela IA ou por uma ferramenta específica, mas a gente está olhando pra
+
+349
+00:26:59.304 --> 00:27:02.784
+solução que a gente quer propor. Qual que é o problema que a gente está tentando
+
+350
+00:27:02.814 --> 00:27:06.069
+resolver e aí depois a gente vai encaixando essas pecinhas.
+
+351
+00:27:06.084 --> 00:27:09.894
+Então, por exemplo, pro agendamento de reuniões, já começa a entender que precisa
+
+352
+00:27:09.954 --> 00:27:12.564
+ter uma integração, de repente, com o Google Calendar.
+
+353
+00:27:12.834 --> 00:27:17.784
+Pra enviar follow-ups, talvez aquela integração com o Fireflies faça muito sentido.
+
+354
+00:27:17.799 --> 00:27:20.154
+A mesma coisa pra atualização do CRM.
+
+355
+00:27:20.215 --> 00:27:25.824
+Então a gente entende primeiro o que precisa ser feito e aí depois começa a cabucar
+
+356
+00:27:25.838 --> 00:27:27.715
+ali as ferramentas que vão atender melhor a gente.
+
+357
+00:27:27.864 --> 00:27:32.274
+E falando de venda e de atendimento, então agora a gente vai pôr a mão na massa em
+
+358
+00:27:32.304 --> 00:27:38.184
+uma solução brasileira que consegue trazer, de forma muito simples, essa qualidade
+
+359
+00:27:38.245 --> 00:27:43.975
+agêntica de atendimento. Pode pôr aqui minha máquina na tela, produção, pra gente
+
+360
+00:27:44.004 --> 00:27:49.495
+pôr essa mão na massa agora. Bora lá então criar o seu agente, o seu agente de
+
+361
+00:27:49.674 --> 00:27:53.634
+vendas, de atendimento por WhatsApp, por redes sociais.
+
+362
+00:27:54.129 --> 00:28:00.114
+Eu estou falando do GPT Maker, essa empresa brasileira que é incrível pra
+
+363
+00:28:00.204 --> 00:28:05.514
+criar equipe de atendimento, de venda com inteligência artificial.
+
+364
+00:28:05.574 --> 00:28:11.484
+Aqui eu vou fazer meu login por já ser um usuário do GPT Maker, mas
+
+365
+00:28:11.514 --> 00:28:16.553
+você faria um cadastro comum. A plataforma inteira é em português.
+
+366
+00:28:16.614 --> 00:28:21.594
+Eu venho aqui literalmente em agentes e eu vou criar um agente.
+
+367
+00:28:21.984 --> 00:28:27.654
+Então vou colocar aqui o nome Turma Especial
+
+368
+00:28:27.669 --> 00:28:28.374
+de IA.
+
+369
+00:28:30.174 --> 00:28:34.975
+Esse é o nome do meu agente e aqui ele pergunta se é um agente pra dar suporte, se
+
+370
+00:28:35.004 --> 00:28:39.684
+ele é um agente de vendas, inclusive pra ter catálogo e e-commerce ou se é pra uso
+
+371
+00:28:39.745 --> 00:28:44.574
+pessoal. Eu vou criar pra dar suporte primeiro. Aonde ele vai trabalhar?
+
+372
+00:28:44.634 --> 00:28:47.605
+A empresa é Exame Sample.
+
+373
+00:28:49.134 --> 00:28:52.465
+Logo depois vou dar o continuar e ele pede pra eu descrever um pouquinho.
+
+374
+00:28:52.915 --> 00:28:56.874
+Lembra que eu sempre posso usar as IAs para nos ajudar.
+
+375
+00:28:57.384 --> 00:29:02.169
+Então eu vou vir aqui, por exemplo, no meu Claude e vou mandar aqui um áudio e
+
+376
+00:29:02.215 --> 00:29:06.399
+pedir pra ele criar um texto. Hoje o Claude está um pouquinho fora do ar, mas vamos
+
+377
+00:29:06.415 --> 00:29:12.234
+ver se ele vai. Faça uma descrição para um
+
+378
+00:29:12.324 --> 00:29:18.024
+agente que vai atender alunos de um MBA de inteligência artificial com
+
+379
+00:29:18.054 --> 00:29:20.605
+poucos caracteres.
+
+380
+00:29:23.665 --> 00:29:28.149
+Vamos verificar aqui então. Aqui ele está literalmente pedindo isso pra que a gente
+
+381
+00:29:28.165 --> 00:29:34.074
+possa fazer a descrição. Ele até dá aqui o limite de 500 caracteres como base.
+
+382
+00:29:34.179 --> 00:29:38.754
+Ele já fez aqui com 198 caracteres a descrição.
+
+383
+00:29:38.874 --> 00:29:42.774
+Vou copiar, vou colar aqui e vou dar continuar.
+
+384
+00:29:43.434 --> 00:29:47.814
+E nesse momento ele pergunta se ele pode ter transbordo humano, ou seja, eu posso
+
+385
+00:29:47.844 --> 00:29:52.465
+determinar o momento que ele vai ou não pra um humano, se ele pode usar emoji nas
+
+386
+00:29:52.524 --> 00:29:57.399
+respostas, se tem algum tema que ele não deve falar, que tem restrição e se ele
+
+387
+00:29:57.415 --> 00:30:03.114
+pode dividir a resposta em partes quando ela for longa. Vou dar continuar.
+
+388
+00:30:03.174 --> 00:30:07.824
+Boas-vindas, eu acabei de criar um agente, Turma Especial de IA.
+
+389
+00:30:08.274 --> 00:30:13.194
+E aqui eu tenho a opção de já conectar canais, abrir configurações ou fazer um
+
+390
+00:30:13.209 --> 00:30:17.769
+treinamento, que é o quê? Assim como quando eu contrato um colaborador, eu preciso
+
+391
+00:30:17.814 --> 00:30:23.004
+dar contexto e treinar. E olha que coisa incrível, eu posso vir aqui, copiar e
+
+392
+00:30:23.064 --> 00:30:28.915
+colar um texto, por exemplo, eu posso abrir um site e pedir pra ele
+
+393
+00:30:28.929 --> 00:30:34.105
+estudar sobre tudo do site, por exemplo, eu posso vir aqui no próprio site da
+
+394
+00:30:34.194 --> 00:30:40.014
+Exame, por exemplo, clicar aqui em inteligência artificial e pedir pra
+
+395
+00:30:40.105 --> 00:30:45.984
+ele aprender com o site da Exame, conteúdos sobre inteligência
+
+396
+00:30:46.014 --> 00:30:51.564
+artificial. Nesse momento, ele está treinando esse agente, olha que coisa
+
+397
+00:30:51.684 --> 00:30:56.394
+incrível, ele já treinou. Então ele buscou aqui as informações do site.
+
+398
+00:30:56.454 --> 00:31:01.225
+Eu posso pegar vídeos, olha que incrível, eu posso vir aqui também, por exemplo, no
+
+399
+00:31:01.254 --> 00:31:06.372
+YouTube Abrindo aqui o YouTube. O YouTube está ótimo.
+
+400
+00:31:07.152 --> 00:31:11.802
+Vou vir aqui na Exame IA, por exemplo.
+
+401
+00:31:11.832 --> 00:31:14.471
+Vou pegar, inclusive, uma aula nossa.
+
+402
+00:31:14.533 --> 00:31:19.063
+Olha que interessante, vou pegar essa aula que aconteceu há três semanas.
+
+403
+00:31:20.712 --> 00:31:26.203
+Pegar o conteúdo desta aula, voltar pro meu agente,
+
+404
+00:31:26.382 --> 00:31:32.232
+colar a URL do YouTube e pedir pra que ele comece a estudar e
+
+405
+00:31:32.322 --> 00:31:35.127
+aprender com esse canal do YouTube também.
+
+406
+00:31:35.277 --> 00:31:40.212
+Então já tem o website, ele que está cadastrando aqui o vídeo, ou eu poderia subir
+
+407
+00:31:40.242 --> 00:31:41.652
+um documento.
+
+408
+00:31:42.972 --> 00:31:48.432
+Vamos pegar aqui um exemplo aleatório, eu poderia vir aqui e buscar um livro, um
+
+409
+00:31:48.462 --> 00:31:53.276
+PDF que eu tenha. Imagina, por exemplo, criar um agente com todo o
+
+410
+00:31:53.322 --> 00:31:59.052
+conteúdo de regulamento da tua companhia, tudo que você tem de diretrizes.
+
+411
+00:31:59.082 --> 00:32:03.597
+Vou pegar aqui um exemplo de uma pesquisa ou vou pegar um exemplo, inclusive, de um
+
+412
+00:32:03.612 --> 00:32:09.372
+livro que a gente possa subir pra você fazer perguntas com o conteúdo
+
+413
+00:32:09.522 --> 00:32:14.263
+desse livro. Olha que interessante, você poderia subir qualquer conteúdo, qualquer
+
+414
+00:32:14.352 --> 00:32:19.122
+documento. Sabe aquilo que está na tua intranet, que ninguém lê, inclusive, todo
+
+415
+00:32:19.152 --> 00:32:22.692
+mundo questiona, que é um material difícil e tudo mais?
+
+416
+00:32:22.722 --> 00:32:28.242
+Imagina que você poderia transformar esse conteúdo em um conteúdo que você interage
+
+417
+00:32:28.272 --> 00:32:30.492
+por WhatsApp. Olha que coisa maravilhosa.
+
+418
+00:32:30.522 --> 00:32:36.132
+Eu vou pegar aqui o conteúdo, por exemplo, do livro "6.0", do Philip
+
+419
+00:32:36.162 --> 00:32:41.263
+Kotler. Então eu quero que ele também tire dúvidas de marketing da nossa super
+
+420
+00:32:41.352 --> 00:32:46.572
+turma aqui. Vou cadastrar esse conteúdo, ele está sendo treinado.
+
+421
+00:32:46.602 --> 00:32:49.453
+E gente, olha que coisa espetacular.
+
+422
+00:32:49.513 --> 00:32:53.862
+Ele vai ler todo o livro, poderia ser, de novo, todas as normas da sua empresa,
+
+423
+00:32:53.953 --> 00:32:58.393
+poderia ser o catálogo da sua empresa, poderia, de novo, ser o e-commerce da tua
+
+424
+00:32:58.422 --> 00:33:04.078
+empresa. E eu vou vir aqui agora e eu posso fazer integrações, inclusive, olha, com
+
+425
+00:33:04.092 --> 00:33:09.732
+o Eleven Labs, pra que ele consiga fazer atendimento por áudio, não só por texto.
+
+426
+00:33:09.792 --> 00:33:13.662
+Olha que coisa incrível. Eu posso vir aqui e testar.
+
+427
+00:33:13.962 --> 00:33:19.752
+Será que ele já está funcionando? Então eu posso vir aqui e falar: "o que é
+
+428
+00:33:19.842 --> 00:33:25.632
+o terceiro espaço do marketing?" Que é um tema que eu sei que
+
+429
+00:33:25.752 --> 00:33:31.722
+Philip Kotler aborda nesse livro do "6.0". Então aqui, olha, ele já vai mostrando.
+
+430
+00:33:31.752 --> 00:33:34.332
+Olha que maravilhoso, aqui já está a resposta.
+
+431
+00:33:34.362 --> 00:33:37.842
+O terceiro espaço no marketing refere-se ao ambiente, que não é nem a casa, nem o
+
+432
+00:33:37.902 --> 00:33:43.272
+trabalho, mas sim os locais onde as pessoas passam tempo e se integram socialmente.
+
+433
+00:33:43.302 --> 00:33:48.882
+E eu posso vir aqui nesse momento e já integrar com canais, como por exemplo, neste
+
+434
+00:33:48.942 --> 00:33:54.643
+momento, eu posso vir aqui e integrar com canais do meu Instagram, que já está
+
+435
+00:33:54.672 --> 00:34:00.402
+aqui, eu posso integrar com o canal do WhatsApp, com o canal, por exemplo,
+
+436
+00:34:01.482 --> 00:34:06.763
+olha que maravilhoso, do Telegram, WhatsApp da Meta, do Mercado Livre, do Message,
+
+437
+00:34:06.792 --> 00:34:12.493
+por SMS, ou seja, eu consigo fazer com que esse agente, a partir de agora,
+
+438
+00:34:12.582 --> 00:34:18.102
+atenda vocês 24 horas do dia, sete dias da semana, em literais seis
+
+439
+00:34:18.162 --> 00:34:23.652
+minutos. A gente acabou de criar um agente que pode atender em todas essas
+
+440
+00:34:23.682 --> 00:34:29.578
+plataformas aqui utilizando a ferramenta GPT Maker.
+
+441
+00:34:29.862 --> 00:34:35.562
+Bom, vocês perceberam, esta que é uma solução brasileira totalmente em português.
+
+442
+00:34:35.592 --> 00:34:38.893
+Com poucos passos você consegue criar o teu agente.
+
+443
+00:34:39.057 --> 00:34:44.953
+E agora a gente vai pra mais uma solução agêntica, porém que trabalha com voz e
+
+444
+00:34:45.013 --> 00:34:50.352
+não com texto, como a gente acabou de ver no GPT Maker, que é o Eleven Labs, que é
+
+445
+00:34:50.382 --> 00:34:54.462
+uma das soluções, inclusive, que o professor Thiago abriu a aula de hoje.
+
+446
+00:34:54.912 --> 00:34:56.382
+Bora pro mão na massa agora.
+
+447
+00:34:56.442 --> 00:35:00.822
+Vamos lá, Léo. Olha só, gente, que legal, você vai entrar pra começar no
+
+448
+00:35:00.852 --> 00:35:05.937
+elevenlabs.io. Ou, de repente, você coloca no Google "Eleven Labs", você vai
+
+449
+00:35:05.952 --> 00:35:11.397
+encontrar também. Assim que você fizer o seu cadastro, inclusive você pode utilizar
+
+450
+00:35:11.442 --> 00:35:15.132
+sua conta do Google pra fazer o login, você vai se deparar com essa tela pra
+
+451
+00:35:15.162 --> 00:35:18.927
+escolher a sua plataforma, o Eleven Creative e o Eleven Agents.
+
+452
+00:35:19.452 --> 00:35:23.532
+O Eleven Creative é onde você vai conseguir gerar esses áudios e você vai poder
+
+453
+00:35:23.592 --> 00:35:26.112
+utilizar eles em vários lugares diferentes.
+
+454
+00:35:26.143 --> 00:35:30.057
+Então, de repente, você quer fazer uma narração, quer fazer a criação de um
+
+455
+00:35:30.072 --> 00:35:34.422
+podcast, uma dublagem, alguma coisa assim, é no Eleven Creative.
+
+456
+00:35:34.542 --> 00:35:39.312
+Já no Eleven Agents, é onde você consegue criar agentes que se comunicam, inclusive
+
+457
+00:35:39.342 --> 00:35:42.462
+em tempo real, utilizando vozes customizadas.
+
+458
+00:35:42.643 --> 00:35:48.432
+Então, por exemplo, na solução do Sabiá, que a gente desenvolve aqui pra
+
+459
+00:35:48.462 --> 00:35:53.036
+ensino, no ensino fundamental, principalmente, você consegue manter uma conversa
+
+460
+00:35:53.082 --> 00:35:58.047
+com ele por voz. E, inclusive, a gente utiliza as APIs do Eleven Labs pra gerar
+
+461
+00:35:58.123 --> 00:36:02.757
+essa solução. Então você consegue incorporar o Eleven Labs também em
+
+462
+00:36:02.802 --> 00:36:07.002
+aplicações próprias suas, nos seus agentes de atendimento.
+
+463
+00:36:07.018 --> 00:36:10.873
+Mas pra gente começar a aprender e se familiarizar com ele, recomendo que você
+
+464
+00:36:10.932 --> 00:36:15.177
+comece aqui pelo Eleven Creative, que é onde você vai conseguir ter a criação
+
+465
+00:36:15.192 --> 00:36:18.312
+desses áudios de uma maneira mais fácil.
+
+466
+00:36:18.342 --> 00:36:23.157
+Depois você vai colocar o seu nome aqui, que está como opcional, e você vai definir
+
+467
+00:36:23.172 --> 00:36:27.102
+um idioma. Por padrão, ele vai estar em inglês, mas você pode descer aqui e
+
+468
+00:36:27.116 --> 00:36:33.042
+escolher português. Ele vai fazer algumas outras perguntas aqui, mas eu
+
+469
+00:36:33.132 --> 00:36:35.322
+não vou necessariamente responder.
+
+470
+00:36:35.352 --> 00:36:40.317
+Depois você pode descrever pra que você vai utilizar o Eleven Labs.
+
+471
+00:36:40.362 --> 00:36:44.893
+Eu vou marcar aqui como uso pessoal e o que você gostaria de fazer com o Eleven
+
+472
+00:36:44.907 --> 00:36:50.112
+Labs. Esse aqui é o processo de onboarding deles, então eu recomendo que você gaste
+
+473
+00:36:50.143 --> 00:36:53.082
+um tempinho ali pra você explorar essas soluções.
+
+474
+00:36:53.143 --> 00:36:58.227
+Inclusive, o nosso papel aqui vai ser mostrar essas ferramentas
+
+475
+00:36:59.112 --> 00:37:04.393
+com uma visão geral, pra que você depois consiga explorar e aplicar nos seus casos
+
+476
+00:37:04.407 --> 00:37:10.212
+de uso de maneira pessoal. Bom, aqui a gente vai ter a opção de text-to-speech,
+
+477
+00:37:10.422 --> 00:37:15.312
+que é você converter um texto em áudio, criação de audiolivros, música, efeitos
+
+478
+00:37:15.342 --> 00:37:20.007
+sonoros e tudo mais. E um dos mais legais aqui é justamente essa primeira opção,
+
+479
+00:37:20.052 --> 00:37:25.707
+onde a gente consegue trazer um texto e fazer com que ele seja disponibilizado pra
+
+480
+00:37:25.812 --> 00:37:29.502
+gente em formato de áudio, com várias configurações de vozes.
+
+481
+00:37:29.561 --> 00:37:33.971
+Nessa tela vocês vão poder escolher entre os planos disponíveis, vocês vão ver que
+
+482
+00:37:34.002 --> 00:37:38.262
+tem vários deles, mas se você vier um pouquinho aqui pra baixo, vai ter essa opção
+
+483
+00:37:38.322 --> 00:37:41.937
+de pular pra você começar a fazer alguns testes gratuitos.
+
+484
+00:37:41.982 --> 00:37:47.832
+A minha recomendação pra vocês é que você sempre inicie numa ferramenta com teste
+
+485
+00:37:47.862 --> 00:37:51.252
+gratuito e quase todas elas possuem o teste grátis.
+
+486
+00:37:51.342 --> 00:37:56.682
+Tanto o GPT, o Claude, o Gemini, o Lovable, o Replit, o próprio Eleven Labs que a
+
+487
+00:37:56.712 --> 00:38:01.302
+gente está aqui agora, todos eles vão ter uma versão pra você sentir um gostinho e
+
+488
+00:38:01.362 --> 00:38:05.623
+aí depois, na sequência, você paga pelas que vão ser, de fato, úteis pra você.
+
+489
+00:38:05.787 --> 00:38:10.947
+Então faça o uso dessa dica, teste as ferramentas, que hoje em dia quase todas têm
+
+490
+00:38:10.962 --> 00:38:16.842
+uma versão gratuita. Bom, a interface do Eleven Labs é superintuitiva.
+
+491
+00:38:16.857 --> 00:38:20.697
+Deixa eu aumentar um pouquinho aqui pra nós, pra vocês conseguirem visualizar com
+
+492
+00:38:21.852 --> 00:38:26.082
+mais facilidade. E vocês vão ver que logo aqui a gente vai ter essa caixinha de
+
+493
+00:38:26.112 --> 00:38:31.242
+texto, onde você pode digitar um texto qualquer e ele vai gerar essa narração.
+
+494
+00:38:31.602 --> 00:38:37.482
+Então vou colocar aqui: "bem-vindo ao pré-MBA da Exame".
+
+495
+00:38:38.893 --> 00:38:41.832
+E aqui, se você preferir, pode copiar e colar um texto.
+
+496
+00:38:41.893 --> 00:38:45.207
+De repente, você está tendo esse trabalho de ideação lá no ChatGPT, gerou um
+
+497
+00:38:45.252 --> 00:38:50.262
+roteiro, você pode colar ele diretamente aqui e ele tem uma limitação de até 5 mil
+
+498
+00:38:50.292 --> 00:38:55.602
+caracteres. Aqui embaixo vocês vão notar que eu tenho 10 mil créditos restantes.
+
+499
+00:38:55.812 --> 00:39:00.567
+Então esse aqui é o que está disponível pra mim dentro da versão gratuita e você
+
+500
+00:39:00.702 --> 00:39:04.632
+vai inclusive entender se faz sentido pagar ou não com base nesse teu uso.
+
+501
+00:39:04.662 --> 00:39:08.922
+Então depois a gente vai ter aqui algumas vozes na lateral.
+
+502
+00:39:09.522 --> 00:39:15.462
+Você pode clicar aqui em play e ouvir todas elas pra ter uma noção
+
+503
+00:39:15.492 --> 00:39:20.532
+do que você precisa. Se você preferir, pode definir uma categoria, personagens,
+
+504
+00:39:20.592 --> 00:39:25.272
+gênero, uma idade, que é mais jovem, que é mais velho, e eu recomendo que você
+
+505
+00:39:25.332 --> 00:39:30.087
+escolha um idioma, que no nosso caso é português, pra ver quais dessas vozes estão
+
+506
+00:39:30.132 --> 00:39:33.852
+disponíveis em português. Então aqui o primeiro é o Paulo, por exemplo.
+
+507
+00:39:33.882 --> 00:39:37.768
+Então todas essas vozes aqui é legal que você vá explorando, entendendo qual que é
+
+508
+00:39:37.842 --> 00:39:42.882
+mais adequado agora. Imagina você criando criativos, anúncios, que de repente teria
+
+509
+00:39:42.912 --> 00:39:47.172
+que pagar aí um narrador profissional, ou de repente você mesmo fazer essa
+
+510
+00:39:47.202 --> 00:39:50.937
+narração, agora você consegue simplesmente com a cópia, com texto, com roteiro,
+
+511
+00:39:51.402 --> 00:39:56.742
+cola ele aqui, ele faz a geração. Então eu vou clicar aqui em "gerar fala" e vamos
+
+512
+00:39:56.772 --> 00:39:57.087
+ver o que dá.
+
+513
+00:39:57.132 --> 00:39:58.377
+Ao pré-MBA da Exame
+
+514
+00:39:58.986 --> 00:40:02.121
+Então ele selecionou aqui, no caso, o Roger.
+
+515
+00:40:02.797 --> 00:40:07.206
+E já transformou esse texto em áudio de uma maneira muito rápida.
+
+516
+00:40:07.236 --> 00:40:12.261
+Você pode clicar aqui em compartilhar, já pra conseguir facilmente gerar um vídeo,
+
+517
+00:40:12.336 --> 00:40:15.906
+por exemplo, caso você queira. Mas a minha recomendação é que você venha nesse
+
+518
+00:40:15.936 --> 00:40:21.276
+botãozinho aqui de baixar. Ele vai gerar um arquivo pra você salvar diretamente no
+
+519
+00:40:21.306 --> 00:40:26.166
+seu computador e depois incorporar no seu vídeo da maneira como você quiser.
+
+520
+00:40:26.196 --> 00:40:31.116
+E aqui no lado, você vai notar que existem várias outras opções de sound effects,
+
+521
+00:40:31.177 --> 00:40:35.466
+de voice change. Então de repente você já tem uma voz de uma maneira e você quer
+
+522
+00:40:35.496 --> 00:40:41.256
+transformar numa outra voz. O Eleven Labs pra questão de voz, ele é uma suíte de
+
+523
+00:40:41.346 --> 00:40:46.131
+soluções muito completa, então quero deixar aqui essa recomendação pra que caso
+
+524
+00:40:46.146 --> 00:40:51.006
+você trabalhe com voz, utiliza o Eleven Labs, faz alguns testes, explora a
+
+525
+00:40:51.067 --> 00:40:54.126
+ferramenta, que eu tenho certeza que você vai gostar muito.
+
+526
+00:40:54.366 --> 00:40:59.616
+Seguindo então nas nossas próximas ferramentas, a gente tem também aqui o Notebook
+
+527
+00:40:59.736 --> 00:41:05.526
+LM, que recentemente foi renomeado pra se chamar Gemini
+
+528
+00:41:05.677 --> 00:41:11.556
+Notebook. Então essas ferramentas de inteligência artificial acabam tendo uma
+
+529
+00:41:11.616 --> 00:41:16.461
+mudança de nomes, de interface muito frequente, justamente por conta das evoluções
+
+530
+00:41:16.476 --> 00:41:21.306
+que acontecem. Então é supercomum que você entre numa ferramenta e algumas
+
+531
+00:41:21.336 --> 00:41:26.436
+coisinhas tenham se modificado. No caso do Notebook LM, se tornou Gemini Notebook.
+
+532
+00:41:26.496 --> 00:41:31.866
+Então é uma ferramenta do Google muito boa pra que você aprenda
+
+533
+00:41:31.881 --> 00:41:36.095
+assuntos do seu interesse. Deixa eu entrar dentro da ferramenta, que a gente vai
+
+534
+00:41:36.126 --> 00:41:40.295
+dar uma olhada na interface e já vai entender melhor como ela funciona.
+
+535
+00:41:40.326 --> 00:41:43.236
+Então ela também vai precisar que você faça um login.
+
+536
+00:41:43.686 --> 00:41:48.276
+E aqui, como está no Google, se você está utilizando aí um Gmail, ele já consegue
+
+537
+00:41:48.306 --> 00:41:53.241
+se integrar no seu Google Drive pra que você traga as informações de dentro do seu
+
+538
+00:41:53.286 --> 00:41:58.356
+drive diretamente pra ele. Ele vai trazer aqui alguns exemplos, alguns notebooks,
+
+539
+00:41:58.536 --> 00:42:03.216
+pra que você trabalhe. E cada um desses notebooks é como se eles fossem cadernos de
+
+540
+00:42:03.246 --> 00:42:08.226
+anotação, são áreas de estudo pra que você se aprofunde nesses temas.
+
+541
+00:42:08.256 --> 00:42:12.741
+Você pode utilizar isso com caráter acadêmico, de repente você quer aprender sobre
+
+542
+00:42:12.876 --> 00:42:17.751
+temas específicos, mas, por exemplo, aqui dentro da Pixelwolf a gente utiliza isso
+
+543
+00:42:17.766 --> 00:42:20.991
+pra ter um entendimento mais claro a respeito dos nossos clientes.
+
+544
+00:42:21.261 --> 00:42:24.756
+Como a gente faz um processo de consultoria muito profundo, que envolve muitos
+
+545
+00:42:24.817 --> 00:42:28.552
+documentos, muitos processos e muito provavelmente você também se identifique com
+
+546
+00:42:28.552 --> 00:42:32.946
+esse tipo de situação, a gente consegue trazer esses documentos pra dentro do
+
+547
+00:42:33.006 --> 00:42:37.297
+Notebook LM e lá dentro a gente pode explorar esse cliente.
+
+548
+00:42:37.311 --> 00:42:42.186
+O mais legal disso é que você pode compartilhar esse notebook com outras pessoas.
+
+549
+00:42:42.216 --> 00:42:46.596
+Então entrou um profissional novo, ele pode acessar esse notebook e se aprofundar
+
+550
+00:42:46.626 --> 00:42:50.976
+nesse assunto. Então de repente pode até ser útil no processo de onboarding, no seu
+
+551
+00:42:51.006 --> 00:42:55.986
+negócio e tudo mais. Eu cliquei aqui em um notebook a respeito de um tema
+
+552
+00:42:56.016 --> 00:43:01.596
+relacionado à inteligência artificial, normas relacionadas a NR1, e eu busquei
+
+553
+00:43:01.626 --> 00:43:07.177
+vários artigos científicos, essa busca eu fiz lá no Cloud Code, no Cloud Code, não,
+
+554
+00:43:07.236 --> 00:43:11.136
+no Cloud Cowork, depois a gente vai ver como fazer isso na prática.
+
+555
+00:43:11.165 --> 00:43:14.721
+Depois que eu baixei esses artigos, eu trouxe eles pra cá.
+
+556
+00:43:14.766 --> 00:43:19.836
+Eles são fontes, todo o funcionamento do Notebook LM é baseado em fontes.
+
+557
+00:43:20.076 --> 00:43:24.486
+Então você vai clicar aqui em adicionar fontes e vai selecionar os arquivos que
+
+558
+00:43:24.516 --> 00:43:29.797
+você quer que ele consuma. Pode ser um PDF, pode ser um site, pode ser um vídeo do
+
+559
+00:43:29.826 --> 00:43:32.317
+YouTube, pode ser um texto que você copiou.
+
+560
+00:43:32.736 --> 00:43:37.356
+Então de repente você está estudando sobre livros, tem alguns artigos sobre um tema
+
+561
+00:43:37.386 --> 00:43:41.916
+que você quer, traga todos eles pra cá, porque ele vai criar essa base de
+
+562
+00:43:41.976 --> 00:43:46.866
+conhecimento. Aqui na lateral, nessa barrinha aqui chamada Fontes, vocês vão ver
+
+563
+00:43:46.896 --> 00:43:52.716
+que tem todos esses artigos científicos aqui, de pesquisas, tem de Harvard, do MIT.
+
+564
+00:43:53.706 --> 00:43:59.286
+E olha só que legal, ele faz o consumo desses dados e permite que você converse
+
+565
+00:43:59.302 --> 00:44:02.616
+sobre esse tema. Então você pode fazer perguntas aqui.
+
+566
+00:44:02.661 --> 00:44:06.680
+Eu perguntei pra ele: "Se você fosse agrupar os conteúdos em grupos pra geração de
+
+567
+00:44:06.696 --> 00:44:10.626
+resumos em vídeos, como você organizaria?" Ele me deu uma sugestão de quatro
+
+568
+00:44:10.656 --> 00:44:14.076
+grupos, inclusive ele vai citando as fontes aqui.
+
+569
+00:44:14.106 --> 00:44:18.876
+E o mais legal de tudo isso, é que além da conversa, você consegue gerar
+
+570
+00:44:18.966 --> 00:44:24.591
+infográficos, podcasts, vídeos sobre aquele tema e totalmente
+
+571
+00:44:24.606 --> 00:44:28.086
+personalizado pra sua aplicação.
+
+572
+00:44:28.146 --> 00:44:32.616
+Olha só, esse aqui é um exemplo de um vídeo que ele acabou criando sobre IA na
+
+573
+00:44:32.677 --> 00:44:33.666
+indústria brasileira.
+
+574
+00:44:34.656 --> 00:44:40.581
+Ele cria narração, ele vai criar os
+
+575
+00:44:40.626 --> 00:44:44.736
+gráficos pra que você consiga entender melhor como as coisas funcionam.
+
+576
+00:44:44.766 --> 00:44:49.190
+Então é realmente um conteúdo que antes estaria disponível no YouTube, depois de
+
+577
+00:44:49.206 --> 00:44:52.836
+uma longa produção, ele gera isso em poucos minutos.
+
+578
+00:44:52.896 --> 00:44:57.486
+Aqui é um vídeo que foi gerado, mas você também pode ter mapas mentais,
+
+579
+00:44:58.656 --> 00:45:04.221
+baseado nas fontes que você quer gerar, podcasts, infográficos também,
+
+580
+00:45:04.836 --> 00:45:09.306
+inclusive flashcards. De repente você está estudando sobre um tema e quer saber se
+
+581
+00:45:09.336 --> 00:45:11.586
+você já sabe aquela resposta ou não.
+
+582
+00:45:11.736 --> 00:45:17.106
+Se você dominou aquele conteúdo, você pode fazer o estudo através de flashcards.
+
+583
+00:45:17.121 --> 00:45:21.591
+Pra criar tudo isso, você vai vir aqui nessa barrinha lateral estúdio e escolher o
+
+584
+00:45:21.666 --> 00:45:25.297
+que você quer gerar. Então, por exemplo, eu quero gerar um resumo em áudio, que ele
+
+585
+00:45:25.326 --> 00:45:27.786
+vai criar no formato aqui de podcast.
+
+586
+00:45:27.802 --> 00:45:32.706
+Tem quatro formatos principais: análise detalhada, resumo, crítica e debate.
+
+587
+00:45:32.721 --> 00:45:36.817
+Ele cria duas pessoas debatendo sobre aquele assunto.
+
+588
+00:45:36.846 --> 00:45:40.656
+Você vai selecionar o idioma, aqui no nosso caso, mais uma vez, português aqui do
+
+589
+00:45:40.686 --> 00:45:45.726
+Brasil, escolhe uma duração, se você quer curta ou padrão, e as fontes que vão
+
+590
+00:45:45.741 --> 00:45:50.586
+fazer parte desse conteúdo. Então apesar de eu ter várias fontes aqui, se eu quiser
+
+591
+00:45:50.616 --> 00:45:54.786
+falar só sobre dois artigos específicos, eu posso fazer essa seleção aqui na
+
+592
+00:45:54.846 --> 00:45:59.496
+barrinha lateral. Clicou em confirmar, se você quiser dar mais alguma instrução,
+
+593
+00:45:59.556 --> 00:46:04.386
+por exemplo, foque nesse aspecto X, no aspecto Y, ele pode fazer isso.
+
+594
+00:46:04.446 --> 00:46:08.826
+Depois você vai clicar em gerar aqui embaixo nesse botãozinho azul, e olha só que
+
+595
+00:46:08.856 --> 00:46:12.336
+legal o tipo de conteúdo que ele gera pra nós.
+
+596
+00:46:12.366 --> 00:46:16.416
+E aí toda a geração desses seus podcasts, vídeos, infográficos, eles vão estar
+
+597
+00:46:16.476 --> 00:46:18.651
+disponíveis aqui do ladinho em estúdio.
+
+598
+00:46:19.041 --> 00:46:22.686
+Mais legal que o Notebook LM se integra no aplicativo pra celular também.
+
+599
+00:46:22.716 --> 00:46:26.826
+Então você pode começar a gerar por aqui, de repente pegou um carro, pegou um Uber,
+
+600
+00:46:26.856 --> 00:46:31.116
+um metrô, continua ouvindo lá o podcast de resumo que você gerou por aqui.
+
+601
+00:46:31.145 --> 00:46:36.996
+Então supervalioso ter o Notebook LM ou agora Gemini Notebook pra o seu dia a
+
+602
+00:46:37.026 --> 00:46:37.297
+dia.
+
+603
+00:46:37.567 --> 00:46:43.506
+Bom, e ainda pra finalizar esta aulona aqui superespecial, eu vou pedir agora ainda
+
+604
+00:46:43.536 --> 00:46:49.416
+pro Thiago trazer mais um contexto bem interessante pra você ter mais um
+
+605
+00:46:49.446 --> 00:46:54.966
+conhecimento aplicado de inteligência artificial, que é essa leitura nossa sobre a
+
+606
+00:46:55.177 --> 00:47:00.621
+fronteira. E tem uma análise aí que você faz entre o centauro e o ciborgue, que é
+
+607
+00:47:00.636 --> 00:47:03.696
+bem interessante pros alunos terem como reflexão, Thiago.
+
+608
+00:47:03.756 --> 00:47:09.547
+Legal demais, Léo. E esse é um ponto, gente, quando esse aprofundamento do nosso
+
+609
+00:47:09.576 --> 00:47:14.646
+lado começa a acontecer e você começa a trazer inteligência artificial pra resolver
+
+610
+00:47:14.797 --> 00:47:19.896
+muitos dos seus problemas, é superimportante que você faça esse uso com um senso
+
+611
+00:47:20.016 --> 00:47:24.726
+crítico muito apurado. Esse conceito é chamado de fronteira irregular, justamente
+
+612
+00:47:24.786 --> 00:47:29.466
+porque essa linha não é muito clara do que a IA faz muito bem e do que ela não faz.
+
+613
+00:47:29.496 --> 00:47:33.456
+Afinal de contas, algo que pode ser muito simples pra nós, pode ser extremamente
+
+614
+00:47:33.471 --> 00:47:38.856
+desafiador pra IA, e coisas que são muito desafiadoras pra nós, são triviais pra
+
+615
+00:47:38.946 --> 00:47:43.791
+que a IA realize. Então tudo que ela faz dentro dessa fronteira, ela gera
+
+616
+00:47:43.806 --> 00:47:48.936
+resultados muito bons. Resultados que inclusive são mais efetivos, até mais
+
+617
+00:47:48.996 --> 00:47:51.456
+eficientes do que se fosse um humano trabalhando.
+
+618
+00:47:51.547 --> 00:47:56.105
+Agora, quando é fora da fronteira, é onde acontecem essas alucinações.
+
+619
+00:47:56.196 --> 00:48:01.927
+A IA sempre vai tentar te dar uma resposta, tendo ela informação ou não, e
+
+620
+00:48:02.016 --> 00:48:06.876
+aí é onde acontece de você simplesmente receber informações que estão incorretas.
+
+621
+00:48:07.476 --> 00:48:11.886
+Então é importante que você entenda essa diferenciação pra que todo o seu uso com
+
+622
+00:48:11.946 --> 00:48:14.721
+IA seja pautado na sua verificação.
+
+623
+00:48:14.736 --> 00:48:19.116
+Afinal de contas, a IA não tem um CPF, a responsabilidade de tudo que é gerado
+
+624
+00:48:19.146 --> 00:48:22.056
+dentro de uma inteligência artificial, é sua.
+
+625
+00:48:22.656 --> 00:48:27.471
+E aí o fato de você ganhar uma confiança faz com que gere esse fenômeno aqui que é
+
+626
+00:48:27.486 --> 00:48:29.692
+dormir ao volante, falling asleep at the wheel.
+
+627
+00:48:30.427 --> 00:48:35.241
+Você deixa a IA gerar os seus relatórios, suas apresentações, para de verificar e
+
+628
+00:48:35.376 --> 00:48:40.746
+aí é onde os erros começam a acontecer e a gente pode acabar enfrentando problemas
+
+629
+00:48:40.761 --> 00:48:45.156
+que são muito críticos. Olha só pra gente exemplificar aqui como que essa fronteira
+
+630
+00:48:45.172 --> 00:48:49.206
+irregular da IA acontece. A gente tem aqui, por exemplo, coisas que a IA faz muito
+
+631
+00:48:49.236 --> 00:48:54.486
+bem. Gerar hipóteses, escrever relatórios, rascunhar uma comunicação, mas ao mesmo
+
+632
+00:48:54.576 --> 00:48:59.151
+tempo, quando a gente vai pro outro lado, como calcular um custo real ou cruzar
+
+633
+00:48:59.256 --> 00:49:04.206
+entrevista com dado financeiro, analisar planilha de cliente, a IA já não lida
+
+634
+00:49:04.266 --> 00:49:07.896
+muito bem com isso. Só que se você vai comparar como humano, ele escrever um
+
+635
+00:49:07.956 --> 00:49:12.186
+relatório, cruzar entrevista com dado financeiro, parece que o nível de dificuldade
+
+636
+00:49:12.276 --> 00:49:18.246
+é muito semelhante, mas pra IA, o nível de discrepância na dificuldade aqui é muito
+
+637
+00:49:18.276 --> 00:49:23.076
+grande. E é por isso que a gente fala de duas abordagens, que são estratégias de
+
+638
+00:49:23.136 --> 00:49:28.581
+navegação, pra que você consiga utilizar a IA de uma maneira que é eficiente, mas
+
+639
+00:49:28.596 --> 00:49:33.096
+que você garanta que toda aquela informação que está sendo gerada ali, está sendo
+
+640
+00:49:33.126 --> 00:49:37.146
+verificada e que ela está complementando, está ampliando o seu trabalho, não está
+
+641
+00:49:37.266 --> 00:49:41.946
+te trazendo problemas. Essas duas estratégias aqui são a de centauros,
+
+642
+00:49:42.156 --> 00:49:46.927
+profissionais que têm uma abordagem de centauro e outros que têm uma abordagem de
+
+643
+00:49:46.986 --> 00:49:52.356
+ciborgue. O centauro, essa figura mitológica, que metade homem, metade cavalo, mas
+
+644
+00:49:52.386 --> 00:49:56.886
+você consegue, até como está na nossa imagem, diferenciar de forma muito clara.
+
+645
+00:49:57.036 --> 00:50:01.297
+Da cintura pra cima é um homem, da cintura pra baixo é uma criatura.
+
+646
+00:50:01.356 --> 00:50:04.836
+Então os profissionais que adotam essa abordagem, eles fazem uma divisão
+
+647
+00:50:04.896 --> 00:50:10.476
+estratégica do trabalho. Eles têm de forma muito clara o que é delegado pra IA e o
+
+648
+00:50:10.506 --> 00:50:13.175
+que eles não delegam pra IA de forma nenhuma.
+
+649
+00:50:13.206 --> 00:50:18.156
+E isso faz com que exista um entendimento do que a IA faz muito bem, o que está
+
+650
+00:50:18.246 --> 00:50:23.076
+dentro daquela fronteira, do que ela executa, e aquilo que está fora, é o humano
+
+651
+00:50:23.091 --> 00:50:27.802
+que realiza. E existe essa outra abordagem, essa outra estratégia de navegação, que
+
+652
+00:50:27.817 --> 00:50:32.423
+é a de ciborgue Que realiza todo esse trabalho de uma maneira muito intrincada,
+
+653
+00:50:32.483 --> 00:50:38.093
+onde você não consegue, no resultado final, saber exatamente o que foi gerado por
+
+654
+00:50:38.153 --> 00:50:39.623
+um humano, o que foi gerado por uma IA.
+
+655
+00:50:40.224 --> 00:50:45.053
+No entanto, esse tipo de abordagem demanda da pessoa que está adotando ela, que
+
+656
+00:50:45.054 --> 00:50:50.093
+haja uma verificação constante. Então você trabalha em colaboração com a IA o tempo
+
+657
+00:50:50.153 --> 00:50:54.174
+todo, ao invés de você pedir um rascunho e depois você escreve em cima, você vai
+
+658
+00:50:54.233 --> 00:50:59.304
+escrevendo junto com a IA, aprimorando linha a linha, parágrafo a parágrafo, e vai
+
+659
+00:50:59.363 --> 00:51:03.294
+gerando os relatórios, por exemplo, todos de maneira muito unificada.
+
+660
+00:51:03.414 --> 00:51:09.054
+É como se a IA fosse uma expansão do seu cérebro de fato, e aí você garante que as
+
+661
+00:51:09.083 --> 00:51:11.333
+informações estão sendo verificadas em tempo real.
+
+662
+00:51:11.393 --> 00:51:13.733
+Uma abordagem não significa que ela é melhor do que a outra.
+
+663
+00:51:13.763 --> 00:51:18.263
+Você vai precisar identificar qual é o estilo de trabalho que você se adequa melhor
+
+664
+00:51:18.354 --> 00:51:23.123
+e aplicar uma delas. O importante é que essa estratégia seja evidenciada e você
+
+665
+00:51:23.153 --> 00:51:27.983
+respeite as regras que foram determinadas justamente pra garantir que você não caia
+
+666
+00:51:28.223 --> 00:51:32.065
+nesses problemas que a fronteira regular revela pra nós.
+
+667
+00:51:32.393 --> 00:51:37.763
+Muito interessante a reflexão, mais um conceito atualizando vocês, alunos.
+
+668
+00:51:37.824 --> 00:51:43.103
+E a gente se vê agora no nosso próximo encontro com muito mais ferramenta e muita
+
+669
+00:51:43.133 --> 00:51:48.713
+mão na massa. Lembre-se, se jogue nesse processo, aproveite para experimentar o
+
+670
+00:51:48.773 --> 00:51:53.933
+conteúdo de hoje, pôr a mão na massa e se soltar cada vez mais utilizando a
+
+671
+00:51:53.933 --> 00:51:56.873
+inteligência artificial. Professor Tiago, muito obrigado.
+
+672
+00:51:57.413 --> 00:51:59.693
+Obrigado, Léo. Até a próxima, gente.
+
+673
+01:43:37.374 --> 01:43:42.039
+Olá, que bom ver você novamente no pré-MBA em Finanças Corporativas da Exame São
+
+674
+01:43:42.069 --> 01:43:45.729
+Paulo. Você já me conhece, né? Meu nome é Marcio Bester.
+
+675
+01:43:45.745 --> 01:43:51.384
+Estou feliz em continuar essa jornada com vocês aqui, rumo ao aprofundamento em
+
+676
+01:43:51.429 --> 01:43:55.479
+finanças, a linguagem do mundo dos negócios. Vamos relembrar?
+
+677
+01:43:55.539 --> 01:43:59.874
+Na nossa primeira aula, você deu um passo fundamental: aprendeu conceitos
+
+678
+01:43:59.979 --> 01:44:05.859
+essenciais como EBITDA, fluxo de caixa e a diferença crucial entre lucro e caixa.
+
+679
+01:44:05.874 --> 01:44:08.529
+Com o repertório que você adquiriu, podemos ir em frente.
+
+680
+01:44:08.589 --> 01:44:13.104
+Vou explicar como eventos econômicos, que parecem distantes, como tarifas
+
+681
+01:44:13.149 --> 01:44:18.370
+internacionais ou a variação da Selic, impactam diretamente não só sua realidade,
+
+682
+01:44:18.399 --> 01:44:23.499
+mas suas decisões estratégicas na sua empresa ou na empresa em que você trabalha.
+
+683
+01:44:23.529 --> 01:44:27.984
+Sabe como eu falo que finanças são a linguagem que conecta todas as áreas da
+
+684
+01:44:27.999 --> 01:44:33.309
+empresa? Então, hoje você vai aprender a traduzir o economês para a realidade do
+
+685
+01:44:33.370 --> 01:44:37.569
+seu negócio. Você vai sair dessa aula sabendo calcular o impacto real desses
+
+686
+01:44:37.599 --> 01:44:41.979
+choques econômicos e descobrir como se proteger ou até se beneficiar dessas
+
+687
+01:44:42.009 --> 01:44:46.479
+mudanças. Você nunca mais vai ficar paralisado, sem saber o que fazer.
+
+688
+01:44:46.539 --> 01:44:51.489
+Então fica comigo até o final, porque o que vem por aí pode mudar completamente a
+
+689
+01:44:51.519 --> 01:44:54.518
+forma como você toma suas decisões financeiras.
+
+690
+01:44:54.609 --> 01:44:59.200
+Assim como na primeira aula, ao final desta, você receberá uma senha exclusiva para
+
+691
+01:44:59.229 --> 01:45:03.249
+garantir o seu certificado de participação do pré-MBA, que é um certificado de
+
+692
+01:45:03.370 --> 01:45:06.489
+peso. A Exame é o maior veículo de negócios do Brasil.
+
+693
+01:45:06.519 --> 01:45:10.209
+Há mais de 50 anos, acompanhamos de perto as maiores empresas brasileiras,
+
+694
+01:45:10.569 --> 01:45:15.459
+documentando suas vitórias, derrotas, suas estratégias e seus números.
+
+695
+01:45:15.489 --> 01:45:19.779
+Entendeu, né? A gente conhece o histórico e as variações econômicas e financeiras
+
+696
+01:45:19.809 --> 01:45:24.429
+do Brasil como ninguém. A São Paulo Escola de Negócios está há mais de 25 anos
+
+697
+01:45:24.459 --> 01:45:27.489
+promovendo educação executiva de excelência.
+
+698
+01:45:27.549 --> 01:45:31.749
+Cinco vezes eleita uma das melhores escolas para executivos do mundo pelo Financial
+
+699
+01:45:31.779 --> 01:45:37.330
+Times, seis vezes eleita um dos melhores MBAs da América Latina no ranking da
+
+700
+01:45:37.419 --> 01:45:42.999
+América Economia. Foi eleita por 10 anos consecutivos a escola Top of Mind dos
+
+701
+01:45:43.089 --> 01:45:47.409
+RHs brasileiros. Além disso, mantemos parcerias com as maiores instituições de
+
+702
+01:45:47.439 --> 01:45:52.359
+ensino e empresas do mundo, como Harvard, Columbia, IBM e B3.
+
+703
+01:45:52.659 --> 01:45:56.544
+Você já está estudando com quem sabe exatamente o que separa um profissional comum
+
+704
+01:45:56.979 --> 01:45:59.080
+de um líder de repertório completo.
+
+705
+01:45:59.109 --> 01:46:03.700
+E é com esse conhecimento exclusivo que preparamos nossas aulas, desde o pré-MBA
+
+706
+01:46:03.759 --> 01:46:07.209
+até nossos cursos para altíssimas lideranças.
+
+707
+01:46:07.239 --> 01:46:11.679
+Nós queremos te acompanhar em cada etapa da carreira, porque temos 75 anos de
+
+708
+01:46:11.694 --> 01:46:16.390
+experiência e sabemos quais são os melhores caminhos para você chegar ao topo.
+
+709
+01:46:16.450 --> 01:46:21.084
+Inclusive, falando em topo, você sabia que segundo uma pesquisa da Flow Executive
+
+710
+01:46:21.189 --> 01:46:26.919
+Finders, de 2024, 26% dos CEOs de empresas listadas na
+
+711
+01:46:26.979 --> 01:46:32.274
+Bovespa vieram do setor financeiro, e a tendência é que essa porcentagem cresça
+
+712
+01:46:32.649 --> 01:46:38.169
+ainda mais. Ou seja, CEOs bem-sucedidos também compreendem profundamente as
+
+713
+01:46:38.200 --> 01:46:41.378
+finanças corporativas. E é nesse caminho que você está.
+
+714
+01:46:41.468 --> 01:46:45.700
+Essas manchetes podem até assustar, mas quem sabe calcular o impacto desses
+
+715
+01:46:45.789 --> 01:46:51.669
+acontecimentos pode agir e tomar decisões de cabeça fria, sabendo que suas análises
+
+716
+01:46:51.700 --> 01:46:57.459
+são embasadas e podem prevenir um grande problema ou até encontrar uma chance de
+
+717
+01:46:57.519 --> 01:47:03.232
+lucro Cada decisão financeira mal calculada pode custar centenas de milhares de
+
+718
+01:47:03.261 --> 01:47:06.066
+reais em juros desnecessários na sua empresa.
+
+719
+01:47:06.561 --> 01:47:10.941
+Projetos importantes engavetados por falta de recursos, oportunidades de
+
+720
+01:47:10.971 --> 01:47:13.716
+crescimento perdidas para concorrentes mais preparados.
+
+721
+01:47:13.971 --> 01:47:19.191
+Ou seja, prevenir todos esses problemas criados por cenários mal analisados te
+
+722
+01:47:19.221 --> 01:47:24.772
+diferencia, faz de você alguém respeitado e que certamente vai ser chamado para as
+
+723
+01:47:24.801 --> 01:47:28.732
+próximas reuniões de estratégia, mas apenas se você dominar o que vamos te mostrar
+
+724
+01:47:28.746 --> 01:47:34.431
+aqui neste pré-MBA e depois também quando quiser se aprofundar em nosso MBA online.
+
+725
+01:47:34.551 --> 01:47:39.591
+Agora vamos para algo bem prático: como calcular o impacto real dos choques
+
+726
+01:47:39.651 --> 01:47:43.897
+econômicos? Vou compartilhar com você a matriz de impacto financeiro que eu uso pra
+
+727
+01:47:43.941 --> 01:47:47.121
+analisar qualquer choque econômico. São três passos simples.
+
+728
+01:47:47.151 --> 01:47:52.221
+Passo um: identifique o tipo de impacto. Existem três tipos principais.
+
+729
+01:47:52.311 --> 01:47:56.482
+Impacto no custo do dinheiro, Selic, afeta empréstimos, capital de giro,
+
+730
+01:47:56.751 --> 01:48:00.636
+investimentos. Cálculo, gente: dívida total vezes a variação da taxa.
+
+731
+01:48:00.921 --> 01:48:06.051
+Impacto no custo de insumos, tarifas, câmbio, matéria-prima importada, produtos
+
+732
+01:48:06.081 --> 01:48:09.921
+importados, que são os afetados. Como se calcula isso?
+
+733
+01:48:10.161 --> 01:48:15.486
+Volume importado vezes a variação da taxa ou a variação da taxa de câmbio.
+
+734
+01:48:16.042 --> 01:48:18.292
+Impacto na demanda, inflação, recessão.
+
+735
+01:48:18.321 --> 01:48:23.631
+E afeta volume de vendas, ticket médio, e aí o cálculo é a receita vezes o
+
+736
+01:48:23.661 --> 01:48:29.032
+percentual da queda esperada. Passo dois, consiste em calcular o impacto mensal.
+
+737
+01:48:29.091 --> 01:48:30.861
+Vamos a um exemplo prático com a Selic.
+
+738
+01:48:31.102 --> 01:48:33.591
+A situação é a seguinte: sua empresa tem 3 milhões.
+
+739
+01:48:33.621 --> 01:48:38.241
+Pessoal, anota lá 3 milhões em empréstimo Selic atual, 15%, 14 virggula alguma
+
+740
+01:48:38.331 --> 01:48:42.651
+coisa, 14,5, 14,75. O impacto se a Selic subir 1 ponto percentual.
+
+741
+01:48:42.982 --> 01:48:48.921
+Então você faz o seguinte cálculo 3 milhões vezes 1%, 30 mil ao ano.
+
+742
+01:48:49.311 --> 01:48:55.161
+Dividindo esse impacto anual por 12, você chega 2.500 por
+
+743
+01:48:55.191 --> 01:48:59.751
+mês a mais. Parece pouco. Mas multiplica por 12, são 30 mil que sai direto do seu
+
+744
+01:48:59.782 --> 01:49:03.051
+lucro. Portanto, é bastante importante esse passo dois.
+
+745
+01:49:03.501 --> 01:49:07.852
+Passo três: é desenvolver contramedidas. E aqui está o pulo do gato.
+
+746
+01:49:07.881 --> 01:49:13.131
+Pra cada R$ 1 de impacto negativo, você precisa encontrar R$ 1,20 de melhoria.
+
+747
+01:49:13.161 --> 01:49:16.191
+Por que R$ 1,20 de melhoria? Margem de segurança.
+
+748
+01:49:16.221 --> 01:49:20.721
+O exemplo que eu vou compartilhar é o seguinte: se o impacto da Selic foi de 30 mil
+
+749
+01:49:20.751 --> 01:49:24.532
+por ano, as contramedidas possíveis que você pode tomar.
+
+750
+01:49:24.561 --> 01:49:30.501
+Alongar prazo de pagamento de 30 pra 45 dias, por exemplo, já vai acarretar
+
+751
+01:49:30.561 --> 01:49:33.081
+uma melhoria no fluxo de 15 mil reais.
+
+752
+01:49:33.501 --> 01:49:38.991
+Renegociar contratos, 5% de desconto em fornecedores, que leva aí a 12
+
+753
+01:49:39.036 --> 01:49:41.421
+mil reais por ano. Otimizar o estoque.
+
+754
+01:49:41.631 --> 01:49:47.151
+Se você reduzir, por exemplo, 20%, isso já significa ou já se traduz em 8 mil reais
+
+755
+01:49:47.181 --> 01:49:52.971
+em capital liberado. Total, gente, 35 mil em melhorias, uma margem de 5 mil.
+
+756
+01:49:53.001 --> 01:49:57.381
+Demonstração prática, tarifas no mundo real. Agora vamos aplicar isso às tarifas.
+
+757
+01:49:57.411 --> 01:50:02.871
+Vamos assumir que você importe 500 mil por mês em insumos e a tarifa adicional
+
+758
+01:50:02.931 --> 01:50:07.417
+esteja em 25%. Portanto, qual o cálculo aqui, qual o impacto direto?
+
+759
+01:50:07.852 --> 01:50:13.761
+500 mil vezes 25% leva aí a 125 mil reais
+
+760
+01:50:13.790 --> 01:50:18.232
+por mês a mais. Mas aqui vem a sacada. Você tem três opções estratégicas.
+
+761
+01:50:18.261 --> 01:50:21.561
+Repassar no preço, qual é o risco aí? De perder vendas.
+
+762
+01:50:22.011 --> 01:50:27.426
+Absorver o custo, aí você vai ter certamente uma redução na margem de 25%, ou a
+
+763
+01:50:27.471 --> 01:50:30.561
+estratégia mista, digamos, que é mais inteligente.
+
+764
+01:50:30.621 --> 01:50:36.232
+E a estratégia mista, na prática, consiste no seguinte: repassa parcialmente 10% do
+
+765
+01:50:36.261 --> 01:50:41.946
+preço, o cliente aceita, melhor, nacionaliza, substitui 30% dos
+
+766
+01:50:42.022 --> 01:50:47.361
+insumos, por exemplo, e a eficiência, gente, é buscar reduzir o desperdício em 5%.
+
+767
+01:50:47.571 --> 01:50:53.001
+Volume, você pode aumentar as vendas em 15%, com preço ainda mais competitivo.
+
+768
+01:50:53.061 --> 01:50:57.831
+O resultado disso tudo, pessoal, um impacto reduzido de 125 mil, que é aquele
+
+769
+01:50:57.861 --> 01:51:02.272
+impacto original, para 35 mil reais. O poder da antecipação.
+
+770
+01:51:02.361 --> 01:51:06.801
+Tradução: temos pelo menos seis a 12 meses da Selic alta pela frente.
+
+771
+01:51:06.861 --> 01:51:12.621
+Quem entende isso agora pode fixar taxas antes de novas altas, quitar dívidas
+
+772
+01:51:12.651 --> 01:51:17.645
+caras com dívidas mais em conta ou mais baratas, negociar contratos longos com
+
+773
+01:51:17.691 --> 01:51:21.982
+fornecedores e ajustar o mix de produtos pra proteger a margem.
+
+774
+01:51:22.011 --> 01:51:26.901
+Quem vai esperar, vai pagar conta cheia. Olá, tudo bem? Prazer estar de volta.
+
+775
+01:51:26.931 --> 01:51:31.895
+Você já se perguntou como a Selic, a taxa básica da economia ou taxa de referência,
+
+776
+01:51:32.241 --> 01:51:37.491
+impacta os seus negócios? Dito de outra forma, como ela traz um impacto nos números
+
+777
+01:51:37.792 --> 01:51:42.081
+nos quais você está depositando confiança e números esses que vêm das demonstrações
+
+778
+01:51:42.111 --> 01:51:44.931
+financeiras? Vamos analisar um pouquinho o contexto.
+
+779
+01:51:44.961 --> 01:51:48.891
+Antes de mais nada, pessoal, vou colocar aqui no quadro pra nós, mostrar um pouco
+
+780
+01:51:48.921 --> 01:51:54.591
+da dinâmica da dívida. E aqui do outro lado, eu vou colocar
+
+781
+01:51:54.651 --> 01:52:00.321
+os poupadores. Por que não, gente, dizer investidores ou
+
+782
+01:52:00.681 --> 01:52:06.111
+mercado? Por que não dizer o mercado? Essa figura de que muito se fala.
+
+783
+01:52:06.741 --> 01:52:12.532
+Então estamos aqui, pessoal. O governo tem uma dinâmica de receita.
+
+784
+01:52:14.061 --> 01:52:19.341
+Basicamente ali são arrecadações, outros, enfim, formas de receita.
+
+785
+01:52:20.301 --> 01:52:25.042
+Nós temos as despesas e aqui eu vou chamar de despesas primárias.
+
+786
+01:52:25.056 --> 01:52:30.951
+Por que primária, pessoal? Porque elas não incluem os juros, o custo do serviço
+
+787
+01:52:31.011 --> 01:52:36.982
+da dívida. Então seria algo que na contabilidade internacional, que nós passamos
+
+788
+01:52:37.011 --> 01:52:42.352
+pra vocês na primeira aula, a gente chama de operacional. Então despesas primárias.
+
+789
+01:52:42.741 --> 01:52:45.321
+E aqui, pessoal, olha que coisa terrível.
+
+790
+01:52:45.861 --> 01:52:51.261
+Eu já tenho um valor negativo, e aí o termo não é prejuízo, é
+
+791
+01:52:51.381 --> 01:52:54.501
+déficit. Só que o déficit é primário. Por quê?
+
+792
+01:52:54.576 --> 01:52:58.431
+Porque eu não coloquei nenhum juros ainda, o serviço da dívida.
+
+793
+01:52:58.881 --> 01:53:04.792
+Então o déficit final ou déficit nominal, vou colocar aqui
+
+794
+01:53:04.821 --> 01:53:10.671
+nominal, ele é altíssimo. Portanto, o governo precisa se financiar.
+
+795
+01:53:10.852 --> 01:53:14.871
+Esses juros aqui advêm desta dinâmica.
+
+796
+01:53:15.471 --> 01:53:20.631
+Com déficit, você certamente tem necessidade de financiamento.
+
+797
+01:53:20.691 --> 01:53:25.251
+Com essa necessidade, advém aí o juros. Está certo?
+
+798
+01:53:25.401 --> 01:53:28.131
+O custo do dinheiro. O que acontece, pessoal?
+
+799
+01:53:28.161 --> 01:53:33.772
+O governo, pra gerenciar essa dívida, emite títulos.
+
+800
+01:53:33.831 --> 01:53:39.441
+Então a gente tem lá o Tesouro Direto, a gente tem, por exemplo, LFT,
+
+801
+01:53:40.042 --> 01:53:46.011
+LTN, NTNB, que tem um componente pré e a inflação
+
+802
+01:53:46.071 --> 01:53:50.151
+aqui. São títulos que estão disponíveis pra todos nós.
+
+803
+01:53:50.901 --> 01:53:54.561
+Previdência, por exemplo, instituto de previdência, fundos de previdência, compram
+
+804
+01:53:54.591 --> 01:53:55.371
+tais títulos, etc.
+
+805
+01:53:56.571 --> 01:54:01.491
+Aí o que acontece, pessoal? Os poupadores comprando esse título, eles
+
+806
+01:54:02.151 --> 01:54:08.091
+financiam o governo. Então existe uma interação bastante grande aqui e uma taxa,
+
+807
+01:54:08.181 --> 01:54:11.211
+pessoal, de juros ali, porque como surge a Selic.
+
+808
+01:54:11.931 --> 01:54:15.081
+Claro que tem um componente prefixado aqui no meio, como eu falei, em alguns
+
+809
+01:54:15.141 --> 01:54:21.081
+títulos, mas o preço básico, digamos, desse conjunto de
+
+810
+01:54:21.141 --> 01:54:26.751
+títulos, se chama Selic. E a Selic, pessoal, portanto, remunera
+
+811
+01:54:27.081 --> 01:54:32.407
+esses títulos, ela acaba sendo essa taxa básica da economia e ela vai influenciar
+
+812
+01:54:32.451 --> 01:54:38.301
+uma outra taxa que vai chegar lá na empresa, que se chama Certificado de Depósito
+
+813
+01:54:38.691 --> 01:54:44.631
+Interbancário, o CDI. CDI gira em torno, pessoal, historicamente, 0,1,
+
+814
+01:54:44.961 --> 01:54:50.647
+10 pontos base abaixo da Selic. E isso, pessoal, influencia aplicações
+
+815
+01:54:50.661 --> 01:54:55.941
+financeiras. Se você for depositar dinheiro no banco e o banco te der um CDB,
+
+816
+01:54:56.272 --> 01:55:00.681
+Certificado de Depósito Bancário, você certamente vai ser contemplado com
+
+817
+01:55:00.861 --> 01:55:06.772
+percentual do CDI. Se você for obter um empréstimo, você vai pagar um
+
+818
+01:55:06.801 --> 01:55:11.211
+percentual do CDI. Então isso funciona pra pessoa física, pessoa jurídica, etc.
+
+819
+01:55:11.796 --> 01:55:15.831
+E aí, vamos entender um pouquinho o impacto do movimento dessa taxa.
+
+820
+01:55:16.371 --> 01:55:20.841
+A Selic acaba influenciando todos os preços da economia.
+
+821
+01:55:21.292 --> 01:55:27.171
+Vamos colocar aqui no formato de DRE o caso de uma empresa, como ela foi afetada.
+
+822
+01:55:27.232 --> 01:55:31.116
+E por último, nessa aula, a gente vai abordar o que a empresa poderia fazer,
+
+823
+01:55:31.221 --> 01:55:36.772
+pessoal, pra gerenciar isso. Ou melhor, minimizar os impactos de uma
+
+824
+01:55:37.522 --> 01:55:43.102
+Selic, que eu costumo dizer, pessoal, ela é histórica e cronicamente elevada no
+
+825
+01:55:43.131 --> 01:55:46.401
+Brasil. Vamos lá, pessoal, vamos colocar aqui pra vocês.
+
+826
+01:55:46.431 --> 01:55:50.691
+A DRE começa com a receita de vendas. Vamos colocar aqui pra vocês.
+
+827
+01:55:51.201 --> 01:55:56.376
+E depois você tem o custo das vendas. Custo do que foi vendido, está certo?
+
+828
+01:55:56.931 --> 01:55:58.431
+E você já tem o lucro bruto
+
+829
+01:56:01.095 --> 01:56:07.066
+Aqui é importante destacar, se você, por exemplo, é uma empresa que é impactada
+
+830
+01:56:07.095 --> 01:56:10.336
+pelos juros já no operacional, varejo, por exemplo.
+
+831
+01:56:10.995 --> 01:56:16.665
+Eu já fiz estudos em que eu mostro que as ações do varejo e o resultado das
+
+832
+01:56:16.695 --> 01:56:20.715
+empresas de varejo sofrem com a alta de juros. Você consegue observar isso.
+
+833
+01:56:20.745 --> 01:56:25.755
+Por quê, pessoal? Porque a alta de juros restringe o consumo, é esse o propósito de
+
+834
+01:56:25.785 --> 01:56:27.765
+uma política monetária restritiva.
+
+835
+01:56:27.795 --> 01:56:29.925
+Consequentemente, seu resultado já vai sofrer aqui.
+
+836
+01:56:29.955 --> 01:56:34.906
+Muito cuidado aqui, já com esse lucro bruto pra verificar qual é o impacto efetivo
+
+837
+01:56:34.920 --> 01:56:40.845
+que a Selic traz pra você aqui. Aí depois você tem as despesas operacionais, que
+
+838
+01:56:40.860 --> 01:56:44.010
+eu chamei lá na primeira aula de SD&amp;A.
+
+839
+01:56:44.566 --> 01:56:50.295
+Você já tem aqui o lucro das operações, o lucro operacional.
+
+840
+01:56:50.776 --> 01:56:56.055
+E agora vamos a um cenário. Você tem nessa linha aqui de baixo, as
+
+841
+01:56:56.086 --> 01:56:59.715
+despesas e receitas financeiras.
+
+842
+01:57:00.795 --> 01:57:04.906
+O que vem acontecendo com muitas empresas, isso é uma coisa histórica.
+
+843
+01:57:05.566 --> 01:57:11.026
+A empresa não gera lucro operacional suficiente pra fazer face ao serviço da
+
+844
+01:57:11.055 --> 01:57:16.305
+dívida. Vocês vão se lembrar, o lucro aqui não é dinheiro, o lucro é aquela
+
+845
+01:57:16.336 --> 01:57:20.175
+referência ou aquele conceito abstrato, como eu falei na primeira aula.
+
+846
+01:57:20.205 --> 01:57:25.305
+Mas certamente, ele é bastante útil e ele tem que superar as despesas e receitas
+
+847
+01:57:25.336 --> 01:57:28.276
+financeiras, no caso aqui, despesa. Você tem que cobrir.
+
+848
+01:57:28.425 --> 01:57:33.705
+Existe um indicador famoso que é o indicador de cobertura do serviço da dívida, que
+
+849
+01:57:33.826 --> 01:57:36.675
+bancos monitoram muito quando emprestam dinheiro.
+
+850
+01:57:37.156 --> 01:57:42.375
+Então você tem que ter um lucro operacional suficiente pra cobrir essa despesa
+
+851
+01:57:42.435 --> 01:57:47.415
+financeira, o que vem não sendo observado no mercado, as
+
+852
+01:57:47.475 --> 01:57:52.920
+empresas estão sofrendo. A empresa de varejo, por exemplo, sofrem já aqui,
+
+853
+01:57:53.625 --> 01:57:55.995
+com essa política monetária restritiva.
+
+854
+01:57:56.026 --> 01:58:00.885
+E aí depois, tem uma despesa maior pra ser coberta com resultado menor.
+
+855
+01:58:00.945 --> 01:58:03.990
+Aí fica difícil. Vamos simular o cenário aqui, pessoal.
+
+856
+01:58:04.365 --> 01:58:08.505
+Vamos imaginar que a empresa tenha obtido, vamos colocar aqui no cantinho, lá no
+
+857
+01:58:08.535 --> 01:58:13.576
+balanço patrimonial, você vê uma dívida, ou seja, vai do lado do passivo e vai ver
+
+858
+01:58:13.605 --> 01:58:16.965
+lá, empréstimos, pessoal. Um empréstimo lá de 2,5 milhões.
+
+859
+01:58:18.076 --> 01:58:20.445
+Podia ser 2 bi aqui, tá certo? 2,5 milhões.
+
+860
+01:58:21.225 --> 01:58:26.384
+E a Selic, vamos imaginar aqui, estivesse ali em 2%. Tudo bem, pessoal?
+
+861
+01:58:26.625 --> 01:58:31.576
+2% ao ano. Esse é o saldo que está contabilizado lá, um saldo meio que nocional
+
+862
+01:58:31.605 --> 01:58:37.485
+aqui, 2,5 milhões. 2,5 milhões vezes 2%, vou colocar aqui pra vocês, você
+
+863
+01:58:37.545 --> 01:58:43.005
+chega a 50 mil reais. E vamos imaginar que o lucro operacional desta empresa
+
+864
+01:58:43.576 --> 01:58:46.906
+seja de 100 mil. Ou seja, a empresa suou sangue, pessoal.
+
+865
+01:58:46.965 --> 01:58:50.715
+Sangue, suor, lágrimas pra conquistar esse lucro operacional.
+
+866
+01:58:51.375 --> 01:58:56.970
+Vendeu, teve o custo, uma margem razoável aqui, foi disciplinada nas
+
+867
+01:58:56.985 --> 01:59:02.175
+despesas, tudo bonitinho, e aí tem esse lucro operacional de 100.
+
+868
+01:59:02.205 --> 01:59:08.130
+Portanto, cobriu, no dobro, esse custo do serviço da dívida,
+
+869
+01:59:08.175 --> 01:59:11.535
+o custo do carregamento dessa dívida de 50 mil.
+
+870
+01:59:11.595 --> 01:59:17.445
+Que esse 2%, a cada 45 dias, o Copom, Comitê de Política
+
+871
+01:59:17.505 --> 01:59:21.076
+Monetária, se reúne, e aí vai subindo a Selic.
+
+872
+01:59:21.915 --> 01:59:26.145
+Identificou um foco de inflação, inflação persistente em serviços, etc.
+
+873
+01:59:27.195 --> 01:59:30.316
+Eu sugiro a todos, que sempre leiam o comunicado, pelo menos.
+
+874
+01:59:30.345 --> 01:59:33.975
+Não precisa ler a ata do Copom, mas pelo menos o comunicado, um pedaço, pra você
+
+875
+01:59:34.005 --> 01:59:37.425
+entender por que houve o aumento ou diminuição da Selic.
+
+876
+01:59:38.205 --> 01:59:42.479
+E aí, essa Selic, vamos imaginar aqui, no intervalo de dois anos, aconteceu isso,
+
+877
+01:59:42.675 --> 01:59:46.425
+em algum tempo da história, ele foi pra 14%.
+
+878
+01:59:46.455 --> 01:59:48.555
+Vou colocar 10, pra facilitar até a conta.
+
+879
+01:59:49.276 --> 01:59:53.355
+Saiu a Selic de 2% pra 10, em pouco menos de dois anos.
+
+880
+01:59:53.370 --> 01:59:55.875
+O que vai acontecer aqui, pessoal? Então você faz a continha básica.
+
+881
+01:59:56.595 --> 02:00:01.515
+No ano subsequente, vamos imaginar, no período subsequente, quando houve esse
+
+882
+02:00:01.576 --> 02:00:07.066
+acréscimo da Selic. Vamos colocar exercício social
+
+883
+02:00:07.665 --> 02:00:08.355
+X1 aqui.
+
+884
+02:00:09.735 --> 02:00:13.844
+Esse lucro operacional, vamos supor que a empresa conseguiu de novo, pessoal.
+
+885
+02:00:13.935 --> 02:00:19.590
+De novo, sangue, suor e lágrimas. Conseguiu lá 100 mil, 100 milhões de
+
+886
+02:00:19.605 --> 02:00:25.095
+reais. E aí, gente, eu tenho que agora cobrir uma Selic de quanto? 10%.
+
+887
+02:00:25.125 --> 02:00:30.406
+E esse 10% aqui, 250 mil. Um aumento absurdo, multiplicou por cinco, pessoal.
+
+888
+02:00:30.765 --> 02:00:33.915
+50 vezes cinco, outra conta aqui, 250.
+
+889
+02:00:33.945 --> 02:00:38.776
+Ou seja, eu tinha resultado operacional suficiente pra cobrir.
+
+890
+02:00:39.135 --> 02:00:41.175
+Eu tinha 100 pra cobrir
+
+891
+02:00:42.435 --> 02:00:47.745
+50. Agora, pessoal, eu tenho 100 pra cobrir quanto? 250.
+
+892
+02:00:47.805 --> 02:00:51.406
+Na última aula, a gente vai abordar os efeitos da alavancagem e tudo mais.
+
+893
+02:00:51.945 --> 02:00:57.810
+Aqui, gente, o foco é como me livrar ou como mitigar os efeitos
+
+894
+02:00:57.826 --> 02:01:02.505
+dessa Selic. E, gente, antes de mais nada, todo gestor, toda
+
+895
+02:01:02.625 --> 02:01:07.125
+gestora, não precisa ser da área financeira, mas tem que entender que a taxa de
+
+896
+02:01:07.245 --> 02:01:12.316
+juros, pessoal, afeta o negócio. O Warren Buffett chegou a dizer que a taxa de
+
+897
+02:01:12.345 --> 02:01:15.435
+juros norte-americana é como se fosse o efeito da gravidade.
+
+898
+02:01:15.885 --> 02:01:21.060
+Quanto maior a taxa, maior o efeito da gravidade, ou seja, mais os preços dos
+
+899
+02:01:21.105 --> 02:01:23.026
+ativos caem. Por que os preços dos ativos caem?
+
+900
+02:01:23.925 --> 02:01:25.755
+Porque tem um impacto na economia real.
+
+901
+02:01:26.055 --> 02:01:31.920
+E aqui, no caso do varejo, em particular, você tem o impacto no operacional,
+
+902
+02:01:32.445 --> 02:01:38.130
+e aí, gente, você está já sendo onerado no lucro operacional pra fazer face a
+
+903
+02:01:38.326 --> 02:01:41.475
+uma despesa financeira ainda maior. Tudo bem, pessoal?
+
+904
+02:01:41.505 --> 02:01:45.120
+E agora, por último, pessoal, eu vou abordar com vocês o que fazer.
+
+905
+02:01:45.135 --> 02:01:50.205
+A minha maneira de lidar, pessoal, em conselhos de empresas e consultorias, eu
+
+906
+02:01:50.235 --> 02:01:55.305
+costumo dizer o seguinte: vamos trabalhar nas duas dimensões. Olha que coisa.
+
+907
+02:01:55.365 --> 02:01:58.605
+Primeiro, gente, lucro líquido. O que eu posso fazer aqui?
+
+908
+02:01:58.785 --> 02:02:03.406
+"Poxa, professor, a Selic sempre aumenta, o senhor falou que a Selic é uma
+
+909
+02:02:04.276 --> 02:02:07.425
+coisa histórica e cronicamente elevada no Brasil.
+
+910
+02:02:07.649 --> 02:02:12.375
+O que eu tenho que fazer?" Gente, faça uma boa lição de casa no que diz respeito ao
+
+911
+02:02:12.406 --> 02:02:15.705
+lucro líquido. E aí o que você pode trabalhar aqui, pessoal?
+
+912
+02:02:15.765 --> 02:02:18.586
+Lucro não é dinheiro, blá-blá-blá, a gente já falou disso.
+
+913
+02:02:18.645 --> 02:02:22.545
+Então você olha a receita, revisita, pessoal.
+
+914
+02:02:23.055 --> 02:02:26.264
+Otimiza o seu portfólio de produtos, conheça efetivamente a empresa.
+
+915
+02:02:26.475 --> 02:02:29.326
+Aqui o exercício é de autoanálise. O que eu estou vendendo?
+
+916
+02:02:29.745 --> 02:02:33.194
+O que gera, de fato, lucro pra empresa? Quais são as fontes de receita?
+
+917
+02:02:33.526 --> 02:02:35.595
+De repente, tem um produto lá que está cannibalizando o outro.
+
+918
+02:02:36.076 --> 02:02:41.640
+Aí você tem um produto que tem margem negativa. "Ah, mas o cliente é importante".
+
+919
+02:02:42.135 --> 02:02:45.645
+Mas cliente importante, será que eu não consigo fazer uma venda casada ali pra
+
+920
+02:02:45.735 --> 02:02:48.465
+tentar majorar essa rentabilidade?
+
+921
+02:02:48.526 --> 02:02:51.255
+Enfim, gente, posso usar tecnologia pra aumentar a receita?
+
+922
+02:02:51.480 --> 02:02:54.045
+Posso aumentar a quantidade? Posso aumentar preço? Tá certo?
+
+923
+02:02:54.285 --> 02:02:59.836
+Então são inúmeras as avenidas aqui possíveis pra você aumentar a receita.
+
+924
+02:02:59.895 --> 02:03:05.160
+Custos, pessoal. Minimizar custo, gente, buscar eficiência, automatizar,
+
+925
+02:03:05.205 --> 02:03:10.965
+mecanizar o processo, mudar o layout da fábrica, alguma coisa precisa ser buscada.
+
+926
+02:03:11.175 --> 02:03:15.915
+Renegociação com fornecedores, descontos. De repente, comprar uma quantidade maior.
+
+927
+02:03:15.975 --> 02:03:20.265
+Eu sei que você, ao ter uma quantidade maior, vai impactar o caixa, porque você vai
+
+928
+02:03:20.279 --> 02:03:24.885
+amarrar o dinheiro, digamos. Você vai deixar o dinheiro parado na sua produção, mas
+
+929
+02:03:24.915 --> 02:03:29.295
+tudo depende aí do contexto e é uma medida eventualmente necessária.
+
+930
+02:03:29.745 --> 02:03:33.615
+E despesas, o que você pode fazer aqui? Cortar.
+
+931
+02:03:34.125 --> 02:03:39.765
+Você pode usar ferramentas como central de serviços compartilhados, se seu grupo
+
+932
+02:03:39.915 --> 02:03:45.526
+compreende várias empresas, você cria um prestador de serviço pra todo esse
+
+933
+02:03:45.555 --> 02:03:51.219
+grupo. Em vez de ter um departamento de folha de pagamento pra cada empresa, você
+
+934
+02:03:51.249 --> 02:03:53.890
+criaria uma central de serviços compartilhados.
+
+935
+02:03:54.640 --> 02:03:58.959
+Também aqui, você pode utilizar ferramentas do ponto de vista orçamentário, você
+
+936
+02:03:58.989 --> 02:04:02.589
+pode empregar uma técnica chamada orçamento base zero.
+
+937
+02:04:02.649 --> 02:04:06.849
+Enfim, gente, aqui as possibilidades também são bastante grandes.
+
+938
+02:04:07.509 --> 02:04:11.349
+Talvez um último, o Imposto de Renda aqui é um pouco mais difícil
+
+939
+02:04:12.580 --> 02:04:18.039
+pra você fazer dentro da lei, uma elisão fiscal, não uma evasão, mas um
+
+940
+02:04:18.309 --> 02:04:19.809
+planejamento tributário e tudo mais.
+
+941
+02:04:20.154 --> 02:04:24.009
+Mas eu digo o seguinte, pessoal, o governo vem fechando as portas, mas aqui,
+
+942
+02:04:24.519 --> 02:04:27.759
+utilize tudo o que o governo te dá como benefício.
+
+943
+02:04:28.029 --> 02:04:32.950
+Então aqui você tem que ter um departamento de impostos robusto e bastante
+
+944
+02:04:33.009 --> 02:04:38.408
+qualificado pra que nenhuma isenção que o governo te dê, passe despercebida.
+
+945
+02:04:38.439 --> 02:04:43.284
+Enfim, gente, são essas as frentes que vocês podem atacar.
+
+946
+02:04:43.779 --> 02:04:47.844
+Ou seja, defender muito bem o operacional diante de um cenário financeiro
+
+947
+02:04:47.859 --> 02:04:51.429
+complicado. Por último, pessoal, olha a dimensão do caixa.
+
+948
+02:04:51.459 --> 02:04:55.509
+E aqui, o que você pode fazer, gente? Prazo médio de estoque.
+
+949
+02:04:55.943 --> 02:05:00.159
+Estoque é dinheiro parado. Então aqui você tem que tomar cuidado.
+
+950
+02:05:00.189 --> 02:05:04.464
+Você não precisa ter, como eu vi numa empresa, 150 tipos de parafuso, pra quê?
+
+951
+02:05:05.019 --> 02:05:09.339
+Todo mundo quer um conforto, o pessoal de produção quer ter material, o pessoal de
+
+952
+02:05:09.399 --> 02:05:14.169
+vendas quer ter produto pra vender. Então a tendência, qual que é a inércia aqui?
+
+953
+02:05:14.259 --> 02:05:18.309
+É que haja estoques mais altos. Havendo estoque mais alto, você demora pra vender,
+
+954
+02:05:18.339 --> 02:05:21.580
+não é isso? Você demora pra girar seu estoque, demora pra vender e demora pra
+
+955
+02:05:21.640 --> 02:05:25.044
+colocar o dinheiro no caixa. Portanto, olho no prazo médio de estoques.
+
+956
+02:05:25.539 --> 02:05:30.818
+Segundo, vender pro cliente. "Ah, o cliente é meu amigo, não pagou, está tudo bem.
+
+957
+02:05:30.880 --> 02:05:35.499
+Ele é meu parça, meu amigo." Não! Você não pode incorrer nesse erro.
+
+958
+02:05:35.679 --> 02:05:40.419
+Então você tem que monitorar muito bem e monetizar cada vez mais rápido aquelas
+
+959
+02:05:40.450 --> 02:05:45.580
+vendas que você fez. Por último, prazo médio de pagamento a fornecedores.
+
+960
+02:05:45.759 --> 02:05:48.580
+Negociar. Poxa, um não você já tem.
+
+961
+02:05:49.120 --> 02:05:55.089
+Você não pediu nada pra ele, não custa sempre buscar essa extensão
+
+962
+02:05:55.149 --> 02:05:59.349
+no prazo de pagamento. Claro que depende do tamanho, depende da massa crítica que
+
+963
+02:05:59.409 --> 02:06:04.450
+você tem na cadeia de suprimento, mas certamente você precisa colocar isso na
+
+964
+02:06:04.509 --> 02:06:08.259
+agenda constantemente. Hoje nós avançamos bastante.
+
+965
+02:06:08.319 --> 02:06:13.689
+Lembre-se de que você pode assistir essa e outras aulas quantas vezes quiser.
+
+966
+02:06:13.719 --> 02:06:18.654
+E é como eu te falei, a gente preza pelo seu caminho de aprendizado pra chegar até
+
+967
+02:06:18.654 --> 02:06:23.409
+o topo. Agora que você já viu como é o cálculo de impactos econômicos, já está
+
+968
+02:06:23.439 --> 02:06:27.669
+preparado pro próximo nível. Na terceira aula, vamos falar sobre um dos maiores
+
+969
+02:06:27.700 --> 02:06:32.245
+dilemas financeiros que existem: quando captar recursos via dívida e quando buscar
+
+970
+02:06:32.319 --> 02:06:36.219
+investidores. Com a taxa de juros sempre elevada, o custo de dinheiro é alto.
+
+971
+02:06:36.459 --> 02:06:41.259
+E eu te adianto, a maioria das empresas brasileiras está endividada com prazos
+
+972
+02:06:41.409 --> 02:06:46.059
+curtos e juros altíssimos. É comum ver empresas pagando 2, 3% ao mês.
+
+973
+02:06:46.630 --> 02:06:51.684
+Isso dá mais de 30% ao ano. Quando vale a pena pagar esses juros?
+
+974
+02:06:51.849 --> 02:06:54.774
+E quando é melhor diluir sua participação trazendo um sócio?
+
+975
+02:06:54.939 --> 02:06:58.719
+Na próxima aula, eu vou te mostrar os critérios objetivos pra essa decisão.
+
+976
+02:06:58.779 --> 02:07:03.009
+Como calcular se sua taxa de retorno justifica o custo de capital?
+
+977
+02:07:03.039 --> 02:07:06.593
+Os indicadores que mostram se você está pronto pra um IPO.
+
+978
+02:07:06.833 --> 02:07:09.640
+Porque timing é tudo quando falamos de captação.
+
+979
+02:07:09.669 --> 02:07:12.654
+A diferença entre dinheiro caro e dinheiro errado.
+
+980
+02:07:12.700 --> 02:07:17.034
+Claro, tudo com exemplos da vida real, com empresas que fizeram IPO no momento
+
+981
+02:07:17.049 --> 02:07:22.179
+errado e quebraram, outras que pegaram dívida cara, mas cresceram 10 vezes.
+
+982
+02:07:22.689 --> 02:07:26.843
+Prepare-se, porque essa aula vai mudar completamente como você enxerga a captação
+
+983
+02:07:26.859 --> 02:07:30.729
+de recursos financeiros. Você finalizou a segunda aula do MBA em Finanças
+
+984
+02:07:30.759 --> 02:07:35.349
+Corporativas. Que legal ver você firme e forte no seu crescimento.
+
+985
+02:07:35.364 --> 02:07:40.749
+Agora eu quero ouvir de você, deixa aqui nos comentários qual foi o momento eureka
+
+986
+02:07:40.809 --> 02:07:45.279
+da aula de hoje, que tipo de choque econômico mais preocupa você agora.
+
+987
+02:07:45.309 --> 02:07:47.830
+E como sempre, estou lendo tudo o que vocês falam.
+
+988
+02:07:47.890 --> 02:07:52.239
+Claro, agora anote a sua senha da aula de hoje.
