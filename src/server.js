@@ -6,6 +6,7 @@ import fs from 'fs';
 import { fileURLToPath } from 'url';
 import { webSearch, formatPerplexityPrompt } from './services/perplexity_engine.js';
 import { generatePresentationHTML } from './services/gamma_engine.js';
+import { generateHelpUSResponseAsync } from './services/helpus_knowledge.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -139,7 +140,7 @@ app.post('/api/tts', (req, res) => {
 });
 
 /**
- * 2. Perplexity Search Endpoint
+ * 2. Perplexity & AI Search Endpoint
  */
 app.get('/api/perplexity', async (req, res) => {
   const query = req.query.q || req.body.q;
@@ -156,6 +157,29 @@ app.get('/api/perplexity', async (req, res) => {
     sources: searchResults,
     prompt: promptData
   });
+});
+
+/**
+ * 2.1. Unified HelpUS Ecosystem Search API
+ */
+app.all('/api/search', async (req, res) => {
+  const query = req.query.q || req.body?.q || req.body?.query || '';
+  if (!query || typeof query !== 'string') {
+    return res.status(400).json({ error: 'Query parameter "q" is required.' });
+  }
+
+  try {
+    const aiResponse = await generateHelpUSResponseAsync(query);
+    res.json({
+      success: true,
+      query,
+      synthesis: aiResponse.text,
+      voice: aiResponse.voice,
+      timestamp: new Date().toISOString()
+    });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to process AI search request' });
+  }
 });
 
 /**
@@ -180,6 +204,90 @@ app.post('/api/gamma', (req, res) => {
     success: true,
     presentationUrl: `/public/${filename}`,
     filename
+  });
+});
+
+/**
+ * 4. Widget Chat & AI Knowledge Base Endpoint
+ */
+app.post('/api/widget/chat', async (req, res) => {
+  const { message, generateAudio = true } = req.body;
+  if (!message || typeof message !== 'string') {
+    return res.status(400).json({ error: 'Message field is required' });
+  }
+
+  try {
+    const aiResponse = await generateHelpUSResponseAsync(message);
+
+    let audioUrl = null;
+    if (generateAudio && aiResponse.ttsText) {
+      const filename = `audio_widget_${Date.now()}.mp3`;
+      const outputPath = path.join(publicDir, filename);
+      const scriptPath = path.join(__dirname, 'tts_engine.py');
+      const voice = aiResponse.voice || 'pt-BR-AntonioNeural';
+
+      const cmd = `python "${scriptPath}" --text "${aiResponse.ttsText.replace(/"/g, '\\"')}" --out "${outputPath}" --voice "${voice}"`;
+      
+      await new Promise((resolve) => {
+        exec(cmd, (error) => {
+          if (!error) {
+            audioUrl = `/public/${filename}`;
+          }
+          resolve();
+        });
+      });
+    }
+
+    res.json({
+      success: true,
+      text: aiResponse.text,
+      voice: aiResponse.voice,
+      audioUrl
+    });
+  } catch (err) {
+    console.error('Widget Chat error:', err);
+    res.status(500).json({ error: 'Failed to process widget request' });
+  }
+});
+
+// In-memory lead store & webhook trigger
+const leadsDatabase = [];
+
+/**
+ * 5. Lead Capture & Appointment Booking Endpoint
+ */
+app.post('/api/widget/lead', (req, res) => {
+  const { name, phone, email, intent, clientSite } = req.body;
+  if (!name || (!phone && !email)) {
+    return res.status(400).json({ error: 'Nome e telefone ou email são obrigatórios.' });
+  }
+
+  const newLead = {
+    id: `LEAD-${Date.now()}`,
+    name,
+    phone: phone || '',
+    email: email || '',
+    intent: intent || 'Agendamento / Atendimento',
+    clientSite: clientSite || 'widget.helpusbr.com',
+    createdAt: new Date().toISOString(),
+    status: 'NOVO'
+  };
+
+  leadsDatabase.push(newLead);
+  console.log('⚡ Novo Lead Capturado pelo Widget:', newLead);
+
+  res.json({
+    success: true,
+    message: 'Lead capturado e agendamento registrado com sucesso!',
+    lead: newLead
+  });
+});
+
+app.get('/api/widget/leads', (req, res) => {
+  res.json({
+    success: true,
+    total: leadsDatabase.length,
+    leads: leadsDatabase
   });
 });
 
