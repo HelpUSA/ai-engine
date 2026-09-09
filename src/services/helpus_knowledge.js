@@ -7,7 +7,7 @@ import http from 'http';
  * Phonetic Pronunciation: "Rélp Ás"
  */
 
-const AI_HELPUS_ENDPOINT = process.env.AI_HELPUS_URL || 'https://ai.helpusbr.com/api/chat';
+const AI_HELPUS_ENDPOINT = process.env.AI_HELPUS_URL || 'https://ai.helpusbr.com/chat';
 
 /**
  * Call external AI service with strict 1.5s timeout, falling back gracefully
@@ -110,10 +110,8 @@ function queryAiHelpus(promptText) {
     try {
       const u = new URL(AI_HELPUS_ENDPOINT);
       const postData = JSON.stringify({
-        messages: [
-          { role: 'system', content: 'Você é o assistente comercial oficial da HelpUS (ai.helpusbr.com). Responda de forma direta, simpática e objetiva em 2 ou 3 frases.' },
-          { role: 'user', content: promptText }
-        ]
+        mensagem: promptText,
+        pesquisar_web: false
       });
 
       const options = {
@@ -135,7 +133,7 @@ function queryAiHelpus(promptText) {
         res.on('end', () => {
           try {
             const data = JSON.parse(body);
-            const content = data.reply || data.content || data?.choices?.[0]?.message?.content;
+            const content = data.resposta || data.reply || data.content || data?.choices?.[0]?.message?.content;
             if (content && typeof content === 'string' && content.trim()) {
               return resolve(content.trim());
             }
