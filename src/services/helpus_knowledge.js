@@ -12,12 +12,12 @@ const AI_HELPUS_ENDPOINT = process.env.AI_HELPUS_URL || 'https://ai.helpusbr.com
 /**
  * Call external AI service with strict 1.5s timeout, falling back gracefully
  */
-export async function generateHelpUSResponseAsync(customerMessage) {
+export async function generateHelpUSResponseAsync(customerMessage, siteContext = {}) {
   const msg = (customerMessage || '').trim();
   const maleVoice = "pt-BR-AntonioNeural";
 
   if (!msg) {
-    return generateHelpUSResponse(msg);
+    return generateHelpUSResponse(msg, siteContext);
   }
 
   // Attempt external query with 5.5s timeout
@@ -39,12 +39,72 @@ export async function generateHelpUSResponseAsync(customerMessage) {
     console.log('💡 Fallback para base local HelpUS:', err.message);
   }
 
-  return generateHelpUSResponse(msg);
+  return generateHelpUSResponse(msg, siteContext);
 }
 
-export function generateHelpUSResponse(customerMessage) {
+export function generateHelpUSResponse(customerMessage, siteContext = {}) {
   const msg = (customerMessage || '').toLowerCase();
   const maleVoice = "pt-BR-AntonioNeural";
+  const siteTitle = (siteContext.siteTitle || siteContext.clientSite || '').toLowerCase();
+
+  // 1. Barbearia Studio Context
+  if (siteTitle.includes('barbearia') || siteTitle.includes('barber')) {
+    if (msg.includes('corte') || msg.includes('barba') || msg.includes('servico') || msg.includes('preco') || msg.includes('valor')) {
+      return {
+        text: "Na Barbearia Studio oferecemos Corte Masculino (R$ 45), Barba Completa com toalha quente (R$ 35), Combo Corte + Barba (R$ 70) e Selagem/Alinhamento (R$ 80). Gostaria de agendar um horário com nossos barbeiros?",
+        ttsText: "Na Barbearia Studio oferecemos Corte Masculino, Barba Completa com toalha quente, Combo Corte e Barba e Selagem. Gostaria de agendar um horário com nossos barbeiros?",
+        voice: maleVoice
+      };
+    }
+    return {
+      text: "Olá! Bem-vindo à Barbearia Studio. Atendemos de terça a sábado das 09h às 20h com agendamento online descomplicado. Como posso ajudar seu visual hoje?",
+      ttsText: "Olá! Bem-vindo à Barbearia Studio. Atendemos de terça a sábado das nove às vinte horas com agendamento online descomplicado. Como posso ajudar seu visual hoje?",
+      voice: maleVoice
+    };
+  }
+
+  // 2. Caipira Raiz Context
+  if (siteTitle.includes('caipira') || siteTitle.includes('ovo') || siteTitle.includes('granja')) {
+    if (msg.includes('ovo') || msg.includes('duzia') || msg.includes('preco') || msg.includes('entrega') || msg.includes('pedido')) {
+      return {
+        text: "Nossos ovos caipiras são 100% livres de gaiola (pasture raised), produzidos diariamente na Granja Mattos. Dúzia selecionada por R$ 18,00 com entrega rápida em toda João Pessoa - PB. Quantas dúzias deseja pedir?",
+        ttsText: "Nossos ovos caipiras são cem por cento livres de gaiola, produzidos diariamente na Granja Mattos. Dúzia selecionada por dezoito reais com entrega rápida em toda João Pessoa. Quantas dúzias deseja pedir?",
+        voice: maleVoice
+      };
+    }
+    return {
+      text: "Olá! Bem-vindo ao Caipira Raiz. Ovos caipiras caipiras de verdade, com gema avermelhada e o máximo de sabor e nutrição. Como podemos entregar seu pedido hoje?",
+      ttsText: "Olá! Bem-vindo ao Caipira Raiz. Ovos caipiras de verdade, com gema avermelhada e o máximo de sabor e nutrição. Como podemos entregar seu pedido hoje?",
+      voice: maleVoice
+    };
+  }
+
+  // 3. Dr. Eduardo Magalhães (Neurologia) Context
+  if (siteTitle.includes('eduardo') || siteTitle.includes('neuro') || siteTitle.includes('medico') || siteTitle.includes('clinica')) {
+    if (msg.includes('enmg') || msg.includes('eeg') || msg.includes('exame') || msg.includes('laudo') || msg.includes('consulta')) {
+      return {
+        text: "A clínica do Dr. Eduardo Magalhães realiza exames especializados em Eletroneuromiografia (ENMG), Eletroencefalograma (EEG) e Mapeamento Cerebral, além de emissão de Laudos Digitais Antifraude por QR Code. Deseja agendar uma consulta?",
+        ttsText: "A clínica do Doutor Eduardo Magalhães realiza exames especializados em Eletroneuromiografia, Eletroencefalograma e Mapeamento Cerebral, além de emissão de Laudos Digitais Antifraude por Que Rê Códe. Deseja agendar uma consulta?",
+        voice: maleVoice
+      };
+    }
+    return {
+      text: "Olá! Sou o assistente virtual da Clínica Neurológica do Dr. Eduardo Magalhães. Estamos à disposição para agendamentos de consultas e informações sobre laudos e exames neurofisiológicos.",
+      ttsText: "Olá! Sou o assistente virtual da Clínica Neurológica do Doutor Eduardo Magalhães. Estamos à disposição para agendamentos de consultas e informações sobre laudos e exames neurofisiológicos.",
+      voice: maleVoice
+    };
+  }
+
+  // 4. Imobiliárias Context (Dany / Waleska / RealEstate)
+  if (siteTitle.includes('imoveis') || siteTitle.includes('dany') || siteTitle.includes('waleska') || siteTitle.includes('realestate')) {
+    if (msg.includes('imovel') || msg.includes('bessa') || msg.includes('jardim oceania') || msg.includes('comprar') || msg.includes('alugar')) {
+      return {
+        text: "Temos excelentes opções de apartamentos, casas em condomínio e coberturas no Bessa, Jardim Oceania e orla de João Pessoa. Gostaria de receber opções no seu WhatsApp com fotos e valores?",
+        ttsText: "Temos excelentes opções de apartamentos, casas em condomínio e coberturas no Bessa, Jardim Oceania e orla de João Pessoa. Gostaria de receber opções no seu WhatsApp com fotos e valores?",
+        voice: maleVoice
+      };
+    }
+  }
 
   if (msg.includes('música') || msg.includes('musica') || msg.includes('compos') || msg.includes('cancao') || msg.includes('som')) {
     return {
@@ -150,4 +210,56 @@ function queryAiHelpus(promptText) {
       resolve(null);
     }
   });
+}
+
+/**
+ * Transcribe WhatsApp audio notes using OpenAI Whisper-1
+ */
+export async function transcribeAudioWithWhisper(audioBuffer, filename = 'voice.ogg') {
+  const apiKey = process.env.OPENAI_API_KEY;
+  if (!apiKey || !audioBuffer) return null;
+
+  try {
+    const boundary = '----WebKitFormBoundary' + Math.random().toString(36).substring(2);
+    const bodyParts = [];
+
+    bodyParts.push(Buffer.from(`--${boundary}\r\nContent-Disposition: form-data; name="model"\r\n\r\nwhisper-1\r\n`));
+    bodyParts.push(Buffer.from(`--${boundary}\r\nContent-Disposition: form-data; name="language"\r\n\r\npt\r\n`));
+    bodyParts.push(Buffer.from(`--${boundary}\r\nContent-Disposition: form-data; name="file"; filename="${filename}"\r\nContent-Type: audio/ogg\r\n\r\n`));
+    bodyParts.push(audioBuffer);
+    bodyParts.push(Buffer.from(`\r\n--${boundary}--\r\n`));
+
+    const postData = Buffer.concat(bodyParts);
+
+    return new Promise((resolve) => {
+      const req = https.request('https://api.openai.com/v1/audio/transcriptions', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${apiKey}`,
+          'Content-Type': `multipart/form-data; boundary=${boundary}`,
+          'Content-Length': postData.length
+        },
+        timeout: 10000
+      }, (res) => {
+        let body = '';
+        res.on('data', chunk => body += chunk);
+        res.on('end', () => {
+          try {
+            const data = JSON.parse(body);
+            if (data && data.text) {
+              return resolve(data.text.trim());
+            }
+          } catch (e) {}
+          resolve(null);
+        });
+      });
+
+      req.on('error', () => resolve(null));
+      req.on('timeout', () => { req.destroy(); resolve(null); });
+      req.write(postData);
+      req.end();
+    });
+  } catch (e) {
+    return null;
+  }
 }

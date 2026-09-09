@@ -1,11 +1,11 @@
-import makeWASocket, { useMultiFileAuthState, DisconnectReason } from '@whiskeysockets/baileys';
+import makeWASocket, { useMultiFileAuthState, DisconnectReason, downloadMediaMessage } from '@whiskeysockets/baileys';
 import qrcodeTerminal from 'qrcode-terminal';
 import QRCode from 'qrcode';
 import path from 'path';
 import fs from 'fs';
 import { exec } from 'child_process';
 import { fileURLToPath } from 'url';
-import { generateHelpUSResponseAsync } from './services/helpus_knowledge.js';
+import { generateHelpUSResponseAsync, transcribeAudioWithWhisper } from './services/helpus_knowledge.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -102,7 +102,21 @@ export async function startWhatsAppBot() {
       if (msg.key.fromMe || msg.key.remoteJid === 'status@broadcast') continue;
 
       const remoteJid = msg.key.remoteJid;
-      const textMessage = msg.message?.conversation || msg.message?.extendedTextMessage?.text || '';
+      let textMessage = msg.message?.conversation || msg.message?.extendedTextMessage?.text || '';
+
+      if (!textMessage.trim() && msg.message?.audioMessage) {
+        try {
+          console.log(`🎙️ Áudio recebido de [${remoteJid}], iniciando transcrição Whisper...`);
+          const audioBuffer = await downloadMediaMessage(msg, 'buffer', {});
+          const transcribed = await transcribeAudioWithWhisper(audioBuffer);
+          if (transcribed) {
+            console.log(`📝 Transcrição Whisper [${remoteJid}]: ${transcribed}`);
+            textMessage = transcribed;
+          }
+        } catch (audioErr) {
+          console.error('Erro ao baixar/transcrever áudio:', audioErr);
+        }
+      }
 
       if (!textMessage.trim()) continue;
 
