@@ -20,10 +20,10 @@ export async function generateHelpUSResponseAsync(customerMessage) {
     return generateHelpUSResponse(msg);
   }
 
-  // Attempt external query with 1.5s timeout
+  // Attempt external query with 5.5s timeout
   try {
     const aiPromise = queryAiHelpus(msg);
-    const timeoutPromise = new Promise(resolve => setTimeout(() => resolve(null), 1500));
+    const timeoutPromise = new Promise(resolve => setTimeout(() => resolve(null), 5500));
     const aiResponse = await Promise.race([aiPromise, timeoutPromise]);
 
     if (aiResponse && typeof aiResponse === 'string' && aiResponse.trim().length > 0) {
@@ -123,7 +123,7 @@ function queryAiHelpus(promptText) {
           'Content-Type': 'application/json',
           'Content-Length': Buffer.byteLength(postData)
         },
-        timeout: 1200
+        timeout: 5000
       };
 
       const requester = u.protocol === 'https:' ? https : http;
