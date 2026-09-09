@@ -24,94 +24,73 @@ if (!fs.existsSync(publicDir)) {
 }
 app.use('/public', express.static(publicDir));
 
-import { botState, startWhatsAppBot } from './whatsapp_bot.js';
+import { humanHandoffs, toggleHandoff, botState, startWhatsAppBot } from './whatsapp_bot.js';
+import { addRAGDocument, getRAGDocuments, deleteRAGDocument } from './services/rag_engine.js';
 
 // Health check
 app.get('/health', (req, res) => {
   res.json({ status: 'online', service: 'AI Engine Hub', version: '1.0.0', botStatus: botState.status });
 });
 
-// HTML Web Page for Scanning WhatsApp QR Code
-app.get(['/', '/qr'], (req, res) => {
-  if (botState.status === 'connected') {
-    return res.send(`
-      <!DOCTYPE html>
-      <html lang="pt">
-      <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HelpUS WhatsApp Bot - Conectado</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-      </head>
-      <body class="bg-slate-950 text-white min-h-screen flex items-center justify-center p-4">
-        <div class="max-w-md w-full bg-slate-900 border border-emerald-500/30 rounded-3xl p-8 text-center space-y-6 shadow-2xl">
-          <div class="w-16 h-16 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto text-3xl">
-            ✅
-          </div>
-          <h1 class="text-2xl font-extrabold text-white">WhatsApp Conectado!</h1>
-          <p class="text-slate-400 text-sm">O robô de atendimento HelpUS com Voz Neural está 100% ativo e respondendo aos seus clientes.</p>
-          <div class="p-3 bg-slate-950 rounded-xl text-xs font-mono text-emerald-400 border border-slate-800">
-            Status: ONLINE 🟢
-          </div>
-        </div>
-      </body>
-      </html>
-    `);
+// Full AI Agent Control Center Dashboard
+app.get(['/', '/dashboard'], (req, res) => {
+  const dashPath = path.join(publicDir, 'dashboard.html');
+  if (fs.existsSync(dashPath)) {
+    return res.sendFile(dashPath);
   }
+  res.redirect('/health');
+});
 
-  if (botState.qrCodeDataUrl) {
-    return res.send(`
-      <!DOCTYPE html>
-      <html lang="pt">
-      <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="refresh" content="10">
-        <title>Escanear QR Code - HelpUS WhatsApp Bot</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-      </head>
-      <body class="bg-slate-950 text-white min-h-screen flex items-center justify-center p-4">
-        <div class="max-w-md w-full bg-slate-900 border border-slate-800 rounded-3xl p-8 text-center space-y-6 shadow-2xl">
-          <div>
-            <span class="text-xs font-bold uppercase tracking-wider text-cyan-400 bg-cyan-950 px-3 py-1 rounded-full border border-cyan-800">
-              Conexão WhatsApp
-            </span>
-            <h1 class="text-2xl font-extrabold text-white mt-3">Escanear QR Code</h1>
-            <p class="text-slate-400 text-xs mt-1">Abra o WhatsApp no seu iPhone ➔ Configurações ➔ Aparelhos Conectados ➔ Conectar um Aparelho</p>
-          </div>
+// Status API
+app.get('/api/status', (req, res) => {
+  res.json({
+    status: botState.status,
+    qrCodeDataUrl: botState.qrCodeDataUrl,
+    connectedUser: botState.connectedUser,
+    activeHandoffs: humanHandoffs.size,
+    ragDocumentsCount: getRAGDocuments().length
+  });
+});
 
-          <div class="p-4 bg-white rounded-2xl shadow-xl inline-block border-4 border-cyan-500/50">
-            <img src="${botState.qrCodeDataUrl}" alt="WhatsApp QR Code" class="w-64 h-64 mx-auto block" />
-          </div>
-
-          <p class="text-[11px] text-slate-500 animate-pulse">
-            Esta página atualiza automaticamente a cada 10 segundos.
-          </p>
-        </div>
-      </body>
-      </html>
-    `);
+// RAG Endpoints
+app.post('/api/rag/upload', (req, res) => {
+  const { title, content } = req.body;
+  if (!content) {
+    return res.status(400).json({ error: 'Conteúdo é obrigatório.' });
   }
+  const newDoc = addRAGDocument(title, content);
+  res.json({ success: true, document: newDoc });
+});
 
-  res.send(`
-    <!DOCTYPE html>
-    <html lang="pt">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="refresh" content="5">
-      <title>Gerando QR Code...</title>
-      <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-    <body class="bg-slate-950 text-white min-h-screen flex items-center justify-center p-4 text-center">
-      <div class="space-y-4">
-        <div class="w-12 h-12 border-4 border-cyan-500 border-t-transparent rounded-full animate-spin mx-auto"></div>
-        <h2 class="text-lg font-bold">Iniciando motor WhatsApp...</h2>
-        <p class="text-xs text-slate-500">Aguarde alguns segundos enquanto o QR Code é gerado.</p>
-      </div>
-    </body>
-    </html>
-  `);
+app.get('/api/rag/documents', (req, res) => {
+  res.json({ success: true, documents: getRAGDocuments() });
+});
+
+app.delete('/api/rag/documents/:id', (req, res) => {
+  const deleted = deleteRAGDocument(req.params.id);
+  res.json({ success: deleted });
+});
+
+// Human Handoff API
+app.post('/api/handoff', (req, res) => {
+  const { remoteJid, status } = req.body;
+  if (!remoteJid) {
+    return res.status(400).json({ error: 'remoteJid é obrigatório.' });
+  }
+  const newStatus = toggleHandoff(remoteJid, status);
+  res.json({ success: true, remoteJid, active: newStatus });
+});
+
+// n8n Webhook Endpoint
+app.post('/api/webhook/n8n', (req, res) => {
+  const { event = 'custom_event', payload = {} } = req.body;
+  console.log(`⚡ Webhook n8n Recebido [${event}]:`, payload);
+  res.json({
+    success: true,
+    status: 'processed',
+    event,
+    receivedAt: new Date().toISOString()
+  });
 });
 
 /**
@@ -211,13 +190,13 @@ app.post('/api/gamma', (req, res) => {
  * 4. Widget Chat & AI Knowledge Base Endpoint
  */
 app.post('/api/widget/chat', async (req, res) => {
-  const { message, generateAudio = true } = req.body;
+  const { message, generateAudio = true, clientSite = '', siteTitle = '' } = req.body;
   if (!message || typeof message !== 'string') {
     return res.status(400).json({ error: 'Message field is required' });
   }
 
   try {
-    const aiResponse = await generateHelpUSResponseAsync(message);
+    const aiResponse = await generateHelpUSResponseAsync(message, { clientSite, siteTitle });
 
     let audioUrl = null;
     if (generateAudio && aiResponse.ttsText) {
@@ -275,6 +254,12 @@ app.post('/api/widget/lead', (req, res) => {
 
   leadsDatabase.push(newLead);
   console.log('⚡ Novo Lead Capturado pelo Widget:', newLead);
+
+  // Auto notification via WhatsApp Bot if connected
+  if (botState.status === 'connected' && botState.sock) {
+    const notifyMsg = `🔔 *NOVO LEAD CAPTURADO (Widget HelpUS)*\n\n👤 *Nome:* ${newLead.name}\n📞 *Contato:* ${newLead.phone || newLead.email}\n🎯 *Intenção:* ${newLead.intent}\n🌐 *Origem:* ${newLead.clientSite}\n⏰ *Data:* ${newLead.createdAt}`;
+    botState.sock.sendMessage('5583999999999@s.whatsapp.net', { text: notifyMsg }).catch(() => {});
+  }
 
   res.json({
     success: true,

@@ -20,11 +20,23 @@ if (!fs.existsSync(publicDir)) {
   fs.mkdirSync(publicDir, { recursive: true });
 }
 
+export const humanHandoffs = new Map();
+
 export const botState = {
   qrCodeDataUrl: null,
   status: 'initializing',
   connectedUser: null
 };
+
+export function toggleHandoff(remoteJid, status) {
+  if (status === undefined) {
+    const current = humanHandoffs.get(remoteJid) || false;
+    humanHandoffs.set(remoteJid, !current);
+    return !current;
+  }
+  humanHandoffs.set(remoteJid, !!status);
+  return !!status;
+}
 
 /**
  * Generate MP3 audio using local tts_engine.py
@@ -102,7 +114,8 @@ export async function startWhatsAppBot() {
       if (msg.key.fromMe || msg.key.remoteJid === 'status@broadcast') continue;
 
       const remoteJid = msg.key.remoteJid;
-      let textMessage = msg.message?.conversation || msg.message?.extendedTextMessage?.text || '';
+      let textMessage = msg.message?.conversation || msg.message?.extendedTextMessage?.text || msg.message?.imageMessage?.caption || '';
+      let incomingImageBase64 = null;
 
       if (!textMessage.trim() && msg.message?.audioMessage) {
         try {
@@ -118,12 +131,44 @@ export async function startWhatsAppBot() {
         }
       }
 
-      if (!textMessage.trim()) continue;
+      if (msg.message?.imageMessage) {
+        try {
+          console.log(`📷 Imagem recebida de [${remoteJid}], baixando buffer para visão multimodal...`);
+          const imgBuffer = await downloadMediaMessage(msg, 'buffer', {});
+          if (imgBuffer) {
+            incomingImageBase64 = imgBuffer.toString('base64');
+            if (!textMessage.trim()) {
+              textMessage = 'Analise a imagem enviada por favor.';
+            }
+          }
+        } catch (imgErr) {
+          console.error('Erro ao baixar imagem:', imgErr);
+        }
+      }
 
-      console.log(`📩 Mensagem recebida de [${remoteJid}]: ${textMessage}`);
+      if (!textMessage.trim() && !incomingImageBase64) continue;
+
+      console.log(`📩 Mensagem recebida de [${remoteJid}]: ${textMessage}${incomingImageBase64 ? ' (com imagem anexa)' : ''}`);
+
+      // Check if Human Handoff is requested or already active
+      const lowerText = textMessage.toLowerCase();
+      const isHandoffKeyword = lowerText.includes('humano') || lowerText.includes('atendente') || lowerText.includes('falar com pessoa');
+
+      if (isHandoffKeyword || humanHandoffs.get(remoteJid)) {
+        if (isHandoffKeyword) {
+          humanHandoffs.set(remoteJid, true);
+          await sock.sendMessage(remoteJid, { 
+            text: '👨‍💻 *Transbordo Humano Ativado!* Um de nossos atendentes humanos foi notificado e dará continuidade ao seu atendimento em instantes.' 
+          });
+          console.log(`👨‍💻 Transbordo humano ativado para [${remoteJid}]`);
+        } else {
+          console.log(`⏸️ Resposta automática pausada para [${remoteJid}] (Modo Atendente Humano Ativo)`);
+        }
+        continue;
+      }
 
       // 1. Generate intelligent HelpUS response via ai.helpusbr.com / Knowledge Engine
-      const botResponse = await generateHelpUSResponseAsync(textMessage);
+      const botResponse = await generateHelpUSResponseAsync(textMessage, {}, incomingImageBase64);
 
       // 2. Send Text Response
       await sock.sendMessage(remoteJid, { text: botResponse.text });

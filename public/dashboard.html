@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelpUS AI Agent & Engine - Control Center</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { background-color: #030712; color: #f9fafb; font-family: system-ui, -apple-system, sans-serif; }
+    .glass-panel { background: rgba(17, 24, 39, 0.7); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 1.5rem; }
+    .glass-nav { background: rgba(3, 7, 18, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+    .tab-btn.active { background: rgba(6, 182, 212, 0.15); color: #22d3ee; border-color: rgba(6, 182, 212, 0.4); }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- Header Nav -->
+  <header class="glass-nav sticky top-0 z-50 px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center font-bold text-white shadow-lg shadow-cyan-500/20">
+        <i data-lucide="bot" class="w-6 h-6"></i>
+      </div>
+      <div>
+        <h1 class="text-lg font-extrabold tracking-tight text-white flex items-center gap-2">
+          HelpUS AI Agent <span class="text-xs bg-cyan-950 text-cyan-400 px-2 py-0.5 rounded-full border border-cyan-800 font-mono">agent.helpusbr.com</span>
+        </h1>
+        <p class="text-xs text-slate-400">Suíte de Agentes Autônomos, Voz Neural & RAG Engine</p>
+      </div>
+    </div>
+
+    <!-- Status Badge -->
+    <div id="topStatusBadge" class="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono">
+      <span id="topStatusDot" class="w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse"></span>
+      <span id="topStatusText" class="text-slate-300">Conectando...</span>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 lg:p-8 space-y-6">
+
+    <!-- Navigation Tabs -->
+    <div class="flex overflow-x-auto gap-2 p-1.5 glass-panel border-slate-800">
+      <button onclick="switchTab('whatsapp')" id="tab-whatsapp" class="tab-btn active flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold transition-all border border-transparent hover:text-cyan-400">
+        <i data-lucide="message-square" class="w-4 h-4"></i> WhatsApp & Sessão
+      </button>
+      <button onclick="switchTab('tts')" id="tab-tts" class="tab-btn flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold transition-all border border-transparent hover:text-cyan-400">
+        <i data-lucide="volume-2" class="w-4 h-4"></i> Voz Neural TTS Studio
+      </button>
+      <button onclick="switchTab('rag')" id="tab-rag" class="tab-btn flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold transition-all border border-transparent hover:text-cyan-400">
+        <i data-lucide="brain" class="w-4 h-4"></i> Base RAG (Treinamento)
+      </button>
+      <button onclick="switchTab('webhooks')" id="tab-webhooks" class="tab-btn flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold transition-all border border-transparent hover:text-cyan-400">
+        <i data-lucide="workflow" class="w-4 h-4"></i> Automações n8n & Webhooks
+      </button>
+    </div>
+
+    <!-- TAB 1: WHATSAPP SESSION & STATUS -->
+    <section id="sec-whatsapp" class="tab-content space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Status Card -->
+        <div class="glass-panel p-6 space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <h2 class="text-sm font-bold text-slate-300 flex items-center gap-2">
+              <i data-lucide="activity" class="w-4 h-4 text-cyan-400"></i> Status do Servidor
+            </h2>
+            <span class="text-[10px] font-mono bg-cyan-950 text-cyan-400 px-2 py-0.5 rounded border border-cyan-800">Porta 4000</span>
+          </div>
+
+          <div id="qrDisplayArea" class="text-center py-4 space-y-4">
+            <div id="qrSpinner" class="w-10 h-10 border-4 border-cyan-500 border-t-transparent rounded-full animate-spin mx-auto"></div>
+            <p id="qrStatusText" class="text-xs text-slate-400">Carregando estado da conexão...</p>
+            <div id="qrImageContainer" class="hidden">
+              <img id="qrImg" src="" alt="WhatsApp QR Code" class="w-56 h-56 mx-auto rounded-2xl border-4 border-cyan-500/50 shadow-2xl p-2 bg-white" />
+              <p class="text-[11px] text-slate-400 mt-3">Abra o WhatsApp ➔ Aparelhos Conectados ➔ Escanear QR Code</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Handoff & Stats Card -->
+        <div class="md:col-span-2 glass-panel p-6 space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <h2 class="text-sm font-bold text-slate-300 flex items-center gap-2">
+              <i data-lucide="users" class="w-4 h-4 text-emerald-400"></i> Gestão de Atendimento & Transbordo Humano
+            </h2>
+            <span class="text-xs font-mono text-slate-400" id="activeHandoffsCount">0 Transbordos Ativos</span>
+          </div>
+
+          <p class="text-xs text-slate-400">
+            Quando um cliente solicita "atendente" ou "humano" no WhatsApp, o bot pausa as respostas automáticas para que sua equipe assuma o chat sem interferências.
+          </p>
+
+          <div class="space-y-3">
+            <div class="flex items-center justify-between p-3 bg-slate-900/80 rounded-xl border border-slate-800">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+                  <i data-lucide="user-check" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h3 class="text-xs font-bold text-white">Transbordo Automático</h3>
+                  <p class="text-[11px] text-slate-400">Ativado ao detectar termos como "falar com pessoa"</p>
+                </div>
+              </div>
+              <span class="text-xs font-mono text-emerald-400 bg-emerald-950 px-2.5 py-1 rounded-full border border-emerald-800">ATIVO</span>
+            </div>
+
+            <div class="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-3">
+              <h4 class="text-xs font-bold text-slate-300">Simular Transbordo por Número</h4>
+              <div class="flex gap-2">
+                <input type="text" id="inputRemoteJid" placeholder="5583999998888@s.whatsapp.net" class="flex-1 bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white outline-none focus:border-cyan-500 font-mono" />
+                <button onclick="toggleHandoffAPI()" class="bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-bold px-4 py-2 rounded-xl transition-colors">
+                  Alternar Handoff
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: TTS VOICE STUDIO -->
+    <section id="sec-tts" class="tab-content hidden space-y-6">
+      <div class="glass-panel p-6 space-y-6">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+          <div>
+            <h2 class="text-base font-bold text-white flex items-center gap-2">
+              <i data-lucide="mic" class="w-5 h-5 text-cyan-400"></i> Estúdio de Síntese de Voz Neural (ElevenLabs Alt)
+            </h2>
+            <p class="text-xs text-slate-400">Gere locuções realistas em MP3 para atendimento no WhatsApp e vinhetas.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">Voz Neural</label>
+              <select id="ttsVoice" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white outline-none focus:border-cyan-500">
+                <option value="pt-BR-AntonioNeural">pt-BR-AntonioNeural (Masculina Corporativa - Padrão)</option>
+                <option value="pt-BR-FranciscaNeural">pt-BR-FranciscaNeural (Feminina Suave)</option>
+                <option value="pt-BR-ThaliaNeural">pt-BR-ThaliaNeural (Feminina Jovem)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">Texto para Sintetizar</label>
+              <textarea id="ttsText" rows="4" class="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-xs text-white outline-none focus:border-cyan-500" placeholder="Digite a mensagem que o robô deve falar..."></textarea>
+            </div>
+
+            <button onclick="generateAudio()" id="btnGenAudio" class="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold py-2.5 rounded-xl text-xs flex items-center justify-center gap-2 shadow-lg shadow-cyan-500/20">
+              <i data-lucide="play" class="w-4 h-4"></i> Gerar Áudio MP3 Neural
+            </button>
+          </div>
+
+          <!-- Audio Result Player -->
+          <div class="flex flex-col justify-center items-center p-6 bg-slate-950 rounded-2xl border border-slate-800 space-y-4">
+            <div class="w-16 h-16 rounded-full bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl">
+              🎙️
+            </div>
+            <h3 class="text-xs font-bold text-slate-300">Resultado do Áudio Gerado</h3>
+            <audio id="audioPlayer" controls class="w-full max-w-sm hidden"></audio>
+            <p id="audioStatus" class="text-xs text-slate-500">Nenhum áudio gerado ainda.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: RAG KNOWLEDGE BASE -->
+    <section id="sec-rag" class="tab-content hidden space-y-6">
+      <div class="glass-panel p-6 space-y-6">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+          <div>
+            <h2 class="text-base font-bold text-white flex items-center gap-2">
+              <i data-lucide="database" class="w-5 h-5 text-indigo-400"></i> Base de Conhecimento RAG (Treinamento)
+            </h2>
+            <p class="text-xs text-slate-400">Adicione informações da empresa para o agente responder com precisão.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Form Add Document -->
+          <div class="space-y-4">
+            <h3 class="text-xs font-bold text-slate-300">Adicionar Novo Documento</h3>
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-400 mb-1">Título do Documento</label>
+              <input type="text" id="ragTitle" placeholder="Ex: Tabela de Preços Bessa 2026" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white outline-none focus:border-cyan-500" />
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-400 mb-1">Conteúdo / Regras de Negócio</label>
+              <textarea id="ragContent" rows="6" placeholder="Cole aqui o texto informativo..." class="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-xs text-white outline-none focus:border-cyan-500"></textarea>
+            </div>
+            <button onclick="uploadRAGDoc()" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-2.5 rounded-xl text-xs transition-colors">
+              Salvar Documento na Base
+            </button>
+          </div>
+
+          <!-- Document List -->
+          <div class="md:col-span-2 space-y-4">
+            <h3 class="text-xs font-bold text-slate-300">Documentos Treinados na Memória</h3>
+            <div id="ragDocsList" class="space-y-3 max-h-96 overflow-y-auto pr-1">
+              <div class="p-4 bg-slate-950 rounded-xl border border-slate-800 text-center text-xs text-slate-500">
+                Carregando documentos RAG...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: AUTOMATIONS & WEBHOOKS -->
+    <section id="sec-webhooks" class="tab-content hidden space-y-6">
+      <div class="glass-panel p-6 space-y-6">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+          <div>
+            <h2 class="text-base font-bold text-white flex items-center gap-2">
+              <i data-lucide="zap" class="w-5 h-5 text-amber-400"></i> Automações n8n & Webhook Dispatcher
+            </h2>
+            <p class="text-xs text-slate-400">Dispare eventos do agent.helpusbr.com para o n8n ou seu CRM.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-3">
+            <h3 class="text-xs font-bold text-cyan-400 font-mono">Endpoint Webhook n8n</h3>
+            <pre class="p-3 bg-slate-900 rounded-lg text-[11px] font-mono text-slate-300 border border-slate-800">POST https://agent.helpusbr.com/api/webhook/n8n</pre>
+            <p class="text-xs text-slate-400">Payload aceito em JSON para agendamento ou notificação:</p>
+            <pre class="p-3 bg-slate-900 rounded-lg text-[11px] font-mono text-emerald-400 border border-slate-800">{
+  "event": "appointment_booking",
+  "clientName": "João Silva",
+  "phone": "5583999887766",
+  "date": "2026-09-10T14:00:00Z"
+}</pre>
+          </div>
+
+          <div class="space-y-4">
+            <h3 class="text-xs font-bold text-slate-300">Testar Disparo de Webhook</h3>
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-400 mb-1">Nome do Evento</label>
+              <input type="text" id="whEvent" value="lead_captured" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white outline-none focus:border-cyan-500 font-mono" />
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-400 mb-1">Payload JSON</label>
+              <textarea id="whPayload" rows="4" class="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-xs text-white outline-none focus:border-cyan-500 font-mono">{"client": "Test User", "service": "Voice AI"}</textarea>
+            </div>
+            <button onclick="triggerWebhook()" class="w-full bg-amber-600 hover:bg-amber-500 text-white font-bold py-2.5 rounded-xl text-xs transition-colors">
+              Disparar Webhook de Teste
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    lucide.createIcons();
+
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.add('hidden'));
+
+      document.getElementById('tab-' + tabId).classList.add('active');
+      document.getElementById('sec-' + tabId).classList.remove('hidden');
+    }
+
+    async function fetchStatus() {
+      try {
+        const res = await fetch('/api/status');
+        const data = await res.json();
+
+        const dot = document.getElementById('topStatusDot');
+        const txt = document.getElementById('topStatusText');
+        const qrContainer = document.getElementById('qrImageContainer');
+        const qrSpinner = document.getElementById('qrSpinner');
+        const qrStatusText = document.getElementById('qrStatusText');
+        const handoffCount = document.getElementById('activeHandoffsCount');
+
+        handoffCount.innerText = `${data.activeHandoffs || 0} Transbordos Ativos`;
+
+        if (data.status === 'connected') {
+          dot.className = 'w-2.5 h-2.5 rounded-full bg-emerald-500';
+          txt.innerText = `Online (${data.connectedUser || 'WhatsApp'})`;
+          qrSpinner.classList.add('hidden');
+          qrContainer.classList.add('hidden');
+          qrStatusText.innerText = '✅ Bot Conectado e Respondendo no WhatsApp!';
+        } else if (data.qrCodeDataUrl) {
+          dot.className = 'w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse';
+          txt.innerText = 'Aguardando QR Code';
+          qrSpinner.classList.add('hidden');
+          qrContainer.classList.remove('hidden');
+          document.getElementById('qrImg').src = data.qrCodeDataUrl;
+          qrStatusText.innerText = 'Escanear QR Code com o aplicativo WhatsApp';
+        } else {
+          dot.className = 'w-2.5 h-2.5 rounded-full bg-cyan-500 animate-pulse';
+          txt.innerText = 'Iniciando...';
+        }
+      } catch (err) {
+        console.error('Erro ao buscar status:', err);
+      }
+    }
+
+    async function generateAudio() {
+      const text = document.getElementById('ttsText').value;
+      const voice = document.getElementById('ttsVoice').value;
+      if (!text) return alert('Digite um texto!');
+
+      const btn = document.getElementById('btnGenAudio');
+      btn.innerText = 'Gerando MP3...';
+
+      try {
+        const res = await fetch('/api/tts', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ text, voice })
+        });
+        const data = await res.json();
+        if (data.success && data.audioUrl) {
+          const player = document.getElementById('audioPlayer');
+          player.src = data.audioUrl;
+          player.classList.remove('hidden');
+          player.play();
+          document.getElementById('audioStatus').innerText = `✅ Sucesso: ${data.filename}`;
+        } else {
+          alert('Erro ao gerar áudio.');
+        }
+      } catch (e) {
+        alert('Erro ao conectar ao servidor TTS.');
+      } finally {
+        btn.innerText = 'Gerar Áudio MP3 Neural';
+      }
+    }
+
+    async function loadRAGDocs() {
+      try {
+        const res = await fetch('/api/rag/documents');
+        const data = await res.json();
+        const container = document.getElementById('ragDocsList');
+        if (!data.documents || data.documents.length === 0) {
+          container.innerHTML = '<div class="p-4 bg-slate-950 rounded-xl border border-slate-800 text-center text-xs text-slate-500">Nenhum documento cadastrado na base.</div>';
+          return;
+        }
+
+        container.innerHTML = data.documents.map(d => `
+          <div class="p-4 bg-slate-950 rounded-xl border border-slate-800 flex items-start justify-between gap-4">
+            <div>
+              <h4 class="text-xs font-bold text-cyan-400 font-mono">${d.title}</h4>
+              <p class="text-xs text-slate-300 mt-1">${d.content}</p>
+              <span class="text-[10px] text-slate-500 font-mono mt-2 block">${d.createdAt}</span>
+            </div>
+            <button onclick="deleteRAGDoc('${d.id}')" class="text-red-400 hover:text-red-300 text-xs font-bold p-1">Excluir</button>
+          </div>
+        `).join('');
+      } catch (e) {
+        console.error('Erro ao carregar RAG docs:', e);
+      }
+    }
+
+    async function uploadRAGDoc() {
+      const title = document.getElementById('ragTitle').value;
+      const content = document.getElementById('ragContent').value;
+      if (!content) return alert('Insira o conteúdo do documento!');
+
+      try {
+        await fetch('/api/rag/upload', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ title, content })
+        });
+        document.getElementById('ragTitle').value = '';
+        document.getElementById('ragContent').value = '';
+        loadRAGDocs();
+        alert('Documento salvo com sucesso na base RAG!');
+      } catch (e) {
+        alert('Erro ao salvar documento RAG.');
+      }
+    }
+
+    async function deleteRAGDoc(id) {
+      if (!confirm('Deseja remover este documento?')) return;
+      await fetch(`/api/rag/documents/${id}`, { method: 'DELETE' });
+      loadRAGDocs();
+    }
+
+    async function toggleHandoffAPI() {
+      const remoteJid = document.getElementById('inputRemoteJid').value;
+      if (!remoteJid) return alert('Digite o número/remoteJid!');
+
+      const res = await fetch('/api/handoff', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ remoteJid })
+      });
+      const data = await res.json();
+      alert(`Handoff alternado! Novo status: ${data.active ? 'HUMANO ATIVO' : 'IA ATIVA'}`);
+      fetchStatus();
+    }
+
+    async function triggerWebhook() {
+      const event = document.getElementById('whEvent').value;
+      const payloadStr = document.getElementById('whPayload').value;
+      let payload = {};
+      try { payload = JSON.parse(payloadStr); } catch(e) { return alert('JSON inválido!'); }
+
+      const res = await fetch('/api/webhook/n8n', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ event, payload })
+      });
+      const data = await res.json();
+      alert(`Webhook enviado com sucesso! Status: ${data.status}`);
+    }
+
+    setInterval(fetchStatus, 5000);
+    fetchStatus();
+    loadRAGDocs();
+  </script>
+</body>
+</html>

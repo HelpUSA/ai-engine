@@ -1,28 +1,37 @@
 import https from 'https';
 import http from 'http';
+import { queryRAGStore } from './rag_engine.js';
+
+const AI_HELPUS_ENDPOINT = process.env.AI_HELPUS_ENDPOINT || 'https://ai.helpusbr.com/chat';
 
 /**
- * HelpUS Knowledge Base & AI Agent Response Generator
- * Default Voice: pt-BR-AntonioNeural (Male Voice)
- * Phonetic Pronunciation: "Rélp Ás"
+ * Call external AI service with strict timeout and local RAG store lookup
  */
-
-const AI_HELPUS_ENDPOINT = process.env.AI_HELPUS_URL || 'https://ai.helpusbr.com/chat';
-
-/**
- * Call external AI service with strict 1.5s timeout, falling back gracefully
- */
-export async function generateHelpUSResponseAsync(customerMessage, siteContext = {}) {
+export async function generateHelpUSResponseAsync(customerMessage, siteContext = {}, imageBase64 = null) {
   const msg = (customerMessage || '').trim();
   const maleVoice = "pt-BR-AntonioNeural";
 
-  if (!msg) {
+  if (!msg && !imageBase64) {
     return generateHelpUSResponse(msg, siteContext);
+  }
+
+  // 0. Query Local RAG Store first (only if no image)
+  if (!imageBase64) {
+    const ragContext = queryRAGStore(msg);
+    if (ragContext) {
+      console.log('🧠 RAG Match encontrado!');
+      const ragAnswer = `Com base na nossa base de conhecimento:\n\n${ragContext}`;
+      return {
+        text: ragAnswer,
+        ttsText: ragAnswer.replace(/HelpUS/gi, 'Rélp Ás'),
+        voice: maleVoice
+      };
+    }
   }
 
   // Attempt external query with 5.5s timeout
   try {
-    const aiPromise = queryAiHelpus(msg);
+    const aiPromise = queryAiHelpus(msg, imageBase64);
     const timeoutPromise = new Promise(resolve => setTimeout(() => resolve(null), 5500));
     const aiResponse = await Promise.race([aiPromise, timeoutPromise]);
 
@@ -165,14 +174,18 @@ export function generateHelpUSResponse(customerMessage, siteContext = {}) {
 /**
  * Helper to query ai.helpusbr.com with 1.2s timeout
  */
-function queryAiHelpus(promptText) {
+function queryAiHelpus(promptText, imageBase64 = null) {
   return new Promise((resolve) => {
     try {
       const u = new URL(AI_HELPUS_ENDPOINT);
-      const postData = JSON.stringify({
-        mensagem: promptText,
+      const payload = {
+        mensagem: promptText || 'Analise esta imagem enviada.',
         pesquisar_web: false
-      });
+      };
+      if (imageBase64) {
+        payload.image_base64 = imageBase64;
+      }
+      const postData = JSON.stringify(payload);
 
       const options = {
         hostname: u.hostname,
