@@ -5,7 +5,7 @@ import path from 'path';
 import fs from 'fs';
 import { exec } from 'child_process';
 import { fileURLToPath } from 'url';
-import { generateHelpUSResponseAsync, transcribeAudioWithWhisper } from './services/helpus_knowledge.js';
+import { generateHelpUSResponseAsync, transcribeAudioWithWhisper, sendManagerAlertNotification } from './services/helpus_knowledge.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -153,6 +153,11 @@ export async function startWhatsAppBot() {
       // Check if Human Handoff is requested or already active
       const lowerText = textMessage.toLowerCase();
       const isHandoffKeyword = lowerText.includes('humano') || lowerText.includes('atendente') || lowerText.includes('falar com pessoa');
+      const isHighValueKeyword = lowerText.includes('orcamento') || lowerText.includes('proposta') || lowerText.includes('agendar') || lowerText.includes('comprar');
+
+      if (isHighValueKeyword || isHandoffKeyword) {
+        await sendManagerAlertNotification(remoteJid, textMessage, isHandoffKeyword ? 'HUMAN_HANDOFF' : 'HIGH_VALUE_LEAD');
+      }
 
       if (isHandoffKeyword || humanHandoffs.get(remoteJid)) {
         if (isHandoffKeyword) {

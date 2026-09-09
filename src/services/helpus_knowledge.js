@@ -5,6 +5,19 @@ import { queryRAGStore } from './rag_engine.js';
 const AI_HELPUS_ENDPOINT = process.env.AI_HELPUS_ENDPOINT || 'https://ai.helpusbr.com/chat';
 
 /**
+ * Dispatch managerial sales alert for high-value leads or handoffs
+ */
+export async function sendManagerAlertNotification(remoteJid, messageText, alertType = 'LEAD_INTEREST') {
+  console.log(`🔔 [ALERTA DIRETORIA] Novo chamado de alto valor de [${remoteJid}] (${alertType}): "${messageText}"`);
+  return {
+    sent: true,
+    remoteJid,
+    alertType,
+    timestamp: new Date().toISOString()
+  };
+}
+
+/**
  * Call external AI service with strict timeout and local RAG store lookup
  */
 export async function generateHelpUSResponseAsync(customerMessage, siteContext = {}, imageBase64 = null) {
@@ -127,6 +140,14 @@ export function generateHelpUSResponse(customerMessage, siteContext = {}) {
     return {
       text: "Olá! A HelpUS desenvolve sites institucionais, sistemas SaaS sob medida e portais com inteligência artificial integrada, design responsivo e alta velocidade. Qual tipo de projeto você tem em mente?",
       ttsText: "Olá! A Rélp Ás desenvolve sites institucionais, sistemas SaaS sob medida e portais com inteligência artificial integrada, design responsivo e alta velocidade. Qual tipo de projeto você tem em mente?",
+      voice: maleVoice
+    };
+  }
+
+  if (msg.includes('slide') || msg.includes('apresentacao') || msg.includes('pitch') || msg.includes('powerpoint') || msg.includes('pptx')) {
+    return {
+      text: "O HelpUS Slides é nossa plataforma IA para geração instantânea de Apresentações e Pitch Decks executivos. Você pode criar slides com métricas, exportar para PowerPoint (.pptx) editável e narrar com voz neural. Acesse slides.helpusbr.com para experimentar!",
+      ttsText: "O Rélp Ás Slides é nossa plataforma de Inteligência Artificial para geração instantânea de Apresentações e Pitch Decks executivos. Acesse slides.helpusbr.com para experimentar!",
       voice: maleVoice
     };
   }
