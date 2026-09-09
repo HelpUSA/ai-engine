@@ -122,7 +122,7 @@ export async function startWhatsAppBot() {
           const audioBuffer = fs.readFileSync(audioPath);
           await sock.sendMessage(remoteJid, {
             audio: audioBuffer,
-            mimetype: 'audio/mp4',
+            mimetype: 'audio/mpeg',
             ptt: true
           });
           console.log(`🎙️ Mensagem de voz enviada para [${remoteJid}]`);

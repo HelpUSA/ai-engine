@@ -3,7 +3,6 @@ import http from 'http';
 
 /**
  * HelpUS Knowledge Base & AI Agent Response Generator
- * Integrates directly with ai.helpusbr.com Multi-AI Gateway & Local Knowledge Fallback.
  * Default Voice: pt-BR-AntonioNeural (Male Voice)
  * Phonetic Pronunciation: "Rélp Ás"
  */
@@ -11,16 +10,23 @@ import http from 'http';
 const AI_HELPUS_ENDPOINT = process.env.AI_HELPUS_URL || 'https://ai.helpusbr.com/api/chat';
 
 /**
- * Call ai.helpusbr.com or generate intelligent response
+ * Call external AI service with strict 1.5s timeout, falling back gracefully
  */
 export async function generateHelpUSResponseAsync(customerMessage) {
   const msg = (customerMessage || '').trim();
   const maleVoice = "pt-BR-AntonioNeural";
 
-  // Try calling ai.helpusbr.com AI service if available
+  if (!msg) {
+    return generateHelpUSResponse(msg);
+  }
+
+  // Attempt external query with 1.5s timeout
   try {
-    const aiResponse = await queryAiHelpus(msg);
-    if (aiResponse) {
+    const aiPromise = queryAiHelpus(msg);
+    const timeoutPromise = new Promise(resolve => setTimeout(() => resolve(null), 1500));
+    const aiResponse = await Promise.race([aiPromise, timeoutPromise]);
+
+    if (aiResponse && typeof aiResponse === 'string' && aiResponse.trim().length > 0) {
       const cleanText = aiResponse.replace(/HelpUS/gi, 'HelpUS');
       const ttsPhonetic = aiResponse.replace(/HelpUS/gi, 'Rélp Ás');
       return {
@@ -30,10 +36,9 @@ export async function generateHelpUSResponseAsync(customerMessage) {
       };
     }
   } catch (err) {
-    console.log('💡 usando base de conhecimento nativa ai.helpusbr.com fallback...');
+    console.log('💡 Fallback para base local HelpUS:', err.message);
   }
 
-  // Native HelpUS Knowledge Base Fallback
   return generateHelpUSResponse(msg);
 }
 
@@ -41,7 +46,15 @@ export function generateHelpUSResponse(customerMessage) {
   const msg = (customerMessage || '').toLowerCase();
   const maleVoice = "pt-BR-AntonioNeural";
 
-  if (msg.includes('site') || msg.includes('desenvolvimento') || msg.includes('web')) {
+  if (msg.includes('música') || msg.includes('musica') || msg.includes('compos') || msg.includes('cancao') || msg.includes('som')) {
+    return {
+      text: "Sim! A inteligência artificial hoje consegue compor músicas completas, gerar arranjos, criar letras e sintetizar vocais neurais em diversos estilos musicais. No ecossistema HelpUS, nós usamos IA para geração de voz neural ultra-realista para negócios e atendimento!",
+      ttsText: "Sim! A inteligência artificial hoje consegue compor músicas completas, gerar arranjos, criar letras e sintetizar vocais neurais em diversos estilos musicais. No ecossistema Rélp Ás, nós usamos IA para geração de voz neural ultra-realista para negócios e atendimento!",
+      voice: maleVoice
+    };
+  }
+
+  if (msg.includes('site') || msg.includes('desenvolvimento') || msg.includes('web') || msg.includes('sistema')) {
     return {
       text: "Olá! A HelpUS desenvolve sites institucionais, sistemas SaaS sob medida e portais com inteligência artificial integrada, design responsivo e alta velocidade. Qual tipo de projeto você tem em mente?",
       ttsText: "Olá! A Rélp Ás desenvolve sites institucionais, sistemas SaaS sob medida e portais com inteligência artificial integrada, design responsivo e alta velocidade. Qual tipo de projeto você tem em mente?",
@@ -81,7 +94,7 @@ export function generateHelpUSResponse(customerMessage) {
     };
   }
 
-  // Default welcome response
+  // Default intelligent response
   return {
     text: "Olá! Seja muito bem-vindo à HelpUS. Sou o assistente virtual com inteligência artificial. Desenvolvemos ecossistemas de software, plataformas SaaS e soluções de IA como o HelpUS Voice. Como posso te ajudar hoje?",
     ttsText: "Olá! Seja muito bem-vindo à Rélp Ás. Sou o assistente virtual com inteligência artificial. Desenvolvemos ecossistemas de software, plataformas SaaS e soluções de IA como o Rélp Ás Voice. Como posso te ajudar hoje?",
@@ -90,7 +103,7 @@ export function generateHelpUSResponse(customerMessage) {
 }
 
 /**
- * Helper to query ai.helpusbr.com
+ * Helper to query ai.helpusbr.com with 1.2s timeout
  */
 function queryAiHelpus(promptText) {
   return new Promise((resolve) => {
@@ -98,7 +111,7 @@ function queryAiHelpus(promptText) {
       const u = new URL(AI_HELPUS_ENDPOINT);
       const postData = JSON.stringify({
         messages: [
-          { role: 'system', content: 'Você é o assistente comercial oficial da HelpUS (ai.helpusbr.com). Responda com clareza, objetividade e foco em ajudar o cliente.' },
+          { role: 'system', content: 'Você é o assistente comercial oficial da HelpUS (ai.helpusbr.com). Responda de forma direta, simpática e objetiva em 2 ou 3 frases.' },
           { role: 'user', content: promptText }
         ]
       });
@@ -112,7 +125,7 @@ function queryAiHelpus(promptText) {
           'Content-Type': 'application/json',
           'Content-Length': Buffer.byteLength(postData)
         },
-        timeout: 5000
+        timeout: 1200
       };
 
       const requester = u.protocol === 'https:' ? https : http;
@@ -123,8 +136,8 @@ function queryAiHelpus(promptText) {
           try {
             const data = JSON.parse(body);
             const content = data.reply || data.content || data?.choices?.[0]?.message?.content;
-            if (content && typeof content === 'string') {
-              return resolve(content);
+            if (content && typeof content === 'string' && content.trim()) {
+              return resolve(content.trim());
             }
           } catch (e) {}
           resolve(null);
